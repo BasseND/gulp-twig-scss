@@ -27,7 +27,7 @@ var paths = {
  * Compile .twig files and pass in data from json file
  * matching file name. index.twig - index.twig.json
  */
-gulp.task('twig', function () {
+function gulpTwigTask () {
 //   return gulp.src(['./client/templates/*.twig','./client/data/head.twig'])
   return gulp.src(['./client/templates/*.twig'])
     // Stay live and reload on error
@@ -47,34 +47,48 @@ gulp.task('twig', function () {
       this.emit('end');
     })
 	.pipe(gulp.dest(paths.build));
-});
+};
 
 /**
  * Recompile .twig files and live reload the browser
  */
-gulp.task('rebuild', ['twig'], function () {
+//gulp.task('rebuild', ['twig'], function () {
   // BrowserSync Reload
-  browserSync.reload();
-});
+  //browserSync.reload();
+//});
+
+gulp.task(
+  "rebuild",
+  gulp.series(gulpTwigTask, function() {
+    // BrowserSync Reload
+    browserSync.reload();
+  })
+);
 
 /**
  * Wait for twig, js and sass tasks, then launch the browser-sync Server
  */
-gulp.task('browser-sync', ['sass', 'twig', 'js'], function () {
-  browserSync({
-    server: {
-      baseDir: paths.build
-    },
-    notify: false,
-    browser:"google chrome"
-  });
-});
+
+gulp.task(
+  "browser-sync",
+  gulp.series([gulpSassTask, gulpTwigTask, gulpJsTask], function() {
+    browserSync({
+      server: {
+        baseDir: paths.build
+      },
+      notify: false,
+      browser: "google chrome"
+    });
+  })
+);
+
+
 
 /**
  * Compile .scss files into build css directory With autoprefixer no
  * need for vendor prefixes then live reload the browser.
  */
-gulp.task('sass', function () {
+function gulpSassTask  () {
   return gulp.src(paths.sass + 'vendors/main.scss')
     .pipe(sourcemaps.init())
     // Stay live and reload on error
@@ -99,12 +113,12 @@ gulp.task('sass', function () {
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.css));
-});
+};
 
 /**
  * Compile .js files into build js directory With app.min.js
  */
-gulp.task('js', function(){
+function gulpJsTask (){
     return gulp.src('build/assets/js/script.js')
         .pipe(sourcemaps.init())
         .pipe(concat('script.min.js'))
@@ -114,24 +128,24 @@ gulp.task('js', function(){
         })
 		.pipe(sourcemaps.write('.'))		
 		.pipe(gulp.dest('build/assets/js'));
-});
+};
 
 /**
  * Watch scss files for changes & recompile
  * Watch .twig files run twig-rebuild then reload BrowserSync
  */
-gulp.task('watch', function () {
+function gulpWatchTask () {
 	gulp.watch(paths.build + 'assets/js/script.js', ['js', browserSync.reload]);
   	gulp.watch(paths.sass + 'vendors/main.scss', ['sass', browserSync.reload]);
   	gulp.watch(['client/templates/**/*.twig','client/data/*.twig.json'], {cwd:'./'}, ['rebuild']);
-});
+};
 
 // Build task compile sass and twig.
-gulp.task('build', ['sass', 'twig']);
+gulp.task("build", [gulpSassTask, gulpTwigTask]);
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the project site, launch BrowserSync then watch
  * files for changes
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task("default", ["browser-sync", gulpWatchTask]);
