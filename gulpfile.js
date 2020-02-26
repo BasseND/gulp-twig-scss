@@ -141,11 +141,11 @@ function gulpWatchTask () {
 };
 
 // Build task compile sass and twig.
-gulp.task("build", [gulpSassTask, gulpTwigTask]);
+gulp.task("build", gulp.series([gulpSassTask, gulpTwigTask]));
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the project site, launch BrowserSync then watch
  * files for changes
  */
-gulp.task("default", ["browser-sync", gulpWatchTask]);
+gulp.task("default", gulp.series(['browser-sync', gulpWatchTask]));
