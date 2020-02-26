@@ -1,0 +1,43 @@
+$placeholder : #000000;
+
+::-webkit-input-placeholder { color: $placeholder; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; }
+:-moz-placeholder { color: $placeholder; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; }
+::-moz-placeholder { color: $placeholder; opacity: 1; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; }
+:-ms-input-placeholder { color: $placeholder; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; }
+
+::-moz-selection {
+    color: $white;
+    background-color: $body-color;
+}
+
+::selection {
+    color: $white;
+    background-color: $body-color;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    &.overflow,
+    &.header-nav-burger-is-open
+    {
+        overflow: hidden;
+    }
+}
+
+img {
+    display: block;
+    @include img-fluid;
+}
+
+a, button, input, textarea {
+    &:focus,
+    &.focus {
+        @include focus-style;
+    }
+}

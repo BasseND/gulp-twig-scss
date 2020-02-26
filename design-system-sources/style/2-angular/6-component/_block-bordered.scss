@@ -1,0 +1,90 @@
+$block-bordered-padding-xs: 1.6rem;
+$block-bordered-padding-lg: 1.6rem;
+$block-bordered-padding-xxl: 3rem;
+
+.block-bordered {
+    position: relative; // nécessaire pour positionner le bouton "réinitialiser le formulaire" (.btn-pos-right)
+    margin-bottom: 2rem;
+    padding: $block-bordered-padding-xs;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    .btn-pos-right {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+
+        &.btn-actions {
+            top: 0.5rem;
+        }
+    }
+
+    &-prestation {
+        padding-bottom: 0.1rem!important; // padding is created by form-group margin bottom
+        margin-bottom: 3rem;
+
+        border-top: 0.1rem dashed $border-color;
+        border-bottom: 0.1rem dashed $border-color;
+
+        + .block-bordered {
+            margin-top: -3.1rem;
+        }
+
+        .block-recap--total {
+            padding: 0 0 2rem 0;
+            border-top-width: 0;
+        }
+    }
+}
+
+.collapse-mx-negative {
+    margin-left: -$block-bordered-padding-xs;
+    margin-right: -$block-bordered-padding-xs;
+}
+
+
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+//
+// MEDIA QUERIES
+//
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+@include media-breakpoint-up(lg) {
+    .block-bordered {
+        padding: $block-bordered-padding-lg;
+
+        .btn-pos-right {
+            top: 2.5rem;
+            right: $block-bordered-padding-lg;
+
+            &.btn-actions {
+                top: 2rem;
+            }
+        }
+    }
+
+    .collapse-mx-negative {
+        margin-left: -$block-bordered-padding-lg;
+        margin-right: -$block-bordered-padding-lg;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .block-bordered {
+        padding: $block-bordered-padding-xxl;
+
+        .btn-pos-right {
+            right: $block-bordered-padding-xxl;
+        }
+
+        &-xl {
+            padding: 4.4rem 5.4rem;
+        }
+    }
+
+    .collapse-mx-negative {
+        margin-left: -$block-bordered-padding-xxl;
+        margin-right: -$block-bordered-padding-xxl;
+    }
+}

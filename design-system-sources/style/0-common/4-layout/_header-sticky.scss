@@ -1,0 +1,43 @@
+.header {
+    &.header-sticky {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        border-bottom: 0.1rem solid $gray-200;
+
+        background-color: $white;
+
+        .region-header-left {
+            .header-logo {
+                max-width: 24rem;
+            }
+        }
+
+        .dropdown-segment-btn {
+            padding: 1rem 2rem;
+
+            font-size: 1.2rem;
+
+            span {
+                &:nth-of-type(1) {
+                    display: none;
+                }
+            }
+
+            &::before {
+                right: 1.5rem;
+                margin-top: -0.4rem;
+            }
+        }
+
+        &.header-sticky-menu-open {
+            .region-header-left {
+                .header-logo {
+                    max-width: 36.6rem;
+                    transform: translateX(-50%) translateY(-30%);
+                }
+            }
+        }
+
+    }
+}

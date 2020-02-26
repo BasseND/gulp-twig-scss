@@ -1,0 +1,147 @@
+@mixin border-top-left-1($color: $secondary) {
+
+    position: relative;
+
+    padding-top: 4.4rem;
+    padding-left: 5rem;
+
+    @include icon(after, icon-border-top-left-1)
+    {
+        position: absolute;
+        top: 0rem;
+        left: -2.7rem;
+
+        display: block;
+
+        font-size: 20rem;
+        color: $color;
+        line-height: 1;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding-top: 3.6rem;
+        padding-left: 3rem;
+
+        &::after
+        {
+            font-size: 12rem;
+        }
+    }
+
+}
+
+@mixin border-top-left-2($color: $secondary) {
+    position: relative;
+
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+
+    @include icon(before, icon-border-top-left-2)
+    {
+        position: absolute;
+        top: 0rem;
+        left: -0.7rem;
+
+        display: block;
+
+        font-size: 5rem;
+        color: $color;
+        line-height: 1;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding-top: 5rem;
+        padding-left: 0;
+
+        &::before {
+            left: -6rem;
+            font-size: 7rem;
+        }
+    }
+}
+
+@mixin border-top-left-3($color: $secondary) {
+
+    position: relative;
+
+    padding-top: 4rem;
+    padding-left: 4rem;
+
+    @include icon(after, icon-border-top-left-3)
+    {
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+
+        display: block;
+
+        font-size: 5.7rem;
+        line-height: 1;
+        color: $color;
+    }
+
+}
+
+@mixin border-top-right-1($color: $secondary) {
+
+    position: relative;
+
+    padding-top: 4rem;
+    padding-right: 4rem;
+
+    @include icon(after, icon-border-top-right-1)
+    {
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+
+        display: block;
+
+        font-size: 7.5rem;
+        line-height: 1;
+        color: $color;
+    }
+
+}
+
+@mixin border-custom-spacer($color: $secondary) {
+
+    position: relative;
+    margin-bottom: 3.5rem;
+
+    @include icon(after, icon-spacer)
+    {
+        display: block;
+        margin-top: 1.5rem;
+
+        font-size: 5rem;
+        line-height: 0;
+        color: $color;
+    }
+
+    // Include any extra rules supplied for the pseudo-element
+    @content;
+
+}
+
+@mixin bg-top-right() {
+
+    &::after
+    {
+        content: '';
+
+        display: block;
+
+        position: absolute;
+        top: -33.4rem; //was 14.4rem// padding-top main
+        left: 66%;
+
+        z-index: -1;
+
+        width: 50%;
+        height: 57rem;
+
+        background-color: $secondary;
+    }
+
+}

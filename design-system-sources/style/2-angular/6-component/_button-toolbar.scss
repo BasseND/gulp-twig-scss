@@ -1,0 +1,52 @@
+.btn-toolbar {
+    margin-top: $form-group-margin-bottom;
+    display: block; // reset bootstrap display flex
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            margin-bottom: 2rem;
+        }
+
+        .btn-prev {
+            order: 0;
+            margin-right: 0.8rem;
+        }
+
+        .btn-save {
+            order: 1;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+        }
+
+        .btn-next {
+            order: 2;
+            margin-left: 0.8rem;
+        }
+    }
+
+
+    @include media-breakpoint-down(sm) {
+        [class*='btn-icon'] {
+            .btn-text {
+                @include sr-only;
+            }
+
+            [class^='icon-'] {
+                margin: 0;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .btn-group {
+            justify-content: flex-start; // nécessaire pour IE
+        }
+
+        .btn-next {
+            margin-left: auto!important;
+        }
+    }
+}

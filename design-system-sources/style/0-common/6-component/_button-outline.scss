@@ -1,0 +1,38 @@
+[class*="btn-outline"] {
+    [class^='icon-'] {
+        color: $secondary;
+    }
+
+    @include hover-focus-active {
+        [class^='icon-'] {
+            color: inherit;
+        }
+    }
+}
+
+.btn-outline-transparent {
+    border-color: transparent;
+}
+
+.btn-outline-primary {
+    &:hover {
+        background-color: $secondary;
+        border-color: $secondary;
+    }
+
+    &:focus {
+        background-color: $secondary-dark;
+        border-color: $secondary-dark;
+    }
+
+    &:active {
+        background-color: $secondary-darken; 
+        border-color: $secondary-darken; 
+    }
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    background-color: $secondary-darken; 
+    border-color: $secondary-darken; 
+}

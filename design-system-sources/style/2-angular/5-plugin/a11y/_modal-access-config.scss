@@ -1,0 +1,131 @@
+//
+// a11y Config
+//
+
+.modal-dialog-access-config
+{
+    .dialog-content
+    {
+        padding: 3rem;
+        max-width: 55rem;
+
+        box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.2);
+
+        background-color: $white;
+
+        h1
+        {
+            @include sr-only;
+        }
+
+        fieldset
+        {
+            display: block;
+            word-spacing: -0.25em;
+        }
+
+        legend
+        {
+            display: block;
+            width: 100%;
+
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            text-align: left;
+            font-weight: 700;
+            word-spacing: normal;
+        }
+
+        fieldset ~ fieldset legend
+        {
+            padding-top: 1rem;
+        }
+
+        input
+        {
+            @include sr-only;
+        }
+
+        label
+        {
+            position: relative;
+            display: block;
+            padding: 1rem 3rem;
+            min-width: 15rem;
+
+            text-align: center;
+
+            border: 0.1rem solid $body-color;
+            background-color: $white;
+            color: $body-color;
+
+            transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+            @include hover
+            {
+                border-color: $secondary;
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+
+        label ~ label
+        {
+            margin-left: 1rem;
+        }
+
+        input:focus + label
+        {
+            @include focus-style($primary);
+        }
+
+        input:checked + label
+        {
+            border-color: $secondary;
+            background-color: $secondary;
+            color: $white;
+
+
+            @include icon(before, icon-check) {
+                margin-right: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .dialog-close
+    {
+        &::after
+        {
+            content:'Fermer';
+            margin-left: 0.4rem;
+
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 1;
+        }
+    }
+
+    .dialog-title {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+    }
+
+    .dialog-description {
+        margin-bottom: 2rem;
+        font-weight: 600;
+        color: $gray-700;
+    }
+}
+
+.modal-dialog-access-config--item
+{
+    display: inline-block;
+    vertical-align: top;
+
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    word-spacing: normal;
+}

@@ -1,0 +1,211 @@
+.form-control,
+input, textarea, select {
+    font-weight: $font-weight-base;
+
+    &:focus {
+        @include focus-style;
+    }
+}
+
+
+label {
+    cursor: pointer;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+// Pour chrome ; on suppr le background jaune
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill
+{
+    background-color: $white;
+}
+
+.custom-control {
+    margin-bottom: 2rem;
+
+    input:focus + label::before {
+        @include focus-style;
+    }
+}
+
+.custom-control-label {
+    padding-top: 0.2rem;
+    text-transform: none;
+}
+
+.custom-radio
+{
+    .custom-control-label
+    {
+        &::before
+        {
+            border: 1px solid $gray-300;
+        }
+    }
+}
+
+.custom-checkbox
+{
+    padding-left: 2.5rem;
+
+    .custom-control-label
+    {
+        &::before
+        {
+            border: 1px solid $gray-300;
+        }
+
+        &::before,
+        &::after
+        {
+            height: 1.4rem;
+            width: 1.4rem;
+
+            left: -2.5rem;
+            top: 0.3rem;
+        }
+    }
+
+    &:last-child
+    {
+        // margin-bottom: 3rem;
+    }
+
+}
+
+.form-group {
+    position: relative; // nécessaire pour positionner l'infobulle
+}
+
+.form-group-icon-left,
+.form-group-icon-right {
+    [class*='icon-'] {
+        position: absolute;
+        top: 0.1rem;
+        bottom: 0.1rem;
+
+        width: 5.8rem;
+
+        font-size: 1.8rem;
+        text-align: center;
+
+        &::before {
+            display: block; 
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.form-group-icon-left {
+    [class*='icon-'] {
+        left: 0.1rem;
+    }
+
+    .float-target-parent label {
+        transform: translateY(-50%) translateX(5.8rem);
+    }
+
+    .form-control {
+        padding-left: 5.8rem;
+    }
+}
+
+.form-group-icon-right {
+    [class*='icon-'] {
+        right: 0.1rem;
+    }
+
+    .form-control {
+        padding-right: 5.8rem;
+    }
+}
+
+.form-group.required label::after {
+    content: "*";
+    color: $red;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid,
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    padding-right: 4rem;
+
+    background-repeat: no-repeat;
+    background-position: center right 1.5rem;
+    background-size: calc(2.25rem / 2) calc(2.25rem / 2);
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    border-color: $input-border-color;
+}
+
+.input-group-text.is-invalid {
+    border-color: $form-feedback-invalid-color;
+
+    &:focus {
+        border-color: $form-feedback-invalid-color;
+        box-shadow: 0 0 0 $input-focus-width rgba($form-feedback-invalid-color, .25);
+    }
+}
+
+select{
+    &.form-control {
+        appearance: none;
+
+        padding-right: 4rem;
+
+        font-size: 1.4rem;
+        font-weight: 700;
+
+        background-repeat: no-repeat;
+        background-position: center right 1.5rem;
+        background-size: calc(2.25rem / 2) calc(2.25rem / 2);
+        background-image: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cpath fill='#000000' d='M26.24 5.76l-10.88 10.24-10.24-10.24-5.12 5.12 15.36 15.36 16.64-15.36z'/%3e%3c/svg%3e"), "#", "%23");
+
+        option {
+            text-transform: none;
+        }
+    }
+}
+
+// For IE 10 and more
+select::-ms-expand
+{
+    display: none;
+}
+
+.description {
+    font-size: 1.4rem;
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.form-row {
+    margin-right: -$form-row-gutter;
+    margin-left: -$form-row-gutter;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: $form-row-gutter;
+        padding-left: $form-row-gutter;
+    }
+}
+
+.invalid-feedback {
+    display: block;
+}

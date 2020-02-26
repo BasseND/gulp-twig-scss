@@ -1,0 +1,87 @@
+.switch-button {
+    position: relative;
+    overflow: hidden;
+
+    display: block;
+
+    width: 3.7rem;
+    height: 1.8rem;
+
+    border-radius: 3.7rem;
+
+    input {
+        @include sr-only;
+
+        + .txt + .txt{ display: none; }
+
+        &:checked {
+            + .txt{ display: none; }
+            + .txt + .txt{ display: block; }
+            ~ .switch
+            {
+                transform: translateX(1.8rem);
+            }
+
+            &:focus {
+                ~ .switch {
+                    border-color: $secondary;
+                }
+            }
+        }
+
+        &:focus {
+            ~ .switch {
+                box-shadow: 0 0 0 0.2rem $black;
+                border: 0.2rem solid $gray-500;
+            }
+        }
+    }
+
+    .txt {
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        color: $white;
+        font-size: 0.8rem;
+        font-weight: $font-weight-semi-bold;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+
+        // OFF
+        &:nth-of-type(1) {
+            background-color: $gray-500;
+            text-align: right;
+            padding-right: 0.3rem;
+        }
+
+        // ON
+        &:nth-of-type(2) {
+            padding-left: 0.35rem;
+            background-color: $secondary;
+        }
+    }
+
+    .switch {
+        display: block;
+
+        position: absolute;
+        top: 0.2rem;
+        left: 0.2rem;
+
+        z-index: 402;
+
+        width: 1.4rem;
+        height: 1.4rem;
+
+        border-radius: 100%;
+
+        background-color: $white;
+
+        transition: transform 0.3s ease;
+    }
+}

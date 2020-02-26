@@ -1,0 +1,9 @@
+.header {
+    &.header-unpin {
+        transform: translateY(-100%);
+
+        @include media-breakpoint-down(xl) {
+            transform: translateY(-150%); 
+        }
+    }
+}

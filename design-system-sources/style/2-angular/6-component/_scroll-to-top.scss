@@ -1,0 +1,29 @@
+.scroll-to-top {
+    // display: none; // A supprimer pour que JS fonctionne
+
+    // position: fixed;
+    // bottom: 2rem;
+    // right: 1.6rem;
+
+    display: block; 
+
+    width: 5rem;
+    height: 5rem;
+
+    background-color: $white;
+    border: 0.1rem solid $gray-200;
+
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 5rem;
+    text-decoration: none !important;
+
+    @include icon(before, icon-arrow_up);
+
+    transition: color 0.3s ease, border-color 0.3s ease;
+
+    @include hover {
+        color: $secondary;
+        border-color: $secondary;
+    }
+}

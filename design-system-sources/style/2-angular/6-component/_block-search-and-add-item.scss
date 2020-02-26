@@ -1,0 +1,107 @@
+.block-search-and-add-item {
+    @include make-row;
+
+    align-items: center;
+
+    &--input,
+    &--text,
+    &--button {
+        @include make-col-ready;
+    }
+
+    &--text {
+        padding: 1rem;
+
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &--button {
+        .btn {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    [class^='icon-'] {
+        font-size: 2.3rem;
+    }
+
+    .float-target-parent:not(.focused) label {
+        max-width: calc(100% - 2.2rem*2 - 9rem); // remove button width
+    }
+}
+
+.form-search-and-add-item {
+    margin: 2rem 0;
+
+    &.disabled {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+
+            // background-color: rgba($black, 0.7);
+            pointer-events: none;
+        }
+
+        .btn {
+            background-color: $gray-300;
+            border-color: $gray-300;
+            color: $black;
+        }
+
+        label {
+            color: $gray-700;
+        }
+    }
+}
+
+
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+//
+// MEDIA QUERIES
+//
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+@include media-breakpoint-up(lg) {
+    .block-search-and-add-item {
+        &--input {
+            @include make-col(7);
+        }
+
+        &--text {
+            @include make-col(1);
+        }
+
+        &--button {
+            @include make-col(4);
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+
+    .form-search-and-add-item {
+        margin: 5rem 0;
+    }
+
+}

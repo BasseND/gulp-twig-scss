@@ -1,0 +1,15 @@
+.region-top
+{
+  display: flex;
+  padding-right: $header-padd-x;
+
+  background-color: $gray-100;
+
+  .in {
+    flex: 1 1 100%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-right: $header-padd-x-desktop;
+  }
+}

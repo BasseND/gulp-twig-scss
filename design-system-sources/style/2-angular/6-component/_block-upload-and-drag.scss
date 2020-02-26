@@ -1,0 +1,122 @@
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);
+    }
+}
+
+.block-upload-and-drag {
+    padding: 3rem;
+
+    text-align: center;
+
+    border: dashed 0.1rem $border-color;
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+
+    transition: all 1.25s ease;
+
+    &.is-hover {
+        background-color: $gray-100;
+        border-color: $secondary;
+
+        animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    }
+}
+
+.block-upload-and-drag--drag {
+    [class^='icon-'] {
+        display: block;
+        margin-bottom: 1.8rem;
+
+        font-size: 10rem;
+
+        color: $secondary;
+
+        &::before {
+            display: block;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.block-upload-and-drag--text {
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.block-upload-and-drag--upload {
+    input:focus + label {
+        @include focus-style($secondary);
+    }
+}
+
+.block-upload-and-drag-description {
+    margin-top: 4rem;
+}
+
+.block-upload-and-drag--file-item {
+    position: relative;
+    flex-grow: 1; // s'étend sur toute la place disponible
+
+    .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.block-upload-and-drag--file {
+    margin: 0 0 2rem 0;
+
+    display: flex;
+    align-items: flex-start;
+
+    text-align: left;
+
+    > [class^='icon-'] {
+        display: none;
+        margin-right: 1.5rem;
+
+        font-size: 12.3rem;
+
+        color: $gray-200;
+    }
+}
+
+.block-upload-and-drag--file-name {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.block-upload-and-drag--file-weight {
+    display: block;
+    margin-bottom: 2rem;
+
+    font-size: 1.1rem;
+
+    color: $gray-500;
+}
+
+
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+//
+// MEDIA QUERIES
+//
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+@include media-breakpoint-up(lg) {
+    .block-upload-and-drag--file {
+        max-width: 70rem;
+        margin: 3rem auto 0 auto;
+
+        > [class^='icon-'] {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,503 @@
+.header {
+    @include clearAfter;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+
+    min-height: 7.7rem; // fix sur la page ou il y a form-layout
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    background-color: transparent;
+
+    transition: background-color 0.6s $bezier, transform 0.6s ease;
+}
+
+.region-header-left {
+    float: left;
+}
+
+.region-header-right {
+    //float: right;
+    position: absolute;
+    top: 50%;
+    right: 2rem; // On simule les meme paddings que le button menu
+    
+    margin-top: -2.75rem;
+
+    .nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    [class^='nav-link'] {
+        height: 100%;
+    }
+
+    .nav-link-access,
+    .nav-link-map,
+    .nav-link-search {
+        > a,
+        > button {
+            display: block;
+            cursor: pointer;
+
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            height: 4.5rem;
+
+            background-color: transparent;
+            
+            color: $black;
+            line-height: 4.5rem;
+
+            transition: background-color 0.3s ease, color 0.3s ease;    
+
+            @include hover-focus-active {
+                background-color: $gray-300;
+            }
+        }
+    }
+
+    .nav-link-search > button {
+        &::before {
+            vertical-align: top;
+        }
+
+        &[aria-expanded='true'] {
+            background-color: transparent !important;
+            color: $black  !important;
+
+            &::before{ color: $red; } 
+
+            &::after {
+                content:'Fermer';
+                margin-left: 0.4rem;
+
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 1;
+            }
+        }
+    }
+
+    a {
+        color: $body-color;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    button {
+        @include reset-btn;
+    }
+
+    [class^='icon-'] {
+        font-size: 2rem;
+
+        line-height: inherit;
+
+        &::before {
+            line-height: inherit;
+        }
+    }
+
+    .nav-link-user {
+        position: relative;
+
+        > a,
+        > button {
+            @extend .btn;
+            @include button-variant($secondary, $white, $secondary, $secondary);
+            font-weight: 600;
+
+            &:focus {
+                background-color: darken($secondary, 10%);  
+            }
+        }
+
+        > button[aria-expanded='true'] {
+            background-color: $secondary !important;
+            color: $white !important;  
+            border-color: $secondary !important;
+        }
+
+        // Pour le niv 1 uniquement car ng-Boostrap-Angular rajoute cette class
+        .dropdown-toggle::after{ display: none !important; }
+    }
+
+    .nav-link-user-dropdown {
+        // position: absolute !important;
+        // top: 100% !important;
+        // left: 0rem !important;
+        right: 0rem;
+
+        // margin-top: -0.1rem; 
+
+        border-width: 0 0.1rem 0.1rem 0.1rem;
+        border-style: solid;
+        border-color: $white;
+
+        background-color: $secondary;
+
+        ul {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        li{
+            &:first-child {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    display: block;
+
+                    position: absolute;
+                    top: 100%;
+                    left: 2.2rem;
+                    right: 2.2rem;
+
+                    height: 0.1rem;
+                    
+                    background-color: $white;
+                }
+            }
+        }
+
+        a {
+            display: block;
+            padding: 1.7rem 2.2rem;
+
+            background-color: $secondary; 
+
+            font-size: 1.2rem;
+            color: $white;  
+
+            @include hover-focus {
+                background-color: darken($secondary, 10%);
+            }
+
+            @include active {
+                background-color: darken($secondary, 15%);
+            }
+        }
+    }
+
+    .nav-link-map {
+        [class^='icon-'] {
+            font-size: 2.4rem;
+        }
+    }
+
+    .block-connexion-button-block,
+    .block[class*="user"] {
+        margin-left: 2rem;
+    }
+    
+    .block-connexion-button-block > a:hover{
+        background-color: $secondary-darken;
+        border-color: $secondary-darken;
+    }
+}
+
+.header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: max-width 0.4s ease;
+
+    z-index: 22; // au dessus quand on ouvre le megamenu
+
+    max-width: 36.6rem;
+
+    a {
+        display: block;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        @include img-fluid;
+    }
+}
+
+.header-megamenu-button {
+    @include reset-btn(0, 2rem 2.4rem 2rem 5.2rem, 0, none);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    white-space: nowrap;
+    word-spacing: -0.25em;
+    line-height: 1;
+
+    @include icon(before, icon-menu){
+        position: absolute;
+        top: 50%;
+        left: 2.4rem;
+
+        transform: translateY(-50%);
+    }
+
+    &[aria-expanded='true'] {
+        @include icon(before, icon-close, false){
+            color: $secondary;
+        }
+    }
+}
+
+.header-megamenu-button,
+.header-search-btn {
+    position: relative;
+
+    // passe par dessus .header-megamenu-nav et .header-megamenu-search-wrapper quand c'est ouvert
+    &[aria-expanded="true"] {        
+        z-index: 22; 
+    }
+}
+
+.block-homepage-selector,
+.block-main-menu,
+.header-megamenu-wrapper,
+.dropdown-segment {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block-homepage-selector {
+    .form-item {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.dropdown-segment {
+    width: 32.6rem;
+
+    .dropdown-menu {
+        width: 100%;
+        border-top: 0;
+    }
+
+    .menu {
+        list-style: none;
+    }
+
+    .menu-item a {
+        display: block;
+        padding: 1.7rem 2.6rem;
+
+        font-weight: 600;
+        text-transform: uppercase;
+
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        @include hover {
+            background-color: $gray-200;
+        }
+    }
+}
+
+.dropdown-segment-btn {
+    @include reset-btn(0, 1.7rem 2.6rem, 0.1rem solid $gray-300, none);
+
+    padding-right: 5rem; // space for icon arrow
+
+    display: block;
+    width: 100%;
+
+    text-align: left;
+    font-weight: 700;
+
+    @include icon(before, icon-arrow_down) {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateX(-50%);
+
+        font-size: 0.8rem;
+    }
+
+    &::after {
+        display: none;
+    }
+
+    span {
+        display: block;
+
+        text-transform: uppercase;
+        line-height: 1;
+
+        &:nth-of-type(1) {
+            font-size: 1.2rem;
+            color: $body-color;
+        }
+
+        &:nth-of-type(2) {
+            color: $secondary;
+        }
+    }
+
+}
+
+.header-search-btn {
+    @include icon(before, false, true) {
+        font-size: 2rem;
+        line-height: 4.5rem; 
+    }
+
+    &[aria-expanded="false"] {
+        @include icon(before, icon-recherche, false);
+    }
+
+    &[aria-expanded="true"] {
+        @include icon(before, icon-close, false);    
+    }
+}
+
+.header-search-btn-txt {
+    @include access-hidden;  
+}
+
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + 
+//
+// MEDIA QUERIES
+//
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+@include media-breakpoint-down(xxl) {
+
+    .header-logo {
+        max-width: 27rem;
+    }
+
+}
+
+@include media-breakpoint-down(lg) {
+
+    .header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        background-color: $white; 
+    }
+
+    .region-header-right {
+        .block-icdc-custom-button-block,
+        .block-header-search-block {
+            display: none;
+        }
+    }
+
+    .block-homepage-selector {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        background-color: $secondary;
+    }
+
+    .dropdown-segment-btn {
+        border: 0;
+        color: $white;
+
+        &::before{ margin-top: -0.3rem; }
+
+        span:nth-of-type(1) { display: none; }
+        span:nth-of-type(2) { color: inherit; }  
+    }
+
+}
+
+@include media-breakpoint-down(md) {
+
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .header-logo {
+        a {  
+            width: 21rem;
+            height: 6.3rem;
+
+            background: url('../img/logo-bdt-mobile.png') 0 0 no-repeat;
+            background-size: contain;    
+        }
+
+        img {
+            @include access-hidden;  
+        }
+    }
+
+    .header-megamenu-button {
+        padding: 0;
+
+        width: 5.5rem;
+        height: 5.5rem;
+
+        background-color: $white;
+        
+        &::before {
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);  
+        }
+
+        span {
+            @include access-hidden;  
+        }
+    }
+
+    .region-header-right {
+        right: 0rem;
+
+        .nav-link-user {
+            > a,
+            > button {
+                position: relative;
+                padding: 0;
+
+                width: 5.5rem;
+                height: 5.5rem;
+
+                @include button-variant($white, $white, $black, $black);
+                color: $black !important;   
+                
+                @include hover-focus-active {
+                    color: $white !important;
+                }
+            }
+
+            [class^='icon'] {  
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                margin-right: 0;
+            }
+
+            span + span {
+                display: none;
+            }
+        }
+    
+        .nav-link-user-dropdown {
+            width: 19rem;
+            left: auto;
+        }
+    }
+    
+    .dropdown-segment {
+        width: 100%;
+    }
+
+}

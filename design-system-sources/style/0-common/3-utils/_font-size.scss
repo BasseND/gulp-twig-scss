@@ -1,0 +1,14 @@
+// this loop generates classes with font-size from 1rem to 20 rem (= from 10px to 200px), in steps of 1rem (= 10px)
+@for $i from 1 through 20 {
+    .ftz-#{$i} {
+        font-size:($i)+rem !important;
+    }
+}
+
+// this loop generates classes with font-sizes from 1.2rem (=12px) to 2rem (=20px), in steps of 0.2rem (= 2px)
+@each $i, $size in $font-sizes {
+    .font-size-#{$i} {
+        font-size: $size+rem !important;
+    }
+}
+

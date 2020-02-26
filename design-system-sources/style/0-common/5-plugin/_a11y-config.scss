@@ -1,0 +1,306 @@
+//
+// Class sur <body> via le JS a11y-modal.js
+//
+
+// Pour les constrastes renforcés
+[data-contrast='high-c']
+{
+
+}
+
+// Pour les constrastes inversés
+[data-contrast='inv-c']
+{
+    ::-webkit-input-placeholder { color: $yellow-access !important; }
+    :-moz-placeholder { color: $yellow-access !important; }
+    ::-moz-placeholder { color: $yellow-access !important; }
+    :-ms-input-placeholder { color: $yellow-access !important; }
+
+    ::-moz-selection
+    {
+        color: $blue-access;
+        background-color: $yellow-access;
+    }
+
+    ::selection
+    {
+        color: $blue-access;
+        background-color: $yellow-access;
+    }
+
+    background-color: $blue-access !important;
+    color: $yellow-access !important;
+
+    // si le client ajoute en wysiwyg des couleurs pour custom le texte
+    font
+    {
+        color: $yellow-access !important;
+    }
+
+    a,
+    span.ext:after {
+        color: inherit;
+    }
+
+    .modal-content
+    {
+        background-color: $blue-access;
+        color: $yellow-access;
+    }
+
+    .a11y-config .btn-close
+    {
+        background-color: $yellow-access;
+        color: $blue-access;
+    }
+
+    .a11y-config h1 span
+    {
+        color: $yellow-access;
+    }
+
+    .a11y-config--item label::before{ border-color: $yellow-access; }
+
+    .a11y-config--item label
+    {
+        color: $blue-access;
+        background-color: $yellow-access;
+        font-weight: 700;
+    }
+
+    .a11y-config--item input:checked + label
+    {
+        color: $yellow-access;
+        background-color: $blue-access;
+        border-color: $yellow-access;
+    }
+
+    .region-top {
+        background-color: $blue-access;
+        border-bottom: solid 0.1rem $yellow-access;
+
+        li a {
+            color: $yellow-access;
+        }
+
+        li::after {
+            background-color: $yellow-access;
+        }
+    }
+
+    .header-top .header-name-title {
+        background-color: $blue-access;
+        color: $yellow-access;
+    }
+
+    .header-top .header-name-title::after {
+        border-color: transparent transparent transparent $blue-access;
+    }
+
+    .header-top li.active
+    {
+        &::after
+        {
+            border-top-color: $yellow-access;
+        }
+
+        a
+        {
+            background-color: $yellow-access;
+            color: $blue-access;
+        }
+    }
+
+    .menu-button
+    {
+        &,
+        &:focus,
+        &:hover,
+        &:active {
+            .menu-button-icon {
+                background-color: $blue-access;
+            }
+        }
+    }
+
+    .menu-panel
+    {
+        color: $yellow-access;
+        background-color: darken($blue-access,10%);
+
+        li.first a,
+        li.is-parent a,
+        li.is-parent .link-more
+        {
+            background-color: $blue-access;
+
+            &:focus,
+            &:hover,
+            &:active
+            {
+                background-color: darken($blue-access,15%);
+            }
+        }
+    }
+
+    .header {
+        background-color: $blue-access;
+    }
+
+    .header-logo {
+        background-color: $white;
+    }
+
+    [class*="hover-theme-color"]
+    {
+        h2 a
+        {
+            &:focus,
+            &:hover,
+            &:active
+            {
+                background-color: $blue-access;
+            }
+        }
+    }
+
+    [class*="menuburger-theme-color"]
+    {
+        h2 a
+        {
+            &::before{ background-color: $yellow-access; }
+
+            &:focus,
+            &:hover,
+            &:active
+            {
+                background-color: darken($blue-access,15%);
+            }
+        }
+
+        ~ ul li.first a
+        {
+            &:focus,
+            &:hover,
+            &:active,
+            &.is-active,
+            &.active
+            {
+                background-color: darken($blue-access,15%);
+            }
+        }
+
+        ~ ul li.is-parent .link-more a
+        {
+            background-color: $blue-access;
+        }
+    }
+
+    .btn
+    {
+        background-color: $yellow-access !important;
+        border-color: $yellow-access !important;
+        color: $blue-access !important;
+    }
+
+    a:focus, a.focus, button:focus, button.focus, input:focus, input.focus, textarea:focus, textarea.focus,
+    .btn:focus {
+        outline-color: $yellow-access;
+    }
+
+    .popover {
+        background-color: $blue-access;
+        border-color: $yellow-access;
+
+        .popover-header, .popover-title,
+        .popover-body, .popover-content {
+            color: $yellow-access;
+        }
+
+        .popover-header, .popover-title {
+            background-color: $blue-access;
+        }
+    }
+
+    .footer-full {
+        background-color: $blue-access;
+    }
+
+    .footer-container,
+    .region-footer-bottom {
+        border-color: $yellow-access;
+    }
+
+    .region-footer .block-views h2,
+    .region-footer .block li::before,
+    .region-footer .btn-simple::before,
+    .region-footer .block h2 .icon {
+        color: $yellow-access;
+    }
+
+    .block-consignations-search-module + .block-menu a
+    {
+        &:focus,
+        &:hover,
+        &:active
+        {
+            color: $yellow-access;
+            border-color: $yellow-access;
+        }
+    }
+
+    .block-consignations-search-module + .block-menu .icon {
+        color: $yellow-access !important;
+    }
+
+    .block-consignations-search-module .form-submit {
+        color: $blue-access;
+        background-color: $yellow-access;
+    }
+
+    .block-consignations-search-module .form-text {
+        color: $yellow-access;
+        border-color: $yellow-access;
+        background-color: $blue-access;
+    }
+
+    .footer-copyright + .block-menu .menu .leaf::after {
+        background-color: $yellow-access;
+    }
+}
+
+// Pour la font
+[data-font='dys-font']
+{
+    font-family: 'OpenDyslexic' !important;
+}
+
+// Pour le line-height
+[data-line-space='dys-line-space']
+{
+    line-height: 160% !important;
+
+    h1, .h1,
+    h2, .h2
+    {
+        line-height: 2.1;
+    }
+
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6
+    {
+        line-height: 1.9;
+    }
+
+    p, li
+    {
+        line-height: 2.2;
+    }
+
+    blockquote, .blockquote
+    {
+        line-height: 2.4;
+    }
+}

@@ -1,0 +1,137 @@
+// Font-face
+// =============================================
+
+// 1. passer le setting `$enable-fontface` à `true`.
+$enable-fontface: true;
+
+// 2. déclarer la "map" des fontes utilisées
+
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+//
+//  Montserrat : Google Font
+//  https://fonts.google.com/specimen/Montserrat
+//
+//  1 :: thin 100
+//  2 :: extralight 200
+//  3 :: light 300
+//  4 :: regular 400 ======= load
+//  5 :: medium 500 ======== load
+//  6 :: semibold 600 ====== load
+//  7 :: bold 700 ========== load
+//  8 :: extrabold 800
+//  9 :: black 900
+//
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+$fonts-map-montserrat: (
+    // sera utilisé comme valeur pour la font-family de ce groupe
+    'montserrat': (
+        // (
+        //     'font-path'    : "montserrat/montserrat-black",
+        //     'font-weight'  : 900,
+        //     'font-style'   : normal,
+        //     'font-display' : swap
+        // ) ,
+        // (
+        //     'font-path'    : "montserrat/montserrat-black-italic",
+        //     'font-weight'  : 900,
+        //     'font-style'   : italic,
+        //     'font-display' : swap
+        // ) ,
+        // (
+        //     'font-path'    : "montserrat/montserrat-extra-bold",
+        //     'font-weight'  : 800,
+        //     'font-style'   : normal,
+        //     'font-display' : swap
+        // ) ,
+        // (
+        //     'font-path'    : "montserrat/montserrat-extra-bold-italic",
+        //     'font-weight'  : 800,
+        //     'font-style'   : italic,
+        //     'font-display' : swap
+        // ) ,
+        (
+            'font-path'    : "montserrat/montserrat-bold",
+            'font-weight'  : 700,
+            'font-style'   : normal,
+            'font-display' : swap
+        ) ,
+        (
+            'font-path'    : "montserrat/montserrat-bold-italic",
+            'font-weight'  : 700,
+            'font-style'   : italic,
+            'font-display' : swap
+        ) ,
+        (
+            'font-path'    : "montserrat/montserrat-semi-bold",
+            'font-weight'  : 600,
+            'font-style'   : normal,
+            'font-display' : swap
+        ) ,
+        (
+            'font-path'    : "montserrat/montserrat-semi-italic",
+            'font-weight'  : 600,
+            'font-style'   : italic,
+            'font-display' : swap
+        ) ,
+        (
+            'font-path'    : "montserrat/montserrat-medium",
+            'font-weight'  : 500,
+            'font-style'   : normal,
+            'font-display' : swap
+        ) ,
+        (
+            'font-path'    : "montserrat/montserrat-medium-italic",
+            'font-weight'  : 500,
+            'font-style'   : italic,
+            'font-display' : swap
+        ) ,
+        (
+            'font-path'    : "montserrat/montserrat-regular",
+            'font-weight'  : 400,
+            'font-style'   : normal,
+            'font-display' : swap
+        ) ,
+        (
+            'font-path'    : "montserrat/montserrat-italic",
+            'font-weight'  : 400,
+            'font-style'   : italic,
+            'font-display' : swap
+        ) ,
+        // (
+        //     'font-path'    : "montserrat/montserrat-light",
+        //     'font-weight'  : 300,
+        //     'font-style'   : normal,
+        //     'font-display' : swap
+        // ) ,
+        // (
+        //     'font-path'    : "montserrat/montserrat-light-italic",
+        //     'font-weight'  : 300,
+        //     'font-style'   : italic,
+        //     'font-display' : swap
+        // ) ,
+        // (
+        //     'font-path'    : "montserrat/montserrat-extra-light",
+        //     'font-weight'  : 200,
+        //     'font-style'   : normal,
+        //     'font-display' : swap
+        // ) ,
+        // (
+        //     'font-path'    : "montserrat/montserrat-extra-light-italic",
+        //     'font-weight'  : 200,
+        //     'font-style'   : italic,
+        //     'font-display' : swap
+        // )
+    )
+);
+
+// 3. définir le chemin vers le répertoire des webfontes
+$webfont-path: "../font/";
+
+// mixin
+@import '../0-mixins/mixin-font-face'; 
+
+// Font-face declarations
+@if ($enable-fontface) {
+    @include sc-import-fonts($fonts-map-montserrat);
+}

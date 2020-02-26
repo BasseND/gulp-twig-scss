@@ -1,0 +1,179 @@
+//  *
+//  * @example
+//  *  @include reset-list();
+//  *  <ul class="reset-list"> ... </ul>
+//  *
+@mixin reset-list() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li,
+    ul li {
+        margin-bottom: 0;
+        padding-left: 0;
+
+        &:before {
+            content: none;
+            margin: 0;
+        }
+    }
+}
+
+.reset-list {
+    @include reset-list;
+}
+
+//  * Reset list only Level 1
+//  *
+//  * @example
+//  *  @include reset-list--l1();
+//  *  <ul class="reset-list--l1"> ... </ul>
+//  *
+@mixin reset-list--l1() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+        padding-left: 0;
+
+        &:before {
+            content: none;
+            margin: 0;
+        }
+    }
+}
+
+.reset-list--l1 {
+    @include reset-list--l1;
+}
+
+//  *
+//  * @example
+//  *  @include list-ul(red);
+//  *  @include list-ol(green);
+//  *
+@mixin list-ul($color: inherit, $level1: false, $level2: false, $level3: false, $styles: false) {
+    list-style: none; // level 1
+
+    li {
+        position: relative;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+
+        &:before {
+            content: "•";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            color: $color;
+            font-size: inherit;
+            margin-right: 4px;
+            /* Screenreaders should ignore that kind of elements =========== */
+            -webkit-alt: "";
+            speak: none;
+        }
+
+        @if $styles {
+            @include icon(before, $level1) {
+                color: $color;
+            }
+        }
+    }
+
+    // level 2
+    ul {
+        margin-top: 1rem;
+        margin-bottom: 0;
+
+        li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+
+            &:before {
+                content: "\26AC";
+            }
+
+            @if $styles {
+                @include icon(before, $level2) {
+                    color: $color;
+                }
+            }
+        }
+    }
+
+    // level 3
+    ul ul li {
+        padding-left: 1.5rem;
+
+        &:before {
+            // content: "--";
+        }
+
+        @if $styles {
+            @include icon(before, $level3) {
+                color: $color;
+            }
+        }
+    }
+}
+
+@mixin list-ol($color: inherit) {
+    list-style: none;
+    counter-reset: list; // level 1
+
+    > li {
+        counter-increment: list;
+        counter-reset: subsection;
+
+        position: relative;
+        margin-bottom: 3rem;
+        padding-left: 4rem;
+
+        &:before {
+            content: counter(list, decimal-leading-zero);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            font-size: 2rem;
+            font-family: inherit;
+            font-weight: bold;
+
+            color: $color;
+        }
+
+        // level 2
+        ol {
+            counter-reset: sublist;
+            margin: 3rem 0;
+
+            li {
+                counter-increment: sublist;
+                padding-left: 7rem;
+
+                &:before {
+                    content: counter(list, decimal-leading-zero) "." counter(sublist, decimal-leading-zero) ".";
+                    color: $color;
+                }
+            }
+        }
+
+        // level 3
+        ol ol {
+            counter-reset: subsublist;
+
+            li {
+                counter-increment: subsublist;
+                padding-left: 10rem;
+
+                &:before {
+                    content: counter(list, decimal-leading-zero) "." counter(sublist, decimal-leading-zero) "." counter(subsublist, decimal-leading-zero) ".";
+                    color: $color;
+                }
+            }
+        }
+    }
+}

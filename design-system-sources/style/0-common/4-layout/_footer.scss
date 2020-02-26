@@ -1,0 +1,294 @@
+.footer-wrapper
+{
+    @include hcenter(130rem);
+
+    margin: 0 auto;  //was 9rem auto 0
+    font-size: 1.4rem;
+
+    .menu,
+    .social-media-links--platforms
+    {
+        display: block;
+        list-style: none;
+    }
+
+    .social-media-links--platforms
+    {
+        li > a
+        {
+            &::before
+            {
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+    h2
+    {
+        margin-bottom: 2rem;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+}
+
+.footer-segment
+{
+    display: none; // hidden in mobile
+
+    @include clearAfter;
+    padding-top: 5rem;
+
+    .block-footer-menu,
+    .menu--segment-footer {
+        @include clearAfter;
+
+        margin-bottom: 2rem;
+    }
+
+    .menu {
+        @extend .float-md-left;
+
+        width: 33.3333%;
+        padding-right: 2rem;
+    }
+
+    .block-footer-menu,
+    .menu--segment-footer,
+    .block-social-media-links
+    {
+        @extend .float-xl-left;
+    }
+
+    .block-social-media-links
+    {
+        li
+        {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        a
+        {
+            display: block;
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
+
+            font-size: 2.8rem;
+            line-height: 1;
+            color: $gray-500;
+
+            transition: color 0.3s ease;
+
+            @include hover
+            {
+                color: $secondary;
+                text-decoration: none;
+            }
+        }
+
+        a + a
+        {
+            padding-left: 1.6rem;
+        }
+    }
+
+    .menu-item
+    {
+        a
+        {
+            position: relative;
+
+            display: block;
+            margin-left: 1.8rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            font-weight: 600;
+            line-height: 1.4;
+            text-transform: uppercase;
+
+            @include icon(before, icon-arrow_right)
+            {
+                position: absolute;
+                top: 1.4rem;
+                left: -1.8rem;
+
+                font-size: 0.9rem;
+                color: $secondary;
+            }
+            @include hover
+            {
+                color: $primary;
+            }
+        }
+    }
+
+    .fa
+    {
+        display: none;
+    }
+
+    // .fa-linkedin
+    // {
+    //     @include icon(before, icon-linkedin);
+    // }
+
+    // .fa-twitter
+    // {
+    //     @include icon(before, icon-twitter);
+    // }
+
+    // .fa-facebook
+    // {
+    //     @include icon(before, icon-facebook);
+    //     transform: translateY(-0.2rem);
+    // }
+
+    // .fa-youtube
+    // {
+    //     transform: translateY(0.3rem);
+    //     @include icon(before, icon-youtube);
+    // }
+
+    // .fa-rss
+    // {
+    //     @include icon(before, icon-rss);
+    // }
+
+
+    // RWD
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
+    @include media-breakpoint-up(xl) {
+        .block-footer-menu,
+        .menu--segment-footer
+        {
+            @include clearAfter;
+
+            width: 75%;
+        }
+
+        .block-social-media-links
+        {
+            width: 25%;
+        }
+    }
+
+}
+
+.footer-segment + .footer-common {
+    margin-top: 6rem;
+}
+
+.footer-common
+{
+    display: flex;
+
+    padding-top: 3.4rem;
+    padding-bottom: 3.4rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        flex-direction: column;
+
+        // avoid overflow by nav-quick-access
+        margin-bottom: 8rem;
+        margin-top: 4rem;
+
+        .footer-copyright {
+            order: 3;
+            
+            font-size: 1.3rem;
+        }
+
+        .menu--common-footer {
+            order: 2;
+
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            a {
+                display: block;
+                padding: 0.5rem 0;
+            }
+        }
+
+        .footer-logo {
+            order: 1;
+
+            margin: auto;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-item
+        {
+            position: relative;
+
+            display: inline-block;
+            vertical-align: top;
+
+            padding: 0 1rem;
+            line-height: normal;
+
+            &:first-child
+            {
+                &::before{ display: none; }
+            }
+
+            &::before
+            {
+                content:'';
+
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                display: block;
+
+                width: 0.1rem;
+                height: 1.6rem;
+
+                background-color: $body-color;
+            }
+        }
+    }
+}
+
+.footer-segment,
+.footer-common
+{
+    border-top: 0.1rem solid $gray-200;
+}
+
+.footer-logo
+{
+    width: 22rem;
+
+    // IE11 flexbox fix
+    // https://stackoverflow.com/questions/44635857/flexbox-max-height-issue-with-ie11
+    overflow: hidden;
+
+    img
+    {
+        @include img-fluid;
+    }
+}
+
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+//
+// MEDIA QUERIES
+//
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+@include media-breakpoint-up(lg) {
+    .footer-wrapper{
+        margin: 9rem auto 0;
+    }
+
+}

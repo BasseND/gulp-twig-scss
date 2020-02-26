@@ -1,0 +1,27 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - 
+//
+// Custom grid
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+// row and columns have a smaller padding than Bootstrap
+.aw-row-padding-xs {
+    @include aw-make-row(2rem);
+
+    > [class*="col-"] {
+        @include aw-make-col-ready(2rem);
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .aw-col-lg-10 { @include aw-make-col-percent(10%); }
+    .aw-col-lg-20 { @include aw-make-col-percent(20%); }
+    .aw-col-lg-30 { @include aw-make-col-percent(30%); }
+    .aw-col-lg-40 { @include aw-make-col-percent(40%); }
+    .aw-col-lg-50 { @include aw-make-col-percent(50%); }
+    .aw-col-lg-60 { @include aw-make-col-percent(60%); }
+    .aw-col-lg-70 { @include aw-make-col-percent(70%); }
+    .aw-col-lg-80 { @include aw-make-col-percent(80%); }
+    .aw-col-lg-90 { @include aw-make-col-percent(90%); }
+    .aw-col-lg-100 { @include aw-make-col-percent(100%); }
+}

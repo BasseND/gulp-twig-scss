@@ -1,0 +1,25 @@
+// styles for drupal and angular
+
+// 0- Import mixins
+@import '0-mixins/_index';
+
+// 1 - Import base style, custom variables and mixins
+@import '1-base/_index';
+
+// 2- Import bootstrap framework
+@import '2-framework/_index';
+
+// 3 - utils
+@import '3-utils/_index';
+
+// 4 - Import layout styles
+@import '4-layout/_index';
+
+// 5 - Import plugins
+@import '5-plugin/_index';
+
+// 6 - Import component
+@import '6-component/_index';
+
+// 7 - Template (page)
+@import '7-template/_index';

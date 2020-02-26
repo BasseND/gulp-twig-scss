@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+
+        {% block title %}
+        <title>{{ title }} - Banque Des Territoires</title>
+        {% endblock %}
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Guide de style - iCDC Banque Des Territoires">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% include "./site/layout/favicon.twig" %}
+
+        <script type="text/javascript" src="./script/modernizr.js"></script>
+        <script type="text/javascript" src="./script/detectizr.js"></script>
+
+        <link rel="stylesheet" href="./style/style.css" type="text/css">
+        <link rel="stylesheet" href="./style/print.css" type="text/css" media="print" />
+
+        {% block styles_more %}
+        {% endblock %}
+    </head>
+    <body>
+        <noscript>
+            <p class="js-off">Javascript est desactivé dans votre navigateur.</p>
+        </noscript>
+
+        {% include "./site/layout/nav-skip.twig" %}
+
+        {% block sg_hero_banner %}
+        {% endblock %}
+
+        {% block bodyclass %}
+        <div class="body-wrapper icdc-angular {{ bodyclass }}" id="top">
+
+            {% block sg_header %}
+                {% include "./site/layout/header.twig" %}
+            {% endblock %}
+
+            {% block sg_main_title %}
+            {% endblock %}
+
+            <main role="main" id="main" class="main container {{ mainclass }}">
+                {% block main %}{% endblock %}
+            </main>
+
+            {% block footer %}
+                {% include "./site/layout/footer.twig" %}
+            {% endblock %}
+
+            {% include "./site/component/modal/modal-access-config.twig" %}
+
+            {% block modal_more %}{% endblock %}
+
+        </div>
+        {# / body-wrapper #}
+        {% endblock %}
+
+        <script type="text/javascript" src="./script/jquery-3-3-1.js"></script>
+        <script type="text/javascript" src="./script/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="./script/plugin.js"></script>
+        <script type="text/javascript" src="./script/app.js"></script>
+
+        {% block scripts_more %}
+        {% endblock %}
+
+    </body>
+</html>

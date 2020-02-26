@@ -1,0 +1,45 @@
+.float-target-parent {
+    position: relative;
+
+    label {
+        pointer-events: none;
+
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 10;
+
+        max-width: calc(100% - #{$input-btn-padding-x}*2);
+
+        transform: translateY(-50%) translateX($input-btn-padding-x);
+
+        transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+
+        &.textarea-label {
+            top: 3rem;
+        }
+    }
+
+    &.focused {
+        label {
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-transform: none;
+
+            color: $gray-500;
+
+            max-width: 100%;
+
+            transform: translateY(-5rem) translateX(0.5rem);
+
+            transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+        }
+    }
+
+    .form-row &[class*="col-"] {
+        label {
+            left: $form-row-gutter;
+        }
+    }
+}

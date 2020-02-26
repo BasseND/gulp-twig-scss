@@ -1,0 +1,219 @@
+// fonticon.scss -- Icons custom for project
+
+$fonticon  : 'bdt'; 
+
+// http://jaydenseric.com/blog/fun-with-sass-and-font-icons
+//  *
+//  * Set Icons custom with optionals position and style.
+//  *
+//  * @mixin
+//  * @section Fonts
+//  * @param $position Position of icon
+//  * @param $icon Name of icon
+//  *  The font weight to be used.
+//  * @example
+//  *  @include icon(before, contact);
+//  *  @include icon(after, arrow-right);
+//  *  @include icon(both, star);
+//  *  @include icon(before, contact) {
+//         margin-right: 20px;
+//     }
+// For adding font icons to elements using CSS pseudo-elements
+@mixin icon($position: before, $icon: false, $styles: true) {
+    @if $position == both {
+        $position: 'before, &:after';
+    }
+    // Either a :before or :after pseudo-element, or both, defaulting to :before
+    &:#{$position} {
+        @if $icon {
+            // A particular icon has been specified
+            content: "#{map-get($icons, $icon)}";
+        }
+        @if $styles {
+            // Supportive icon styles required
+            font-family: '#{$fonticon}' !important;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            font-size: inherit;
+            color: inherit;
+
+            // Better Font Rendering
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            // Screenreaders should ignore that kind of elements
+            -webkit-alt: "";
+            speak: none;
+        }
+        // Include any extra rules supplied for the pseudo-element
+        @content;
+    }
+}
+
+$icons: (
+    icon-alerte_outline: "\e99b",
+    icon-comparateur_energetique: "\e999",
+    icon-deconnexion: "\e99a",
+    icon-simulateur: "\e997",
+    icon-cartographie: "\e998",
+    icon-coproprietes_degradees: "\e994",
+    icon-fichier_pdf: "\e995",
+    icon-mobile: "\e996",
+    icon-tourisme: "\e993",
+    icon-accompagnement_transformation_secteur: "\e98b",
+    icon-adaptation_changement_climatique: "\e98c",
+    icon-consigner: "\e98d",
+    icon-dialogue_citoyen: "\e98e",
+    icon-entreprendre_autrement: "\e98f",
+    icon-pret_flash: "\e990",
+    icon-transition-energetique: "\e991",
+    icon-vieillissement: "\e992",
+    icon-france-metropole: "\e980",
+    icon-guadeloupe: "\e983",
+    icon-guyane: "\e984",
+    icon-martinique: "\e985",
+    icon-mayotte: "\e986",
+    icon-nouvelle-caledonie: "\e987",
+    icon-polynesie-francaise: "\e988",
+    icon-la-reunion: "\e989",
+    icon-st-pierre-et-miquelon: "\e98a",
+    icon-hexagone-bdt: "\e97f",
+    icon-pause: "\e97d",
+    icon-play: "\e97e",
+    icon-confirmation: "\e982",
+    icon-refus: "\e981",
+    icon-epl: "\e97b",
+    icon-mobilites: "\e97c",
+    icon-alerte: "\e97a",
+    icon-contrat: "\e979",
+    icon-ajouter: "\e977",
+    icon-erreur: "\e978",
+    icon-traitement-en-cours: "\e976",
+    icon-demande-validee: "\e96c",
+    icon-sort-table: "\e96d",
+    icon-drag-n-drop: "\e96e",
+    icon-upload: "\e96f",
+    icon-historique: "\e970",
+    icon-modifier: "\e971",
+    icon-supprimer: "\e972",
+    icon-recapitulatif: "\e973",
+    icon-dupliquer: "\e974",
+    icon-justificatif-paiement: "\e975",
+    icon-logement2: "\e96a",
+    icon-logement: "\e96b",
+    icon-partage: "\e969",
+    icon-modernisation_ecoles: "\e968",
+    icon-territoires_conseils: "\e967",
+    icon-zoom: "\e966",
+    icon-reconquete_territoires_industrie: "\e963",
+    icon-renovation_reseaux_eaux: "\e964",
+    icon-cacher_mot_de_passe: "\e965",
+    icon-pencil: "\e962",
+    icon-toutes-nos-offres: "\e95e",
+    icon-banque-en-ligne: "\e95f",
+    icon-services-en-ligne: "\e960",
+    icon-reseaux-sociaux: "\e961",
+    icon-soutien_enjeux_renovation_parc_social: "\e946",
+    icon-maintien_investissement_production_neuve_et_rehabilitation_thermique: "\e947",
+    icon-rss: "\e948",
+    icon-annuaire_smartcity: "\e949",
+    icon-association_elus: "\e94a",
+    icon-offre_conseils_et_financements: "\e94b",
+    icon-reseau_experts_partenaires: "\e94c",
+    icon-partenaire_financier_de_reference: "\e94d",
+    icon-appui_politique_locale: "\e94e",
+    icon-appui_realisation_projets: "\e94f",
+    icon-appui_renovation_urbaine: "\e950",
+    icon-accompagnement_sur_site: "\e951",
+    icon-gamme_evenements_complete: "\e952",
+    icon-reponses_personnalisees: "\e953",
+    icon-expertise_developpement_territorial: "\e954",
+    icon-legitimite_historique: "\e955",
+    icon-transition_ecologique: "\e956",
+    icon-gamme_intervention_complete: "\e957",
+    icon-proximite: "\e958",
+    icon-partenaires_a_vos_cotes: "\e959",
+    icon-403: "\e95a",
+    icon-404: "\e95b",
+    icon-maintenance: "\e95c",
+    icon-actualites: "\e95d",
+    icon-ameliorer_efficacite_energetique: "\e937",
+    icon-definir_strategie_financiere: "\e938",
+    icon-smartcity: "\e939",
+    icon-ouvrir_gerer_comptes: "\e93a",
+    icon-developper_entreprise: "\e93b",
+    icon-elaborer_son_installation: "\e93c",
+    icon-financer_offre_innovante: "\e93d",
+    icon-financer_projet_territorial: "\e93e",
+    icon-mettre_en_place_solution_innovante: "\e93f",
+    icon-financer_projet_investissement: "\e940",
+    icon-financer_logement_social: "\e941",
+    icon-revitaliser_centre_ville: "\e942",
+    icon-back: "\e943",
+    icon-envoyer_ami: "\e944",
+    icon-arrow_double_left: "\e900",
+    icon-arrow_double_right: "\e901",
+    icon-arrow-full-left: "\e902",
+    icon-arrow-full-right: "\e903",
+    icon-border-top-left-1: "\e904",
+    icon-border-top-left-2: "\e905",
+    icon-border-top-left-3: "\e906",
+    icon-border-top-right-1: "\e907",
+    icon-close: "\e908",
+    icon-spacer: "\e909",
+    icon-article_verrouille: "\e90a",
+    icon-assistant_projet: "\e90b",
+    icon-ecrire_par_mail: "\e90c",
+    icon-dossier: "\e90d",
+    icon-pdf: "\e90e",
+    icon-citation: "\e90f",
+    icon-retour: "\e910",
+    icon-connexion: "\e911",
+    icon-participants: "\e912",
+    icon-horaire: "\e913",
+    icon-temps_estime: "\e914",
+    icon-attention: "\e915",
+    icon-telephone: "\e916",
+    icon-information_outline: "\e917",
+    icon-check: "\e918",
+    icon-tutoriel_telecharger: "\e919",
+    icon-tutoriel_video: "\e91a",
+    icon-configuration: "\e91b",
+    icon-site_internet: "\e91c",
+    icon-voir_mot_de_passe: "\e91d",
+    icon-youtube: "\e91e",
+    icon-instagram: "\e945",
+    icon-linkedin: "\e91f",
+    icon-twitter: "\e920",
+    icon-facebook: "\e921",
+    icon-fermer: "\e922",
+    icon-aide: "\e923",
+    icon-information: "\e924",
+    icon-arrow_down: "\e925",
+    icon-arrow_up: "\e926",
+    icon-arrow_left: "\e927",
+    icon-arrow_right: "\e928",
+    icon-mapmarker: "\e929",
+    icon-reinitialiser: "\e92a",
+    icon-calendrier: "\e92b",
+    icon-menu: "\e92c",
+    icon-lien_externe: "\e92d",
+    icon-telecharger: "\e92e",
+    icon-carte: "\e92f",
+    icon-newsletter: "\e930",
+    icon-access: "\e931",
+    icon-account: "\e932",
+    icon-recherche: "\e933",
+    icon-imprimer: "\e934",
+    icon-contact: "\e935",
+    icon-agenda: "\e936"
+);
+
+@each $icon, $value in $icons {
+    .#{$icon} {
+        @include icon(before, #{$icon}, false);
+    }
+}
