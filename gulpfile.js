@@ -4,14 +4,14 @@
 var gulp = require('gulp'),
     path = require('path'),
     data = require('gulp-data'),
-	twig = require('gulp-twig'), // Decided to use twig, because already familiar with it
+	  twig = require('gulp-twig'), // Decided to use twig, because already familiar with it
     prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),    
-	plumber = require('gulp-plumber'),
+	  plumber = require('gulp-plumber'),
     concat = require('gulp-concat'),
     sourcemaps = require('gulp-sourcemaps'),
-	browserSync = require('browser-sync'),
-	fs = require('fs');
+	  browserSync = require('browser-sync'),
+	  fs = require('fs');
 
 /*
  * Directories here
@@ -20,6 +20,7 @@ var paths = {
   build: './build/',
   sass: './scss/',
   css: './build/assets/css/',
+  cssDS: './build/assets/cssDS/',
   data: './client/data/'
 };
 
@@ -92,15 +93,15 @@ function gulpSassTask  () {
   return gulp.src(paths.sass + 'vendors/main.scss')
     .pipe(sourcemaps.init())
     // Stay live and reload on error
-	.pipe(plumber({
-		handleError: function (err) {
-			console.log(err);
-			this.emit('end');
-		}
-	}))
+    .pipe(plumber({
+      handleError: function (err) {
+        console.log(err);
+        this.emit('end');
+      }
+    }))
     .pipe(sass({
-		includePaths: [paths.sass + 'vendors/'],
-		outputStyle: 'expanded'
+      includePaths: [paths.sass + 'vendors/', paths.sass + 'ds/'],
+		  outputStyle: 'expanded'
 		})
 		.on('error', function (err) {
 			console.log(err.message);

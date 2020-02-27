@@ -1,7 +1,10 @@
 _site
 .sass-cache
 node_modules/
+design-system-sources/
 package-lock.json
 gulpfile.*.js
+gulpfileOLD.js
+projects.json
 #build/
 .netlify/

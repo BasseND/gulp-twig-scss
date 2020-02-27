@@ -244,8 +244,7 @@ label {
 }
 
 button {
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
 }
 
 button:focus {
@@ -2124,8 +2123,7 @@ pre code {
   background-color: #ffffff;
   background-clip: padding-box;
   border: 3px solid #ced4da;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   -webkit-transition: border-color ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
   transition: border-color ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
   -o-transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
@@ -2380,8 +2378,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   line-height: 1;
   color: #ffffff;
   background-color: rgba(40, 167, 69, 0.8);
-  -webkit-border-radius: .2rem;
-          border-radius: .2rem;
+  border-radius: .2rem;
 }
 
 .was-validated .form-control:valid, .form-control.is-valid, .was-validated
@@ -2487,8 +2484,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   line-height: 1;
   color: #ffffff;
   background-color: rgba(220, 53, 69, 0.8);
-  -webkit-border-radius: .2rem;
-          border-radius: .2rem;
+  border-radius: .2rem;
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid, .was-validated
@@ -2693,8 +2689,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   padding: 0.375rem 0.75rem;
   font-size: 0.9rem;
   line-height: 1.5;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -3342,16 +3337,14 @@ fieldset:disabled a.btn {
   padding: 0.5rem 1rem;
   font-size: 1.125rem;
   line-height: 1.5;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.7875rem;
   line-height: 1.5;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
 }
 
 .btn-block {
@@ -3934,8 +3927,7 @@ input[type="button"].btn-block {
   content: "";
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-background-size: 50% 50%;
-          background-size: 50% 50%;
+  background-size: 50% 50%;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
@@ -3963,8 +3955,7 @@ input[type="button"].btn-block {
 }
 
 .custom-radio .custom-control-label::before {
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
@@ -3989,11 +3980,9 @@ input[type="button"].btn-block {
   color: #495057;
   vertical-align: middle;
   background: #ffffff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
-  -webkit-background-size: 8px 10px;
-          background-size: 8px 10px;
+  background-size: 8px 10px;
   border: 3px solid #ced4da;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -4135,7 +4124,6 @@ input[type="button"].btn-block {
   border: 0;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
@@ -4145,7 +4133,6 @@ input[type="button"].btn-block {
 @media screen and (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -4174,19 +4161,15 @@ input[type="button"].btn-block {
   height: 1rem;
   background-color: #007bff;
   border: 0;
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
        appearance: none;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
-    -webkit-transition: none;
-    -o-transition: none;
+    -moz-transition: none;
     transition: none;
   }
 }
@@ -4214,18 +4197,14 @@ input[type="button"].btn-block {
   height: 1rem;
   background-color: #007bff;
   border: 0;
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   appearance: none;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
-    -webkit-transition: none;
-    -o-transition: none;
+    -ms-transition: none;
     transition: none;
   }
 }
@@ -4491,8 +4470,7 @@ input[type="button"].btn-block {
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
-  -webkit-background-size: 100% 100%;
-          background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 @media (max-width: 575.98px) {
@@ -5071,28 +5049,22 @@ input[type="button"].btn-block {
 
 .accordion .card:not(:first-of-type):not(:last-of-type) {
   border-bottom: 0;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
 }
 
 .accordion .card:not(:first-of-type) .card-header:first-child {
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
 }
 
 .accordion .card:first-of-type {
   border-bottom: 0;
-  -webkit-border-bottom-right-radius: 0;
-          border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-          border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .accordion .card:last-of-type {
-  -webkit-border-top-left-radius: 0;
-          border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0;
-          border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .breadcrumb {
@@ -5532,11 +5504,9 @@ input[type="button"].btn-block {
 }
 
 .progress-bar-striped {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  -webkit-background-size: 1rem 1rem;
-          background-size: 1rem 1rem;
+  background-size: 1rem 1rem;
 }
 
 .progress-bar-animated {
@@ -6338,7 +6308,7 @@ button.close {
           transform: translateX(0);
 }
 
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+@supports (transform-style: preserve-3d) {
   .carousel-item-next.carousel-item-left,
   .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
@@ -6353,7 +6323,7 @@ button.close {
           transform: translateX(100%);
 }
 
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+@supports (transform-style: preserve-3d) {
   .carousel-item-next,
   .active.carousel-item-right {
     -webkit-transform: translate3d(100%, 0, 0);
@@ -6368,7 +6338,7 @@ button.close {
           transform: translateX(-100%);
 }
 
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+@supports (transform-style: preserve-3d) {
   .carousel-item-prev,
   .active.carousel-item-left {
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -6407,7 +6377,7 @@ button.close {
           transform: translateX(0);
 }
 
-@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+@supports (transform-style: preserve-3d) {
   .carousel-fade .carousel-item-next,
   .carousel-fade .carousel-item-prev,
   .carousel-fade .carousel-item.active,
@@ -6464,8 +6434,7 @@ button.close {
   width: 20px;
   height: 20px;
   background: transparent no-repeat center center;
-  -webkit-background-size: 100% 100%;
-          background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .carousel-control-prev-icon {
@@ -6736,46 +6705,35 @@ button.bg-dark:focus {
 }
 
 .rounded {
-  -webkit-border-radius: 0.25rem !important;
-          border-radius: 0.25rem !important;
+  border-radius: 0.25rem !important;
 }
 
 .rounded-top {
-  -webkit-border-top-left-radius: 0.25rem !important;
-          border-top-left-radius: 0.25rem !important;
-  -webkit-border-top-right-radius: 0.25rem !important;
-          border-top-right-radius: 0.25rem !important;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
 }
 
 .rounded-right {
-  -webkit-border-top-right-radius: 0.25rem !important;
-          border-top-right-radius: 0.25rem !important;
-  -webkit-border-bottom-right-radius: 0.25rem !important;
-          border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
 }
 
 .rounded-bottom {
-  -webkit-border-bottom-right-radius: 0.25rem !important;
-          border-bottom-right-radius: 0.25rem !important;
-  -webkit-border-bottom-left-radius: 0.25rem !important;
-          border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 
 .rounded-left {
-  -webkit-border-top-left-radius: 0.25rem !important;
-          border-top-left-radius: 0.25rem !important;
-  -webkit-border-bottom-left-radius: 0.25rem !important;
-          border-bottom-left-radius: 0.25rem !important;
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 
 .rounded-circle {
-  -webkit-border-radius: 50% !important;
-          border-radius: 50% !important;
+  border-radius: 50% !important;
 }
 
 .rounded-0 {
-  -webkit-border-radius: 0 !important;
-          border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 .clearfix::after {
