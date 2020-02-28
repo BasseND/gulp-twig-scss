@@ -131,7 +131,7 @@ function gulpSassTask  () {
       }
     }))
     .pipe(sass({
-      includePaths: [paths.sass + 'site/'],
+      includePaths: [paths.sass + 'site/', paths.sass + 'ds/'],
 		  outputStyle: 'expanded'
 		})
 		.on('error', function (err) {
