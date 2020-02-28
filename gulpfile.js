@@ -18,10 +18,10 @@ var gulp = require('gulp'),
  */
 var paths = {
   build: './build/',
-  sass: './scss/',
+  sass: './src/scss/',
+  cssDS: './ds-sources/assets/css/',
   css: './build/assets/css/',
-  cssDS: './build/assets/cssDS/',
-  data: './client/data/'
+  data: './twig/data/'
 };
 
 /**
@@ -29,8 +29,8 @@ var paths = {
  * matching file name. index.twig - index.twig.json
  */
 function gulpTwigTask () {
-//   return gulp.src(['./client/templates/*.twig','./client/data/head.twig'])
-  return gulp.src(['./client/templates/*.twig'])
+//   return gulp.src(['./twig/templates/*.twig','./twig/data/head.twig'])
+  return gulp.src(['./twig/templates/*.twig'])
     // Stay live and reload on error
 	.pipe(plumber({
 		handleError: function (err) {
@@ -72,7 +72,7 @@ gulp.task(
 
 gulp.task(
   "browser-sync",
-  gulp.series([gulpSassTask, gulpTwigTask, gulpJsTask], function() {
+  gulp.series([gulpSassTask, gulpSassSourcesTask, gulpTwigTask, gulpJsTask], function() {
     browserSync({
       server: {
         baseDir: paths.build
@@ -83,14 +83,12 @@ gulp.task(
   })
 );
 
-
-
 /**
  * Compile .scss files into build css directory With autoprefixer no
  * need for vendor prefixes then live reload the browser.
  */
-function gulpSassTask  () {
-  return gulp.src(paths.sass + 'vendors/main.scss')
+function gulpSassSourcesTask() {
+  return gulp.src(paths.sass + 'ds/style.scss')
     .pipe(sourcemaps.init())
     // Stay live and reload on error
     .pipe(plumber({
@@ -100,7 +98,40 @@ function gulpSassTask  () {
       }
     }))
     .pipe(sass({
-      includePaths: [paths.sass + 'vendors/', paths.sass + 'ds/'],
+      includePaths: [paths.sass + 'ds/'],
+      outputStyle: 'expanded'
+    })
+      .on('error', function (err) {
+        console.log(err.message);
+        // sass.logError
+        this.emit('end');
+      })
+    )
+    .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
+      cascade: true
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(paths.cssDS));
+};
+
+
+
+/**
+ * Compile .scss files into build css directory With autoprefixer no
+ * need for vendor prefixes then live reload the browser.
+ */
+function gulpSassTask  () {
+  return gulp.src(paths.sass + 'site/main.scss')
+    .pipe(sourcemaps.init())
+    // Stay live and reload on error
+    .pipe(plumber({
+      handleError: function (err) {
+        console.log(err);
+        this.emit('end');
+      }
+    }))
+    .pipe(sass({
+      includePaths: [paths.sass + 'site/'],
 		  outputStyle: 'expanded'
 		})
 		.on('error', function (err) {
@@ -136,13 +167,15 @@ function gulpJsTask (){
  * Watch .twig files run twig-rebuild then reload BrowserSync
  */
 function gulpWatchTask () {
-	gulp.watch(paths.build + 'assets/js/script.js', ['js', browserSync.reload]);
-  	gulp.watch(paths.sass + 'vendors/main.scss', ['sass', browserSync.reload]);
-  	gulp.watch(['client/templates/**/*.twig','client/data/*.twig.json'], {cwd:'./'}, ['rebuild']);
+	  gulp.watch(paths.build + 'assets/js/script.js', ['js', browserSync.reload]);
+    // gulp.watch(paths.sass + 'vendors/main.scss', ['sass', browserSync.reload]);
+    gulp.watch(paths.sass + 'ds/style.scss', ['sass', browserSync.reload]);
+    gulp.watch(paths.sass + 'site/main.scss', ['sass', browserSync.reload]);
+  	gulp.watch(['twig/templates/**/*.twig','twig/data/*.twig.json'], {cwd:'./'}, ['rebuild']);
 };
 
 // Build task compile sass and twig.
-gulp.task("build", gulp.series([gulpSassTask, gulpTwigTask]));
+gulp.task("build", gulp.series([gulpSassTask, gulpSassSourcesTask, gulpTwigTask]));
 
 /**
  * Default task, running just `gulp` will compile the sass,

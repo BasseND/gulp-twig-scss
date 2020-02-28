@@ -9527,4 +9527,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello/fontello.eot?71188044826");
+  src: url("../fonts/fontello/fontello.woff2?71188044826") format("woff2"), url("../fonts/fontello/fontello.woff?71188044826") format("woff"), url("../fonts/fontello/fontello.ttf?71188044826") format("truetype"), url("../fonts/fontello/fontello.svg?71188044826#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=style.css.map */
