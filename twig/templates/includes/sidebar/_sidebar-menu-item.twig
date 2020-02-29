@@ -1,0 +1,36 @@
+{############################################################################################}
+{########################################### USAGE ##########################################}
+{############################################################################################}
+
+{#
+    {% include '../includes/sidebar/_sidebar-menu-item.twig' with {
+        'sidebar_menu_item_title': 'Mes alertes',
+        'sidebar_menu_item_class': 'alerte',
+        'sidebar_menu_item_badge_value': '2',
+        'sidebar_menu_item_url': 'https://www.google.com',  
+        'sidebar_menu_item_additionnal_attributes': {
+            'data-test': 'lol'
+        },
+        'sidebar_menu_item_additionnal_classes': ''
+    } %}
+#}
+
+{############################################################################################}
+{########################################### CODE ###########################################}
+{############################################################################################}
+
+{% set class = 'sidebar-menu-item' %}
+{% set class = class ~ ' ' ~ sidebar_menu_item_class %}
+	{% if sidebar_menu_item_additionnal_classes %}
+{% set class = class ~ ' ' ~ sidebar_menu_item_additionnal_classes|trim %}
+{% endif %}
+
+
+	<li class="{{ class }}" {% for key, additionnal_attr in sidebar_menu_item_additionnal_attributes %} {{ key }}="{{ additionnal_attr }}" {% endfor %}> {% if sidebar_menu_item_title %}
+		<a href="{{ sidebar_menu_item_url }}">{{ sidebar_menu_item_title }}
+			{% if sidebar_menu_item_badge_value  %}
+				<span class="badge">{{ sidebar_menu_item_badge_value }}</span>
+			{% endif %}
+		</a>
+	{% endif %}
+</li>

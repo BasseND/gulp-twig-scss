@@ -1,0 +1,109 @@
+
+{############################################################################################}
+{########################################### USAGE ##########################################}
+{############################################################################################}
+
+{#
+{% include '../sidebar/_sidebar-main-menu.twig' with {
+        'sidebar_menu_block_title' : 'Mon compte',
+        'sidebar_menu_items' : [
+        {
+        'sidebar_menu_title': 'Tableau de bord',
+        'sidebar_menu_class': 'dasboard',
+        'sidebar_menu_badge_value': '',
+        'sidebar_menu_url': 'https://www.google.com',  
+        'sidebar_menu_additionnal_attributes': '',
+        'sidebar_menu_additionnal_classes': ''
+        },
+        {
+        'sidebar_menu_title': 'Mes alertes',
+        'sidebar_menu_class': 'alerte',
+        'sidebar_menu_badge_value': '2',
+        'sidebar_menu_url': 'https://www.google.com',  
+        'sidebar_menu_additionnal_attributes': '',
+        'sidebar_menu_additionnal_classes': ''
+        },
+        {
+        'sidebar_menu_title': 'Mes informations',
+        'sidebar_menu_class': 'info',
+        'sidebar_menu_badge_value': '2',
+        'sidebar_menu_url': 'https://www.google.com',  
+        'sidebar_menu_additionnal_attributes': '',
+        'sidebar_menu_additionnal_classes': ''
+        },
+        
+        {
+        'sidebar_menu_title': 'Mes commandes',
+        'sidebar_menu_class': 'commande',
+        'sidebar_menu_badge_value': '',
+        'sidebar_menu_url': 'https://www.google.com',  
+        'sidebar_menu_additionnal_attributes': '',
+        'sidebar_menu_additionnal_classes': ''
+        },
+        {
+        'sidebar_menu_title': 'Mes démarches',
+        'sidebar_menu_class': 'demarche',
+        'sidebar_menu_badge_value': '',
+        'sidebar_menu_url': 'https://www.google.com',  
+        'sidebar_menu_additionnal_attributes': '',
+        'sidebar_menu_additionnal_classes': ''
+        },
+        {
+        'sidebar_menu_title': 'Hotte de Noël',
+        'sidebar_menu_class': 'noel',
+        'sidebar_menu_badge_value': '',
+        'sidebar_menu_url': 'https://www.google.com',  
+        'sidebar_menu_additionnal_attributes': '',
+        'sidebar_menu_additionnal_classes': ''
+        },
+        {
+        'sidebar_menu_title': 'FAQ',
+        'sidebar_menu_class': 'faq',
+        'sidebar_menu_badge_value': '',
+        'sidebar_menu_url': 'https://www.google.com',  
+        'sidebar_menu_additionnal_attributes': '',
+        'sidebar_menu_additionnal_classes': ''
+        },
+            {
+        'sidebar_menu_title': 'Déconnexion',
+        'sidebar_menu_class': 'deconnexion',
+        'sidebar_menu_badge_value': '',
+        'sidebar_menu_url': 'https://www.google.com',  
+        'sidebar_menu_additionnal_attributes': '',
+        'sidebar_menu_additionnal_classes': ''
+        },
+        ],
+        'sidebar_menu_additionnal_attributes': {
+        'data-test': 'lol'
+        },
+        'sidebar_menu_additionnal_classes': ''
+    } %}
+#}
+
+{############################################################################################}
+{########################################### CODE ###########################################}
+{############################################################################################}
+
+{% set block_class = 'compte-menu' %}
+	{% if sidebar_menu_additionnal_classes %}
+{% set block_class = block_class ~ ' ' ~ sidebar_menu_additionnal_classes|trim %}
+{% endif %}
+
+<div class="{{ block_class }}" {% for key, additionnal_attr in sidebar_menu_additionnal_attributes %} {{ key }}="{{ additionnal_attr }}" {% endfor %}> <h4>{{ sidebar_menu_block_title }}</h4>
+	<ul class="sidebar-menu">
+		{% for item in sidebar_menu_items %}
+			{% include '../sidebar/_sidebar-menu-item.twig' with {
+                'sidebar_menu_item_title': item.sidebar_menu_title,
+                'sidebar_menu_item_class': item.sidebar_menu_class,
+                'sidebar_menu_item_badge_value': item.sidebar_menu_badge_value,
+                'sidebar_menu_item_url': item.sidebar_menu_url,  
+                'sidebar_menu_item_additionnal_attributes': item.sidebar_menu_additionnal_attributes,
+                'sidebar_menu_item_additionnal_classes': item.sidebar_menu_additionnal_classes
+            } %}
+		{% endfor %}
+	</ul>
+
+</div>
+
+
+

@@ -78,7 +78,7 @@ gulp.task(
         baseDir: paths.build
       },
       notify: false,
-      browser: "google chrome"
+      browser: ["google chrome", "firefox"]
     });
   })
 );

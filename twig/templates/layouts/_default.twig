@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+    {% include "../includes/header/_head.twig" %}
+    </head>
+<body>	
+    <!-- HEADER -->
+    {% include "../includes/header/_header.twig" %}
+    
+    <!-- MAIN -->
+    <main>
+		{% block content %}
+
+		{% endblock %}
+    </main>
+
+    <!-- FOOTER -->
+    {% include "../includes/_footer.twig" %}
+
+    <!-- SCRIPTS -->
+    {% include "../includes/_scripts.twig" %}
+
+</body>
+</html>
