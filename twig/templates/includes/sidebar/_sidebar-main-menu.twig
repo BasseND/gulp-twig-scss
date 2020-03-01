@@ -100,6 +100,7 @@
 		{% for item in sidebar_menu_items %}
 			{% include '../sidebar/_sidebar-menu-item.twig' with {
                 'sidebar_menu_item_title': item.sidebar_menu_title,
+                'sidebar_menu_item_childs': item.sidebar_menu_child_items,
                 'sidebar_menu_item_class': item.sidebar_menu_class,
                 'sidebar_menu_item_badge_value': item.sidebar_menu_badge_value,
                 'sidebar_menu_item_url': item.sidebar_menu_url,  

@@ -6,11 +6,17 @@
 {# SIDEBAR #}
 {% include '../sidebar/_sidebar-main-menu.twig' with {
 
-            'sidebar_menu_block_title' : 'Mon compte',
+            'sidebar_menu_block_title' : 'Ressources',
             'sidebar_menu_items' : [
             {
 
-            'sidebar_menu_title': 'Tableau de bord',
+            'sidebar_menu_title': 'Layout',
+            'sidebar_menu_child_items': [
+                    { 'child_item': 'Ostéopathie'},
+                    { 'child_item': 'Laser varicosites'},
+                    { 'child_item': 'Analyses médicales'},
+                    { 'child_item': 'Autres'},
+                ],
             'sidebar_menu_class': 'dasboard',
             'sidebar_menu_badge_value': '',
             'sidebar_menu_url': 'compte-dasboard.html',  
@@ -18,66 +24,57 @@
             'sidebar_menu_additionnal_classes': ''
             },
             {
-            'sidebar_menu_title': 'Mes alertes',
-            'sidebar_menu_class': 'alerte',
+            'sidebar_menu_title': 'Blocks',
+             'sidebar_menu_child_items': [
+                { 'child_item': 'Ostéopathie'},
+                { 'child_item': 'Laser varicosites'},
+                { 'child_item': 'Analyses médicales'},
+                { 'child_item': 'Autres'},
+            ],
+            'sidebar_menu_class': 'blocks',
             'sidebar_menu_badge_value': '2',
-            'sidebar_menu_url': 'compte-alertes.html',  
+            'sidebar_menu_url': 'blocks.html',  
             'sidebar_menu_additionnal_attributes': '',
             'sidebar_menu_additionnal_classes': ''
             },
             {
-            'sidebar_menu_title': 'Mes informations',
-            'sidebar_menu_class': 'info',
+            'sidebar_menu_title': 'Components',
+            'sidebar_menu_class': 'components',
             'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'compte-informations.html',  
+            'sidebar_menu_url': 'components.html',  
             'sidebar_menu_additionnal_attributes': '',
             'sidebar_menu_additionnal_classes': ''
             },
             {
-            'sidebar_menu_title': 'Mes commandes',
-            'sidebar_menu_class': 'commande',
+            'sidebar_menu_title': 'Formulaires',
+            'sidebar_menu_class': 'formulaires',
             'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'compte-commandes.html',  
+            'sidebar_menu_url': 'formulaires.html',  
             'sidebar_menu_additionnal_attributes': '',
             'sidebar_menu_additionnal_classes': ''
             },
             {
-            'sidebar_menu_title': 'Mes démarches',
-            'sidebar_menu_class': 'demarche',
+            'sidebar_menu_title': 'Modules',
+            'sidebar_menu_class': 'modules',
             'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'compte-demarches.html',  
+            'sidebar_menu_url': 'moduless.html',  
             'sidebar_menu_additionnal_attributes': '',
             'sidebar_menu_additionnal_classes': ''
             },
             {
-            'sidebar_menu_title': 'Hotte de Noël',
-            'sidebar_menu_class': 'noel',
+            'sidebar_menu_title': 'Crédits',
+            'sidebar_menu_class': 'credits',
             'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'compte-hotte-noel.html',  
+            'sidebar_menu_url': 'credits.html',  
             'sidebar_menu_additionnal_attributes': '',
             'sidebar_menu_additionnal_classes': ''
-            },
-            {
-            'sidebar_menu_title': 'FAQ',
-            'sidebar_menu_class': 'faq',
-            'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'compte-dasboard.html',  
-            'sidebar_menu_additionnal_attributes': '',
-            'sidebar_menu_additionnal_classes': ''
-            },
-            {
-            'sidebar_menu_title': 'Déconnexion',
-            'sidebar_menu_class': 'deconnexion',
-            'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'compte-dasboard.html',  
-            'sidebar_menu_additionnal_attributes': '',
-            'sidebar_menu_additionnal_classes': ''
-            },
+            }
+    
 
             ],
 
             'sidebar_menu_additionnal_attributes': {
-            'data-test': 'lol'
+            'data-sidebar': 'left'
             },
             'sidebar_menu_additionnal_classes': ''
         } %}

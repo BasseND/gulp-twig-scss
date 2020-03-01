@@ -2,4 +2,4 @@ $(document).ready(function() {
   // Your jquery scripts in here
 });
 
-//# sourceMappingURL=script.min.js.map
+//# sourceMappingURL=script.js.map
