@@ -1,3 +1,68 @@
         
-        <title>{{ title }}</title>
-        {% include "./_styles.twig" %}
+{% set random = random(99999999999) %}
+
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width,height=device-height,shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="google" content="notranslate">
+        <!--[if (IEMobile)]>
+        <meta http-equiv="cleartype" content="on">
+        <![endif]-->
+
+    {% endblock %} 
+
+    {% block seo_meta %}
+        <meta name="robots" content="{% block robots %}noindex, nofollow{% endblock %}">
+        <title>{% block title %}{{ title }}{% endblock %}</title>
+        <meta name="description" content="{% block description %}{{ page_description }}{% endblock %}">
+    {% endblock %} 
+
+
+
+    {% block social_meta %}
+        <meta name="og:type" content="website">
+        <meta name="og:title" content="{% block title %}{{ project_name }}{% endblock %}">
+        <meta name="og:site_name" content="{{ project_short_name }}">
+        <meta name="og:description" content="{% block description %}{{ page_description }}{% endblock %}">
+        <meta name="og:image" content="{{ img_url }}screenshot.png?{{ random }}">
+        <meta name="og:locale" content="{{ lang_code_extended }}">
+        <meta name="image" content="{{ img_url }}screenshot.png?{{ random }}">
+    {% endblock %} 
+
+
+    {% block favicons %}
+        {% if (favicon_url) %}
+
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ favicon_url }}apple-icon-57x57.png?{{ random }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ favicon_url }}apple-icon-60x60.png?{{ random }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ favicon_url }}apple-icon-72x72.png?{{ random }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ favicon_url }}apple-icon-76x76.png?{{ random }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ favicon_url }}apple-icon-114x114.png?{{ random }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ favicon_url }}apple-icon-120x120.png?{{ random }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ favicon_url }}apple-icon-144x144.png?{{ random }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ favicon_url }}apple-icon-152x152.png?{{ random }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_url }}apple-icon-180x180.png?{{ random }}">
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ favicon_url }}android-icon-192x192.png?{{ random }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_url }}favicon-32x32.png?{{ random }}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ favicon_url }}favicon-96x96.png?{{ random }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ favicon_url }}favicon-16x16.png?{{ random }}">
+        <link rel="manifest" href="{{ favicon_url }}manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{{ favicon_url }}ms-icon-144x144.png?{{ random }}">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="{{ project_short_name }}">
+        <meta name="application-name" content="{{ project_short_name }}">
+        {% endif %}
+    {% endblock %} 
+
+    {% block stylesheets %}
+       {% include "./_styles.twig" %}
+     {% endblock %}
+
+    
