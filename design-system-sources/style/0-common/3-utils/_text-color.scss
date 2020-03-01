@@ -1,5 +1,0 @@
-@each $key, $color in $theme-colors {
-    .text-#{$key} {
-        color: $color;
-    }
-}
