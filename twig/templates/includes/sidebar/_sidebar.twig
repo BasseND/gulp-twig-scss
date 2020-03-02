@@ -2,84 +2,254 @@
     <aside class="main-sidebar sidebar-style-2 ">
        <div class="sidebar-wrapper">
            {# {% include "../sidebar/_sidebar-main-menu.twig" %}  #}
+           <div class="sidebar-logo">
+              <h1> Design System</h1>
+           </div>
 
-{# SIDEBAR #}
-{% include '../sidebar/_sidebar-main-menu.twig' with {
+            {# SIDEBAR #}
 
-            'sidebar_menu_block_title' : 'Ressources',
-            'sidebar_menu_items' : [
+            <ul class="sidebar-menu">
+
+{% include '../sidebar/_sidebar-menu-item.twig' with {
+        
+        'sidebar_menu_item_items': [
             {
-
-            'sidebar_menu_title': 'Layout',
-            'sidebar_menu_child_items': [
-                    { 'child_item': 'Ostéopathie'},
-                    { 'child_item': 'Laser varicosites'},
-                    { 'child_item': 'Analyses médicales'},
-                    { 'child_item': 'Autres'},
+                'sidebar_menu_item_title': 'Layout',
+                'sidebar_menu_item_child_items': [
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
                 ],
-            'sidebar_menu_class': 'dasboard',
-            'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'compte-dasboard.html',  
-            'sidebar_menu_additionnal_attributes': '',
-            'sidebar_menu_additionnal_classes': ''
-            },
-            {
-            'sidebar_menu_title': 'Blocks',
-             'sidebar_menu_child_items': [
-                { 'child_item': 'Ostéopathie'},
-                { 'child_item': 'Laser varicosites'},
-                { 'child_item': 'Analyses médicales'},
-                { 'child_item': 'Autres'},
-            ],
-            'sidebar_menu_class': 'blocks',
-            'sidebar_menu_badge_value': '2',
-            'sidebar_menu_url': 'blocks.html',  
-            'sidebar_menu_additionnal_attributes': '',
-            'sidebar_menu_additionnal_classes': ''
-            },
-            {
-            'sidebar_menu_title': 'Components',
-            'sidebar_menu_class': 'components',
-            'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'components.html',  
-            'sidebar_menu_additionnal_attributes': '',
-            'sidebar_menu_additionnal_classes': ''
-            },
-            {
-            'sidebar_menu_title': 'Formulaires',
-            'sidebar_menu_class': 'formulaires',
-            'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'formulaires.html',  
-            'sidebar_menu_additionnal_attributes': '',
-            'sidebar_menu_additionnal_classes': ''
-            },
-            {
-            'sidebar_menu_title': 'Modules',
-            'sidebar_menu_class': 'modules',
-            'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'moduless.html',  
-            'sidebar_menu_additionnal_attributes': '',
-            'sidebar_menu_additionnal_classes': ''
-            },
-            {
-            'sidebar_menu_title': 'Crédits',
-            'sidebar_menu_class': 'credits',
-            'sidebar_menu_badge_value': '',
-            'sidebar_menu_url': 'credits.html',  
-            'sidebar_menu_additionnal_attributes': '',
-            'sidebar_menu_additionnal_classes': ''
-            }
-    
+                'sidebar_menu_item_class': 'layout',
+                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_url': 'https://www.google.com',  
+                'sidebar_menu_item_additionnal_attributes': {
+                    'data-test': 'lol'
+                },
+                'sidebar_menu_item_additionnal_classes': ''
 
-            ],
-
-            'sidebar_menu_additionnal_attributes': {
-            'data-sidebar': 'left'
             },
-            'sidebar_menu_additionnal_classes': ''
-        } %}
+
+            {
+                'sidebar_menu_item_title': 'Blocks',
+                'sidebar_menu_item_child_items': [
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                ],
+                'sidebar_menu_item_class': 'blocks',
+                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_url': 'https://www.google.com',  
+                'sidebar_menu_item_additionnal_attributes': {
+                    'data-test': 'lol'
+                },
+                'sidebar_menu_item_additionnal_classes': ''
+
+            },
+
+            {
+                'sidebar_menu_item_title': 'Formulaire',
+                'sidebar_menu_item_child_items': [
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                ],
+                'sidebar_menu_item_class': 'formulaire',
+                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_url': 'https://www.google.com',  
+                'sidebar_menu_item_additionnal_attributes': {
+                    'data-test': 'lol'
+                },
+                'sidebar_menu_item_additionnal_classes': ''
+
+            },
+            {
+                'sidebar_menu_item_title': 'Components',
+                'sidebar_menu_item_child_items': [
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                ],
+                'sidebar_menu_item_class': 'components',
+                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_url': 'https://www.google.com',  
+                'sidebar_menu_item_additionnal_attributes': {
+                    'data-test': 'lol'
+                },
+                'sidebar_menu_item_additionnal_classes': ''
+
+            },
+
+
+         ]
+
+       
+
+        
+    } %}
+
+
+                    
+
+                
+            </ul>
+
+
+
+            
+
+{# 
+
+            {% include '../sidebar/_sidebar-main-menu.twig' with {
+
+                        'sidebar_menu_block_title' : 'Ressources',
+                        'sidebar_menu_items' : [
+                        {
+
+                        'sidebar_menu_title': 'Layout',
+                        'sidebar_menu_child_items': [
+                                { 'child_item': 'Ostéopathie'},
+                                { 'child_item': 'Laser varicosites'},
+                                { 'child_item': 'Analyses médicales'},
+                                { 'child_item': 'Autres'},
+                            ],
+                        'sidebar_menu_class': 'dasboard',
+                        'sidebar_menu_badge_value': '',
+                        'sidebar_menu_url': 'compte-dasboard.html',  
+                        'sidebar_menu_additionnal_attributes': '',
+                        'sidebar_menu_additionnal_classes': ''
+                        },
+                        {
+                        'sidebar_menu_title': 'Blocks',
+                        'sidebar_menu_child_items': [
+                            { 'child_item': 'Ostéopathie'},
+                            { 'child_item': 'Laser varicosites'},
+                            { 'child_item': 'Analyses médicales'},
+                            { 'child_item': 'Autres'},
+                        ],
+                        'sidebar_menu_class': 'blocks',
+                        'sidebar_menu_badge_value': '2',
+                        'sidebar_menu_url': 'blocks.html',  
+                        'sidebar_menu_additionnal_attributes': '',
+                        'sidebar_menu_additionnal_classes': ''
+                        },
+                        {
+                        'sidebar_menu_title': 'Components',
+                        'sidebar_menu_class': 'components',
+                        'sidebar_menu_badge_value': '',
+                        'sidebar_menu_url': 'components.html',  
+                        'sidebar_menu_additionnal_attributes': '',
+                        'sidebar_menu_additionnal_classes': ''
+                        },
+                        {
+                        'sidebar_menu_title': 'Formulaires',
+                        'sidebar_menu_class': 'formulaires',
+                        'sidebar_menu_badge_value': '',
+                        'sidebar_menu_url': 'formulaires.html',  
+                        'sidebar_menu_additionnal_attributes': '',
+                        'sidebar_menu_additionnal_classes': ''
+                        },
+                        {
+                        'sidebar_menu_title': 'Modules',
+                        'sidebar_menu_class': 'modules',
+                        'sidebar_menu_badge_value': '',
+                        'sidebar_menu_url': 'moduless.html',  
+                        'sidebar_menu_additionnal_attributes': '',
+                        'sidebar_menu_additionnal_classes': ''
+                        },
+                        {
+                        'sidebar_menu_title': 'Crédits',
+                        'sidebar_menu_class': 'credits',
+                        'sidebar_menu_badge_value': '',
+                        'sidebar_menu_url': 'credits.html',  
+                        'sidebar_menu_additionnal_attributes': '',
+                        'sidebar_menu_additionnal_classes': ''
+                        }
+                
+
+                        ],
+
+                        'sidebar_menu_additionnal_attributes': {
+                        'data-sidebar': 'left'
+                        },
+                        'sidebar_menu_additionnal_classes': ''
+                    } %}
+
+
+#}
+
 
 {# END SIDEBAR #}
+
+
 
 
 

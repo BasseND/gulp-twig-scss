@@ -1,10 +1,11 @@
-.main-navbar {
-  // font-size: 30px;
-    height: 70px;
-    left: 250px;
-    right: 5px;
-    position: absolute;
-    z-index: 890;
-    background-color: transparent;
+header {
+  //font-size: 30px;
+  height: 70px;
+  left: 250px;
+  right: 0;
+  position: absolute;
+  z-index: 890;
+  background-color: $white;
+  .main-navbar {
+  }
 }
-

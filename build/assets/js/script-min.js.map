@@ -1,1 +1,1 @@
-{"version":3,"sources":["script.js"],"names":["$","document","ready"],"mappings":"AAAAA,EAAEC,UAAUC,MAAM","sourcesContent":["$(document).ready(function() {\r\n  // Your jquery scripts in here\r\n});\r\n"],"file":"script-min.js"}
+{"version":3,"sources":["script.js"],"names":["$","document","ready"],"mappings":"AAAAA,EAAEC,UAAUC,MAAM","sourcesContent":["$(document).ready(function() {\n  // Your jquery scripts in here\n});\n"],"file":"script-min.js"}

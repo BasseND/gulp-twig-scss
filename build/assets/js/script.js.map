@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["script.js"],"sourcesContent":["$(document).ready(function() {\r\n  // Your jquery scripts in here\r\n});\r\n"],"file":"script.js"}
+{"version":3,"names":[],"mappings":"","sources":["script.js"],"sourcesContent":["$(document).ready(function() {\n  // Your jquery scripts in here\n});\n"],"file":"script.js"}

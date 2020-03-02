@@ -10,6 +10,7 @@ var gulp = require("gulp"),
   plumber = require("gulp-plumber"),
   concat = require("gulp-concat"),
   rename = require("gulp-rename"),
+  zip = require("gulp-zip"),
   minify = require("gulp-minify"),
   mergeStream = require("merge-stream"),
   sourcemaps = require("gulp-sourcemaps"),
@@ -59,6 +60,7 @@ var pathsNew = {
 
 var paths = {
   build: "./build/",
+  zip: "./ds-sources/",
   // sass: "./src/scss/",
   cssDS: "./ds-sources/assets/css/",
   // css: "./build/assets/css/",
@@ -143,7 +145,8 @@ gulp.task(
       gulpTwigTask,
       gulpJsTask,
       gulpCopyImageTask,
-      gulpCopyFontsTask
+      gulpCopyFontsTask,
+      gulpZipResourcesTask
     ],
     function() {
       browserSync({
@@ -313,15 +316,13 @@ function gulpJsTask () {
 /**
  * Zip the ressources folder
  * 
- function gulpZipResourcesTask () {
+ *  */
+function gulpZipResourcesTask () {
   return gulp
-    .src("./**")
-    .pipe(zip("test.zip"))
-    .pipe(gulp.dest("./distribution"));
+    .src(pathsNew.zip + "./**")
+    .pipe(zip("assets-resource.zip"))
+    .pipe(gulp.dest("./build/"));
 };
-
-
- */
 
 
      
@@ -361,7 +362,8 @@ gulp.task(
     gulpSassSourcesTask,
     gulpTwigTask,
     gulpCopyImageTask,
-    gulpCopyFontsTask
+    gulpCopyFontsTask,
+    gulpZipResourcesTask
   ])
 );
 

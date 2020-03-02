@@ -4,20 +4,115 @@
 
 {#
     {% include '../includes/sidebar/_sidebar-menu-item.twig' with {
-        'sidebar_menu_item_title': 'Mes alertes',
-        'sidebar_menu_item_child_items': [
-            { 'child_item': 'Ostéopathie'},
-            { 'child_item': 'Laser varicosites'},
-            { 'child_item': 'Analyses médicales'},
-            { 'child_item': 'Autres'},
-        ],
-        'sidebar_menu_item_class': 'alerte',
-        'sidebar_menu_item_badge_value': '2',
-        'sidebar_menu_item_url': 'https://www.google.com',  
-        'sidebar_menu_item_additionnal_attributes': {
-            'data-test': 'lol'
-        },
-        'sidebar_menu_item_additionnal_classes': ''
+        
+        'sidebar_menu_item_items': [
+            {
+                'sidebar_menu_item_title': 'Components',
+                'sidebar_menu_item_child_items': [
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                ],
+                'sidebar_menu_item_class': 'components',
+                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_url': 'https://www.google.com',  
+                'sidebar_menu_item_additionnal_attributes': {
+                    'data-test': 'lol'
+                },
+                'sidebar_menu_item_additionnal_classes': ''
+
+            },
+
+            {
+                'sidebar_menu_item_title': 'Components',
+                'sidebar_menu_item_child_items': [
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                ],
+                'sidebar_menu_item_class': 'components',
+                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_url': 'https://www.google.com',  
+                'sidebar_menu_item_additionnal_attributes': {
+                    'data-test': 'lol'
+                },
+                'sidebar_menu_item_additionnal_classes': ''
+
+            },
+
+            {
+                'sidebar_menu_item_title': 'Components',
+                'sidebar_menu_item_child_items': [
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                ],
+                'sidebar_menu_item_class': 'components',
+                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_url': 'https://www.google.com',  
+                'sidebar_menu_item_additionnal_attributes': {
+                    'data-test': 'lol'
+                },
+                'sidebar_menu_item_additionnal_classes': ''
+
+            },
+
+         ]
+
+       
+
+        
     } %}
 #}
 
@@ -25,32 +120,31 @@
 {########################################### CODE ###########################################}
 {############################################################################################}
 
-{% set class = 'sidebar-menu-item' %}
-{% set class = class ~ ' ' ~ sidebar_menu_item_class %}
-	{% if sidebar_menu_item_additionnal_classes %}
-{% set class = class ~ ' ' ~ sidebar_menu_item_additionnal_classes|trim %}
-{% endif %}
+{% set class = 'dropdown sidebar-menu-item' %}
 
+{% if sidebar_menu_item_items|length > 0 %}
+    {% for item in sidebar_menu_item_items %}
 
-	    <li class="{{ class }}" {% for key, additionnal_attr in sidebar_menu_item_additionnal_attributes %} {{ key }}="{{ additionnal_attr }}" {% endfor %}> {% if sidebar_menu_item_title %}
-		<a href="{{ sidebar_menu_item_url }}">{{ sidebar_menu_item_title }}
-			{% if sidebar_menu_item_badge_value  %}
-				<span class="badge">{{ sidebar_menu_item_badge_value }}</span>
+	    <li class="{{ class }} {{ item.sidebar_menu_item_class }}" >
+        {% if item.sidebar_menu_item_title %}
+		<a href="{{ item.sidebar_menu_item_url }}">{{ item.sidebar_menu_item_title }}
+			{% if item.sidebar_menu_item_badge_value  %}
+				<span class="badge">{{ item.sidebar_menu_item_badge_value }}</span>
 			{% endif %}
 		</a>
+       {% endif %}
 
-       
-          <ul class="sidebar-menu">
-          {% for item in sidebar_menu_item_child_items %}
-            <li class="TEST">
-                {{ item.child_item }}
+       {% if item.sidebar_menu_item_child_items|length > 0 %}
+          <ul class="dropdown-menu">
+          {% for autres in item.sidebar_menu_item_child_items %}
+            <li>
+                <a class="nav-link" href="{{ autres.child_item_url }}">{{ autres.child_item_title }}</a>
             </li>
-            {% endfor %}
-              
+           {% endfor %}
           </ul>
+	   {% endif %} 
+      </li>
+    {% endfor %}
 
-       
+{% endif %}
 
-
-	   {% endif %}
-     </li>
