@@ -23,28 +23,67 @@
       padding: 10px;
       //LI
 
-      a {
-        display: block;
-        padding: 10px 5px;
-        color: $white;
-        position: relative;
+      .sidebar-menu-item {
+        a {
+          display: block;
+          padding: 14px 5px 14px 35px;
+          color: $white;
+          position: relative;
 
-        &::after {
-          @include fontello;
-          content: "\E822";
-          font-size: 1rem;
-          position: absolute;
-          right: 15px;
+          &::after {
+            @include fontello;
+            content: "\E822";
+            font-size: 1rem;
+            position: absolute;
+            right: 15px;
+          }
+          &::before {
+            @include fontello;
+            content: "\E830";
+            font-size: 1rem;
+            position: absolute;
+            left: 3px;
+          }
+          .badge {
+            position: absolute;
+            right: 33px;
+            left: inherit;
+            width: initial;
+            font-size: 0.8em;
+            background-color: $blue-gradien-light;
+            top: 31%;
+            padding: 3px 8px;
+            background: #8c35ff;
+          }
         }
-        .badge {
-          position: absolute;
-          right: 33px;
-          left: inherit;
-          width: initial;
-          font-size: 0.8em;
-          background-color: $blue-gradien-light;
-          top: 23%;
-          padding: 2px 8px;
+
+        &.layout {
+          a {
+            &::before {
+              content: "\F0DB";
+            }
+          }
+        }
+        &.blocks {
+          a {
+            &::before {
+              content: "\F1B3";
+            }
+          }
+        }
+        &.formulaire {
+          a {
+            &::before {
+              content: "\E830";
+            }
+          }
+        }
+        &.components {
+          a {
+            &::before {
+              content: "\E82F";
+            }
+          }
         }
       }
     }
