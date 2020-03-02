@@ -125,7 +125,7 @@
 
 	    <li class="{{ class }} {{ item.sidebar_menu_item_class }}" >
         {% if item.sidebar_menu_item_title %}
-		<a href="{{ item.sidebar_menu_item_url }}">{{ item.sidebar_menu_item_title }}
+		<a class="nav-link has-dropdown" data-toggle="dropdown" href="{{ item.sidebar_menu_item_url }}">{{ item.sidebar_menu_item_title }}
 			{% if item.sidebar_menu_item_badge_value  %}
 				<span class="badge">{{ item.sidebar_menu_item_badge_value }}</span>
 			{% endif %}
