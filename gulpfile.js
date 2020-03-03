@@ -41,7 +41,9 @@ var pathsNew = {
   site: {
     scripts: {
       input: "./src/js/*",
-      output: "./build/assets/js/"
+      inputBundle: "./src/js/vendor/*",
+      output: "./build/assets/js/",
+      outputBundle: "./build/assets/js/vendor/"
     },
     sass: {
       input: "./src/scss/site/main.scss",
@@ -73,7 +75,8 @@ var paths = {
 
   scripts: {
     input: "./src/js/*",
-    output: "./build/assets/js/"
+    output: "./build/assets/js/",
+    outputBundle: "./build/assets/js/"
     // polyfills: ".polyfill.js",
   },
   images: {
@@ -275,17 +278,41 @@ function gulpSassTask  () {
  * Compile .js files into build js directory With app.min.js
  */
 function gulpJsTask () {
-    return gulp
-      .src(paths.scripts.input)
+  var scriptjs = gulp
+      .src(pathsNew.site.scripts.input)
       .pipe(sourcemaps.init())
       // .pipe(concat("script.min.js"))
+      
+      // .pipe(concat(project.filesJs))
+      // .pipe(uglify())
+
+  
       .pipe(minify())
       .on("error", function(err) {
         console.log(err.toString());
         this.emit("end");
       })
       .pipe(sourcemaps.write("."))
-      .pipe(gulp.dest(paths.scripts.output));
+    .pipe(gulp.dest(pathsNew.site.scripts.output));
+
+      var bundlejs = gulp
+        .src(pathsNew.site.scripts.inputBundle)
+        .pipe(sourcemaps.init())
+        .pipe(concat("bunbles.js"))
+
+        // .pipe(concat(project.filesJs))
+        // .pipe(uglify())
+
+
+        .pipe(minify())
+        .on("error", function (err) {
+          console.log(err.toString());
+          this.emit("end");
+        })
+        .pipe(sourcemaps.write("."))
+        .pipe(gulp.dest(pathsNew.site.scripts.outputBundle));
+
+      return mergeStream(scriptjs, bundlejs);
 };
 
 /**
