@@ -1,0 +1,24 @@
+.block-collapse {
+  .card {
+    .card-header {
+      button {
+        display: block;
+        background: none;
+        // background-color: rgba(0, 0, 0, 0);
+        border: 0;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        font-family: inherit;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 700;
+        line-height: 1.8462;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+}
