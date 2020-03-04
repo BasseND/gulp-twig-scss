@@ -1,27 +1,32 @@
-<div class="accordion block-collapse" id="accordionCode">
-	<div class="card">
-		<div class="card-header" id="headingOne">
 
-			<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+{############################################################################################}
+{########################################### USAGE ##########################################}
+{############################################################################################}
+
+{#
+	{% include '../blocks/_block-collapse.twig' with {
+		'collapse_id' : random(99999999999) ,
+		'path_code' : '../../../site/component/block/block-multi-item.twig'      
+	} %}
+#}
+
+{############################################################################################}
+{########################################### CODE ###########################################}
+{############################################################################################}
+
+<div class="accordion block-collapse" id="accordion_{{collapse_id}}">
+	<div class="card">
+		<div class="card-header" id="heading_{{collapse_id}}">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_{{collapse_id}}" aria-expanded="true" aria-controls="collapse_{{collapse_id}}">
 				Code HTML
 			</button>
-
 		</div>
-
-		<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionCode">
+		<div id="collapse_{{collapse_id}}" class="collapse show" aria-labelledby="heading_{{collapse_id}}" data-parent="#accordion_{{collapse_id}}">
 			<div class="card-body">
-
-				<pre><code class="language-css">p { color: red }</code></pre>
-
-				<pre><code class="language-html">
-					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						Collapsible Group Item #1
-					</button>
-                 </code></pre>
-
-
+				<script type="text/plain" class="language-html">
+					 {% include path_code %} 
+				</script>
 			</div>
 		</div>
 	</div>
-
 </div>

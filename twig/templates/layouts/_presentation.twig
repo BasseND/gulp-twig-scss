@@ -17,8 +17,36 @@
       {% include "../includes/sidebar/_metis-menu.twig" %}
       
         <!-- END SIDEBAR -->
-       {% include "../ds-components/card.twig" %}
-       {% include "../blocks/_block-preview.twig" %}
+       {#{% include "../ds-components/card.twig" %} 
+       {% include "../blocks/_block-preview.twig" %} 
+        {% include "../blocks/_button-download.twig" %}  #}
+
+
+        {% include '../blocks/_block-preview.twig' with {
+              'collapse_id' : random(99999999999) ,
+              'path_code' : '../blocks/_button-download.twig'      
+        } %}
+
+         {% include '../blocks/_block-preview.twig' with {
+              'collapse_id' : random(99999999999) ,
+              'path_code' : '../blocks/_button-download.twig'      
+        } %}
+
+         {% include '../blocks/_block-preview.twig' with {
+              'collapse_id' : random(99999999999) ,
+              'path_code' : '../blocks/_button-download.twig'      
+        } %}
+
+         {% include '../blocks/_block-preview.twig' with {
+              'collapse_id' : random(99999999999) ,
+              'path_code' : '../blocks/_button-download.twig'      
+        } %}
+
+         {% include '../blocks/_block-preview.twig' with {
+              'collapse_id' : random(99999999999) ,
+              'path_code' : '../blocks/_button-download.twig'      
+        } %}
+
 
 
         {% block content %}

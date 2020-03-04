@@ -1,6 +1,8 @@
 .block-collapse {
   .card {
     .card-header {
+          min-height: 50px;
+          padding: 10px 25px;
       button {
         display: block;
         background: none;
@@ -19,6 +21,13 @@
         width: 100%;
         text-align: left;
       }
+    }
+    .card-body {
+        padding: 8px;
+        pre {
+          margin: 0;
+          border: 1px solid #e2e2e2;
+        }
     }
   }
 }
