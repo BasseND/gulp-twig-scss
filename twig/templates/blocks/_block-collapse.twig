@@ -1,14 +1,32 @@
-<div class="sg-code">
-	<button class="sg-btn" type="button" data-toggle="collapse" data-target="#collapse_{{collapse_id}}" aria-expanded="false" aria-controls="collapse_{{collapse_id}}">
-		<span>Code HTML</span>
-	</button>
+{############################################################################################}
+{########################################### USAGE ##########################################}
+{############################################################################################}
 
-	<div class="collapse" id="collapse_{{collapse_id}}">
-		{# script tag needed for prism JS (write markup without having to escape anything)
-		    see: https://prismjs.com/plugins/unescaped-markup/
-		#}
-		<script type="text/plain" class="language-twig">
-			{% include path_code %}
-		</script>
+{#
+	{% include '../blocks/_block-collapse.twig' with {
+		'collapse_id' : random(99999999999) ,
+		'path_code' : '../../../site/component/block/block-multi-item.twig'      
+	} %}
+#}
+
+{############################################################################################}
+{########################################### CODE ###########################################}
+{############################################################################################}
+
+	<div class="accordion block-collapse" id="accordion_{{collapse_id}}"> <div class="card">
+		<div class="card-header" id="heading_{{collapse_id}}">
+			<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_{{collapse_id}}" aria-expanded="true" aria-controls="collapse_{{collapse_id}}">
+				Code HTML
+			</button>
+		</div>
+		<div id="collapse_{{collapse_id}}" class="collapse show" aria-labelledby="heading_{{collapse_id}}" data-parent="#accordion_{{collapse_id}}">
+			<div class="card-body">
+				<script type="text/plain" class="language-html">
+					{% include path_code %}
+				</script>
+			</div>
+		</div>
 	</div>
 </div>
+
+
