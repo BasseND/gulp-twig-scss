@@ -8,5 +8,22 @@ header {
   z-index: 890;
   background-color: $white;
   .main-navbar {
+    position: relative;
+    .nav {
+      .nav-link {
+        font-size: 1em;
+        color: $blue-darken;
+        font-weight: 500;
+        &:hover,
+        &:focus {
+          color: $blue-1;
+        }
+
+      }
+      img.logo-klee {
+          width: 160px;
+          margin-top: 0.2em;
+      }
+    }
   }
 }

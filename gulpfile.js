@@ -7,6 +7,7 @@ var gulp = require("gulp"),
   twig = require("gulp-twig"), // Decided to use twig, because already familiar with it
   prefix = require("gulp-autoprefixer"),
   sass = require("gulp-sass"),
+  del = require("del"),
   plumber = require("gulp-plumber"),
   concat = require("gulp-concat"),
   rename = require("gulp-rename"),
@@ -22,7 +23,7 @@ var gulp = require("gulp"),
  */
 var pathsNew = {
   build: "./build/",
-
+  zip: "./ds-sources/",
   kitUI: {
     sass: {
       input: "./src/scss/ds/style.scss",
@@ -143,6 +144,7 @@ gulp.task(
   "browser-sync",
   gulp.series(
     [
+      gulpDeleteFolderTask,
       gulpSassTask,
       gulpSassSourcesTask,
       gulpTwigTask,
@@ -162,6 +164,14 @@ gulp.task(
     }
   )
 );
+
+/**
+ * Delete the build folder 
+ */
+
+ function gulpDeleteFolderTask() {
+   return del(pathsNew.build);
+ }
 
 /**
  * Compile .scss files into build css directory With autoprefixer no
@@ -281,12 +291,6 @@ function gulpJsTask () {
   var scriptjs = gulp
       .src(pathsNew.site.scripts.input)
       .pipe(sourcemaps.init())
-      // .pipe(concat("script.min.js"))
-      
-      // .pipe(concat(project.filesJs))
-      // .pipe(uglify())
-
-  
       .pipe(minify())
       .on("error", function(err) {
         console.log(err.toString());
@@ -299,11 +303,6 @@ function gulpJsTask () {
         .src(pathsNew.site.scripts.inputBundle)
         .pipe(sourcemaps.init())
         .pipe(concat("bunbles.js"))
-
-        // .pipe(concat(project.filesJs))
-        // .pipe(uglify())
-
-
         .pipe(minify())
         .on("error", function (err) {
           console.log(err.toString());
@@ -348,11 +347,9 @@ function gulpZipResourcesTask () {
   return gulp
     .src(pathsNew.zip + "./**")
     .pipe(zip("assets-resource.zip"))
-    .pipe(gulp.dest("./build/"));
+    .pipe(gulp.dest(pathsNew.build));
 };
-
-
-     
+    
 /**
  * Rename files extension
  * 
@@ -387,6 +384,7 @@ function gulpWatchTask () {
 gulp.task(
   "build",
   gulp.series([
+    gulpDeleteFolderTask,
     gulpSassTask,
     gulpSassSourcesTask,
     gulpTwigTask,

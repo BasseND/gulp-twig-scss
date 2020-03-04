@@ -9539,8 +9539,8 @@ a.text-dark:hover, a.text-dark:focus {
 */
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello/fontello.eot?465810155");
-  src: url("../fonts/fontello/fontello.woff2?465810155") format("woff2"), url("../fonts/fontello/fontello.woff?465810155") format("woff"), url("../fonts/fontello/fontello.ttf?465810155") format("truetype"), url("../fonts/fontello/fontello.svg?465810155#fontello") format("svg");
+  src: url("../fonts/fontello/fontello.eot?3043393020");
+  src: url("../fonts/fontello/fontello.woff2?3043393020") format("woff2"), url("../fonts/fontello/fontello.woff?3043393020") format("woff"), url("../fonts/fontello/fontello.ttf?3043393020") format("truetype"), url("../fonts/fontello/fontello.svg?3043393020#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -9571,11 +9571,31 @@ body {
 
 header {
   height: 70px;
+  position: fixed;
   left: 250px;
   right: 0;
-  position: absolute;
+  top: 0;
   z-index: 890;
   background-color: #fff;
+}
+
+header .main-navbar {
+  position: relative;
+}
+
+header .main-navbar .nav .nav-link {
+  font-size: 1em;
+  color: #00234c;
+  font-weight: 500;
+}
+
+header .main-navbar .nav .nav-link:hover, header .main-navbar .nav .nav-link:focus {
+  color: #0042cf;
+}
+
+header .main-navbar .nav img.logo-klee {
+  width: 160px;
+  margin-top: 0.2em;
 }
 
 .main-sidebar {
@@ -9694,7 +9714,7 @@ header {
 .main-content {
   padding-left: 280px;
   padding-right: 30px;
-  padding-top: 80px;
+  padding-top: 98px;
   width: 100%;
   position: relative;
 }
@@ -9809,11 +9829,11 @@ header {
 }
 
 #sidebar-menu ul li a:hover {
-  color: #383c40;
+  color: #f5f5f5;
 }
 
 #sidebar-menu ul li a:hover i {
-  color: #383c40;
+  color: #f5f5f5;
 }
 
 #sidebar-menu ul li .badge {
@@ -9941,7 +9961,7 @@ header {
 }
 
 .vertical-collpsed .vertical-menu #sidebar-menu > ul > li > a:hover, .vertical-collpsed .vertical-menu #sidebar-menu > ul > li > a:active, .vertical-collpsed .vertical-menu #sidebar-menu > ul > li > a:focus {
-  color: #383c40;
+  color: #f5f5f5;
 }
 
 .vertical-collpsed .vertical-menu #sidebar-menu > ul > li > a svg {
@@ -10004,7 +10024,7 @@ header {
 }
 
 .vertical-collpsed .vertical-menu #sidebar-menu > ul > li:hover > ul a:hover {
-  color: #383c40;
+  color: #f5f5f5;
 }
 
 .vertical-collpsed .vertical-menu #sidebar-menu > ul ul {
