@@ -1,0 +1,20 @@
+.ds-block {
+  background-color: $white;
+}
+
+.block-preview {
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 0.2rem;
+  background-color: $white;
+  .block-info {
+    .block-main-title {
+    }
+    p {
+    }
+  }
+  .block_example {
+    margin-top: 1em;
+  }
+}

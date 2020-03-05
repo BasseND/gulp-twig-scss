@@ -5,9 +5,10 @@
 
 {#
 	{% include '../blocks/_block-preview.twig' with {
+		'block_id' : random(99999999999) ,
 		'block_title' : 'Buttons' ,
-		'block_description' : '../../../site/component/block/block-multi-item.twig',
-		'block_description' : '../../../site/component/block/block-multi-item.twig',      
+		'block_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',
+		'block_path_code_example' : '../blocks/_button-download.twig',      
 	} %}
 #}
 
@@ -15,19 +16,14 @@
 {########################################### CODE ###########################################}
 {############################################################################################}
 
-<div class="accordion block-collapse" id="accordion_{{collapse_id}}">
-	<div class="card">
-		<div class="card-header" id="heading_{{collapse_id}}">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_{{collapse_id}}" aria-expanded="true" aria-controls="collapse_{{collapse_id}}">
-				Code HTML
-			</button>
+<div class="block-preview" id="block_{{ block_id }}">
+		<div class="block-info">
+       <h2 class="block-main-title">{{ block_title }}</h2>
+			 <p>{{ block_description }}</p> 
 		</div>
-		<div id="collapse_{{collapse_id}}" class="collapse show" aria-labelledby="heading_{{collapse_id}}" data-parent="#accordion_{{collapse_id}}">
-			<div class="card-body">
-				<script type="text/plain" class="language-html">
-					 {% include path_code %} 
-				</script>
-			</div>
+		<div class="block_example">
+			{% include block_path_code_example %} 
 		</div>
-	</div>
+	
+
 </div>
