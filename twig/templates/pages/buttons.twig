@@ -1,0 +1,35 @@
+{% extends "../layouts/_presentation.twig" %}
+
+
+{% block content %}
+    <div class="ds-content">
+       {# Button #}
+        <div class="ds-block">
+	       {% include '../blocks/_block-preview.twig' with {
+              'block_id' : random(99999999999) ,
+              'block_title' : 'Buttons' ,
+              'block_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',
+              'block_path_code_example' : '../blocks/_button-download.twig',      
+            } %}
+          {% include '../blocks/_block-collapse.twig' with {
+              'collapse_id' : random(99999999999) ,
+              'path_code' : '../blocks/_button-download.twig'      
+          } %}
+        </div>
+
+         {# Button Icons #}
+        <div class="ds-block">
+	       {% include '../blocks/_block-preview.twig' with {
+              'block_id' : random(99999999999) ,
+              'block_title' : 'Buttons' ,
+              'block_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',
+              'block_path_code_example' : '../blocks/_button-download.twig',      
+            } %}
+          {% include '../blocks/_block-collapse.twig' with {
+              'collapse_id' : random(99999999999) ,
+              'path_code' : '../blocks/_button-download.twig'      
+          } %}
+        </div>
+
+    </div>
+{% endblock %}

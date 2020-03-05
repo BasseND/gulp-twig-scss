@@ -40,6 +40,10 @@ var pathsNew = {
   },
 
   site: {
+    twig: {
+      input: "./twig/templates/pages/*.twig",
+      output: "./build/"
+    },
     scripts: {
       input: "./src/js/*",
       inputBundle: "./src/js/vendor/*",
@@ -100,7 +104,7 @@ var paths = {
  */
 function gulpTwigTask () {
 //   return gulp.src(['./twig/templates/*.twig','./twig/data/head.twig'])
-  return gulp.src(['./twig/templates/*.twig'])
+  return gulp.src(pathsNew.site.twig.input)
     // Stay live and reload on error
 	.pipe(plumber({
 		handleError: function (err) {
@@ -109,15 +113,15 @@ function gulpTwigTask () {
 		}
 	}))
   	// Load template pages json data
-    .pipe(data(function (file) {
-		return JSON.parse(fs.readFileSync(paths.data + path.basename(file.path) + '.json'));		
-	}))
+    // .pipe(data(function (file) {
+		//return JSON.parse(fs.readFileSync(paths.data + path.basename(file.path) + '.json'));		
+	//}))
     .pipe(twig())
     .on('error', function (err) {
       process.stderr.write(err.message + '\n');
       this.emit('end');
     })
-	.pipe(gulp.dest(paths.build));
+	.pipe(gulp.dest(pathsNew.site.twig.output));
 };
 
 /**
