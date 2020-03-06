@@ -9527,10 +9527,20 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/**************************************************/
+/******* Element with grey border and radius ******/
+/**************************************************/
+/*
+&:before {
+  @include fontello;
+  content: '\E801';
+  font-size: 15px;
+}
+*/
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello/fontello.eot?1726465719");
-  src: url("../fonts/fontello/fontello.woff2?1726465719") format("woff2"), url("../fonts/fontello/fontello.woff?1726465719") format("woff"), url("../fonts/fontello/fontello.ttf?1726465719") format("truetype"), url("../fonts/fontello/fontello.svg?1726465719#fontello") format("svg");
+  src: url("../fonts/fontello/fontello.eot?3874325555");
+  src: url("../fonts/fontello/fontello.woff2?3874325555") format("woff2"), url("../fonts/fontello/fontello.woff?3874325555") format("woff"), url("../fonts/fontello/fontello.ttf?3874325555") format("truetype"), url("../fonts/fontello/fontello.svg?3874325555#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -9621,6 +9631,236 @@ ul {
 .card .card-footer {
   background-color: transparent;
   border: none;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 600;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.15;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  white-space: normal;
+  /*
+  &.btn-blue-blue,
+  &.btn-teal-teal,
+  &.btn-red-red,
+  &.btn-green-green {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      pointer-events: none;
+      left: 0;
+      top: 0;
+      border-radius: 4px;
+      transition: width ease-out .5s .3s, background-color ease .3s;
+    }
+
+
+  }
+
+  &.btn-green-green {
+    &:before {
+      background-color: $green-1;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover:before,
+      &:active:before {
+        background-color: darken($green-1, 5%);
+      }
+    }
+  }
+
+  &.btn-red-red {
+    &:before {
+      background-color: $red-1;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover:before,
+      &:active:before {
+        background-color: darken($red-1, 5%);
+      }
+    }
+  }
+  &.btn-blue-blue {
+    &:before {
+      background-color: $blue-1;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover:before,
+      &:active:before {
+        background-color: #0e285c;
+      }
+    }
+  }
+  &.btn-transparent-blue {
+    &:before {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border: solid 1px $blue-1;
+      width: 100%;
+      // width: 0;
+      // transition: width ease-in-out .5s;
+      border-radius: 4px;
+    }
+    .text {
+      background-color: transparent;
+      overflow: hidden;
+      color :$blue-1;
+      // opacity: 0;
+      // transition: opacity ease-in-out .3s .5s;
+      &:before {
+        display: none;
+      }
+    }
+    &.visible .text {
+      opacity: 1;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover,
+      &:active {
+        .text {
+          background-color: $blue-1;
+          color: $white;
+        }
+      }
+    }
+    &.visible:before {
+      width: 100%;
+    }
+  }
+  &.btn-transparent-white {
+    .text {
+      color: $white-1;
+      background-color: transparent;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover,
+      &:active {
+        .text {
+          background-color: $blue-1;
+          color: $white-1;
+          &:before {
+            border-color: $blue-1;
+          }
+        }
+      }
+    }
+  }
+*/
+}
+
+@media (max-width: 767px) {
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+.btn.solid-button-one {
+  background: #0053b3;
+  color: #fff;
+  padding: 0.9em 2em;
+  border-radius: 50px;
+}
+
+.btn.solid-button-one:hover, .btn.solid-button-one:focus {
+  background: #fff;
+  color: #0053b3;
+  border: 2px solid #0053b3;
+}
+
+.btn.solid-button-two {
+  background: #fff;
+  color: #0053b3;
+  padding: 0.9em 2em;
+  border-radius: 50px;
+}
+
+.btn.solid-button-two:hover, .btn.solid-button-two:focus {
+  background: #fff;
+  color: #0053b3;
+  border: 2px solid #0053b3;
+}
+
+.btn.solid-button-tree {
+  background: #fff;
+  color: #0053b3;
+  padding: 0.9em 2em;
+  border-radius: 50px;
+}
+
+.btn.solid-button-tree:hover, .btn.solid-button-tree:focus {
+  border: solid 3px #fff;
+  background-color: #00234c;
+  color: #fff;
+}
+
+.btn.line-button-one {
+  background: #0053b3;
+  color: #fff;
+  padding: 0.9em 2em;
+  border-radius: 0;
+}
+
+.btn.line-button-one:hover {
+  background: #fff;
+  color: #0053b3;
+  border: 2px solid #0053b3;
+}
+
+.btn.btn-small {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.19px;
+}
+
+.btn.btn-small .text {
+  padding: 12px 20.1px;
+}
+
+.btn.btn-xtra-small {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.19px;
+}
+
+.btn.btn-xtra-small .text {
+  padding: 10px 18px;
+}
+
+.btn.btn-medium {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.19px;
+}
+
+.btn.btn-medium .text {
+  padding: 17px 20.4px;
+}
+
+.btn[disabled], .btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
 }
 
 /*# sourceMappingURL=style.css.map */

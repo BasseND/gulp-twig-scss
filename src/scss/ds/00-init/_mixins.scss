@@ -1,0 +1,219 @@
+/**************************************************/
+/******* Element with grey border and radius ******/
+/**************************************************/
+@mixin greyborder-radius {
+    border: 1px solid $grey-border;
+    border-radius: 1px;
+    padding: 3px 8px;
+    background: white;
+}
+
+@mixin reset-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+//============================================================
+// Fontello
+//============================================================
+
+@mixin fontello {
+    font-family: fontello;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    user-select: none;
+}
+
+/*
+&:before {
+  @include fontello;
+  content: '\E801';
+  font-size: 15px;
+}
+*/
+
+// CLEARFIX
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Node Bg
+@mixin node-bg {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 700px;
+        background: linear-gradient(0deg, $white 0%, $grey-light-5 100%);
+        z-index: 0;
+    }
+}
+
+@mixin visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+}
+
+@mixin input_submit_btn($textColor, $bgColor) {
+    border: 0;
+    font-size: 1em;
+    color: $textColor;
+    background-color: $bgColor;
+    padding: 1em 2em 1em 3.6em;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    //margin-left: 4.9em;
+}
+
+@mixin input_submit_btn_hover($textColor, $bgColor) {
+    color: $textColor;
+    background-color: $bgColor;
+}
+
+@mixin sourceBeforeStyle {
+    margin-top: 4px;
+    padding-left: 70px;
+    position: relative;
+
+    &:before {
+        content: "";
+        background-color: lighten($grey-legend, 60%);
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }
+}
+
+@mixin label-highlighted {
+    background-color: $red-2;
+    padding: 0.6em 1em;
+    font-size: 1.2em;
+    color: $white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@mixin focus {
+    outline-color: $lavender;
+    outline-offset: -1px;
+    outline-style: auto;
+    outline-width: 2px;
+    border-radius: 50px;
+}
+
+@mixin focusInput {
+    outline-color: $lavender;
+    border-color: $lavender;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+@mixin focusOutline {
+    outline: dotted 1px #ccc;
+    outline-offset: 0.45rem;
+}
+
+@mixin hideInput {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+@mixin blue_gradient {
+    background-image: -webkit-linear-gradient(45deg,
+            $blue-gradien-dark,
+            $blue-gradien-light);
+    background-image: -moz-linear-gradient(45deg,
+            $blue-gradien-dark,
+            $blue-gradien-light);
+    background-image: -o-linear-gradient(45deg,
+            $blue-gradien-dark,
+            $blue-gradien-light);
+    background-image: linear-gradient(45deg,
+            $blue-gradien-dark,
+            $blue-gradien-light);
+}
+
+@mixin h3-before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    background-color: $blue-darken;
+    left: -12px;
+    bottom: -18px;
+}
+
+@mixin form-required-hidden-after {
+    &.form-required {
+        &::after {
+            content: "";
+            background: none;
+        }
+    }
+}
+
+@mixin before-override {
+    &::before {
+        content: "" !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+}
+
+// Pulse Animation
+@mixin pulse-anim {
+
+    &:hover,
+    &:focus {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 2em rgba($white, 0);
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 var(--hover);
+        }
+    }
+}
+
+//============================================================
+// media query mixin
+//============================================================
+
+@mixin mq($minWhidthSize, $maxWhidthSize) {
+    @media (min-width: $minWhidthSize) and (max-width: $maxWhidthSize) {
+        @content;
+    }
+}
+
+// media query Max Width mixin
+@mixin mq-max($maxWhidthSize) {
+    @media (max-width: $maxWhidthSize) {
+        @content;
+    }
+}
+
+// media query Min Width mixin
+@mixin mq-min($minWhidthSize) {
+    @media (min-width: $minWhidthSize) {
+        @content;
+    }
+}

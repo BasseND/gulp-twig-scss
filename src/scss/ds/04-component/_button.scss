@@ -1,0 +1,230 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    overflow: hidden;
+    //transition: opacity 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    line-height: 1.15;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    white-space: normal;
+
+    @include mq-max($tablet-medium - 1) {
+        margin-bottom: 10px;
+    }
+
+    &.solid-button-one {
+        background: $teal-3;
+        color: $white;
+        padding: 0.9em 2em;
+        border-radius: 50px;
+
+        &:hover,
+        &:focus {
+            background: $white;
+            color: $teal-3;
+            border: 2px solid $teal-3;
+        }
+    }
+
+    &.solid-button-two {
+        background: $white;
+        color: $teal-3;
+        padding: 0.9em 2em;
+        border-radius: 50px;
+
+        &:hover,
+        &:focus {
+            background: $white;
+            color: $teal-3;
+            border: 2px solid $teal-3;
+        }
+    }
+
+    &.solid-button-tree {
+        background: $white;
+        color: $teal-3;
+        padding: 0.9em 2em;
+        border-radius: 50px;
+
+        &:hover,
+        &:focus {
+            border: solid 3px $white;
+            background-color: $blue-darken;
+            color: $white;
+        }
+    }
+
+    &.line-button-one {
+        background: $teal-3;
+        color: $white;
+        padding: 0.9em 2em;
+        border-radius: 0;
+
+        &:hover {
+            background: $white;
+            color: $teal-3;
+            border: 2px solid $teal-3;
+        }
+    }
+
+    &.line-button-two {}
+
+    /*
+  &.btn-blue-blue,
+  &.btn-teal-teal,
+  &.btn-red-red,
+  &.btn-green-green {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      pointer-events: none;
+      left: 0;
+      top: 0;
+      border-radius: 4px;
+      transition: width ease-out .5s .3s, background-color ease .3s;
+    }
+
+
+  }
+
+  &.btn-green-green {
+    &:before {
+      background-color: $green-1;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover:before,
+      &:active:before {
+        background-color: darken($green-1, 5%);
+      }
+    }
+  }
+
+  &.btn-red-red {
+    &:before {
+      background-color: $red-1;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover:before,
+      &:active:before {
+        background-color: darken($red-1, 5%);
+      }
+    }
+  }
+  &.btn-blue-blue {
+    &:before {
+      background-color: $blue-1;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover:before,
+      &:active:before {
+        background-color: #0e285c;
+      }
+    }
+  }
+  &.btn-transparent-blue {
+    &:before {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border: solid 1px $blue-1;
+      width: 100%;
+      // width: 0;
+      // transition: width ease-in-out .5s;
+      border-radius: 4px;
+    }
+    .text {
+      background-color: transparent;
+      overflow: hidden;
+      color :$blue-1;
+      // opacity: 0;
+      // transition: opacity ease-in-out .3s .5s;
+      &:before {
+        display: none;
+      }
+    }
+    &.visible .text {
+      opacity: 1;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover,
+      &:active {
+        .text {
+          background-color: $blue-1;
+          color: $white;
+        }
+      }
+    }
+    &.visible:before {
+      width: 100%;
+    }
+  }
+  &.btn-transparent-white {
+    .text {
+      color: $white-1;
+      background-color: transparent;
+    }
+    &:not([disabled]):not(.disabled) {
+      &:hover,
+      &:active {
+        .text {
+          background-color: $blue-1;
+          color: $white-1;
+          &:before {
+            border-color: $blue-1;
+          }
+        }
+      }
+    }
+  }
+*/
+    // Button size
+    &.btn-small {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.19px;
+
+        .text {
+            padding: 12px 20.1px;
+        }
+    }
+
+    &.btn-xtra-small {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.19px;
+
+        .text {
+            padding: 10px 18px;
+        }
+    }
+
+    &.btn-medium {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.19px;
+
+        .text {
+            padding: 17px 20.4px;
+        }
+    }
+
+    &[disabled],
+    &.disabled {
+        cursor: not-allowed;
+        opacity: 0.4;
+    }
+}

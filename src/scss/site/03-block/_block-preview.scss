@@ -1,22 +1,21 @@
-.ds-block {
-  // background-color: $white;
-}
-
 .block-preview {
- 
-  .block-info {
 
-    .block-main-title {
-    }
-    p {
-    }
+  .block-info {
+        margin-bottom: 2em;
+
+    .block-main-title {}
+
+    p {}
   }
+
   .block_example {
-     padding: 1.5rem;
-     margin-right: 0;
-     margin-left: 0;
-     border-width: 0.2rem;
-     background-color: $white;
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 0.2rem;
+    background-color: $white;
     margin-top: 1em;
+    border: 1px solid #e4e4e4;
+    border-bottom: 0;
   }
 }

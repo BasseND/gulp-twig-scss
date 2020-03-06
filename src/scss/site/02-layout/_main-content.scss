@@ -4,4 +4,12 @@
     padding-top: 98px;
     width: 100%;
     position: relative;
+
+    .ds-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        .ds-block {
+            // background-color: $white;
+        }
+    }
 }
