@@ -8,8 +8,20 @@
     .ds-content {
         max-width: 1000px;
         margin: 0 auto;
+        margin-bottom: 2em;
         .ds-block {
             // background-color: $white;
+            .ds-info {} 
+            .ds-block_example {
+                padding: 1.5rem;
+                margin-right: 0;
+                margin-left: 0;
+                border-width: 0.2rem;
+                background-color: #fff;
+                margin-top: 1em;
+                border: 1px solid #e4e4e4;
+                border-bottom: 0;
+            }
         }
     }
 }

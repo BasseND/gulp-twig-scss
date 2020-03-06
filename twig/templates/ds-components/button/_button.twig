@@ -1,0 +1,60 @@
+{# ##########################################################################################
+########################################## USAGE #########################################
+########################################################################################## #}
+
+{#
+    {% include '../ds-components/button/_button.twig' with {
+        button: {
+            'text': 'Lorem ipsum',
+            'color': 'blue-blue', ['blue-blue', 'transparent-blue',  'transparent-white', 'teal-teal', 'green-green']
+            'size': 'medium', ['small', 'medium']
+            'type': 'anchor', ['btn', 'submit_btn', 'anchor', 'new_tab_anchor']
+            'icon_position': 'icon-left', ['icon-left', 'icon-right' ]
+            'icon_name': 'icon-recommencer', ['icon-left', 'icon-right' ]
+            'url': 'https://google.com/',
+            'additionnal_attributes': {},
+            'additionnal_classes': ''
+        }
+    } %}
+#}
+
+{# ##########################################################################################
+########################################## CODE ##########################################
+########################################################################################## #}
+
+
+
+    {% set class = 'btn btn-' ~ button.color ~ ' btn-' ~ button.size ~ ' btn-' ~ button.icon_position ~ ' btn-' ~ button.icon_name %}
+    {% if button.additionnal_classes %}
+        {% set class = class ~ ' ' ~ button.additionnal_classes|trim %}
+    {% endif %}
+
+    {% if button.type == 'anchor' or button.type == 'new_tab_anchor' %}
+        <a href="{{ button.url }}"{% if button.type == 'new_tab_anchor' %} target="_blank" rel="noopener"{% endif %}
+        class="{{ class }}"
+        {% for key, additionnal_attr in button.additionnal_attributes %}
+            {{ key }}="{{ additionnal_attr }}"
+        {% endfor %}
+        >
+    {% else %}
+        <button
+        {% if button.type == 'submit_btn' %}
+            type="submit"
+        {% else %}
+            type="button"
+        {% endif %}
+        class="{{ class }}"
+        {% for key, additionnal_attr in button.additionnal_attributes %}
+            {{ key }}="{{ additionnal_attr }}"
+        {% endfor %}
+        >
+    {% endif %}
+    {# <span class="text">{{ button.text|trim }}</span> #}
+
+    {{ button.text|trim }}
+
+    {% if button.type == 'anchor' or button.type == 'new_tab_anchor' %}
+        </a>
+    {% else %}
+        </button>
+    {% endif %}

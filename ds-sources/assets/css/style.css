@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -9530,6 +9531,786 @@ a.text-dark:hover, a.text-dark:focus {
 /**************************************************/
 /******* Element with grey border and radius ******/
 /**************************************************/
+.btn-icon-left.btn-icon-ok-circled::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-ok-circled::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-ok::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-ok::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-down-circle::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-down-circle::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-left-circle::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-left-circle::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-right-circle::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-right-circle::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-up-circle::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-up-circle::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-down-open::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-down-open::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-up-open::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-up-open::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-right-open::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-right-open::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-left-open::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-left-open::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-info::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-info::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-facebook::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-facebook::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-twitter::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-twitter::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-instagram::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-instagram::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-user::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-user::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-lock-open-alt::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-lock-open-alt::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-login::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-login::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-download::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-download::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-chain::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-chain::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-external-link::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-external-link::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-valide::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-valide::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-recommencer::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-recommencer::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-003-envelope::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-003-envelope::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-icon::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-icon::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-linkedin::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-linkedin::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-mail-alt::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-mail-alt::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-rss::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-rss::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-citoyennente::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-citoyennente::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-accessibilite::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-accessibilite::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-logement::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-logement::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 /*
 &:before {
   @include fontello;
@@ -9539,8 +10320,8 @@ a.text-dark:hover, a.text-dark:focus {
 */
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello/fontello.eot?3874325555");
-  src: url("../fonts/fontello/fontello.woff2?3874325555") format("woff2"), url("../fonts/fontello/fontello.woff?3874325555") format("woff"), url("../fonts/fontello/fontello.ttf?3874325555") format("truetype"), url("../fonts/fontello/fontello.svg?3874325555#fontello") format("svg");
+  src: url("../fonts/fontello/fontello.eot?1474734653");
+  src: url("../fonts/fontello/fontello.woff2?1474734653") format("woff2"), url("../fonts/fontello/fontello.woff?1474734653") format("woff"), url("../fonts/fontello/fontello.ttf?1474734653") format("truetype"), url("../fonts/fontello/fontello.svg?1474734653#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -9649,130 +10430,31 @@ ul {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   line-height: 1.15;
-  margin-right: 10px;
+  margin-right: 0.625rem;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
   border: 2px solid transparent;
   white-space: normal;
-  /*
-  &.btn-blue-blue,
-  &.btn-teal-teal,
-  &.btn-red-red,
-  &.btn-green-green {
-    position: relative;
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: 0;
-      pointer-events: none;
-      left: 0;
-      top: 0;
-      border-radius: 4px;
-      transition: width ease-out .5s .3s, background-color ease .3s;
-    }
-
-
+  border-radius: 60px;
+  padding: 0.9em 2em;
+  /* &.btn-outline {
+     color: $grey-text;
+     border: 2px solid transparent;
+     background: transparent ;
   }
 
-  &.btn-green-green {
-    &:before {
-      background-color: $green-1;
-    }
-    &:not([disabled]):not(.disabled) {
-      &:hover:before,
-      &:active:before {
-        background-color: darken($green-1, 5%);
-      }
-    }
+  // Button Solid
+  &.btn-solid {
+    color: $white;
+    border: 2px solid transparent;
   }
 
-  &.btn-red-red {
-    &:before {
-      background-color: $red-1;
-    }
-    &:not([disabled]):not(.disabled) {
-      &:hover:before,
-      &:active:before {
-        background-color: darken($red-1, 5%);
-      }
-    }
-  }
-  &.btn-blue-blue {
-    &:before {
-      background-color: $blue-1;
-    }
-    &:not([disabled]):not(.disabled) {
-      &:hover:before,
-      &:active:before {
-        background-color: #0e285c;
-      }
-    }
-  }
-  &.btn-transparent-blue {
-    &:before {
-      content: '';
-      position: absolute;
-      pointer-events: none;
-      height: 100%;
-      left: 0;
-      top: 0;
-      border: solid 1px $blue-1;
-      width: 100%;
-      // width: 0;
-      // transition: width ease-in-out .5s;
-      border-radius: 4px;
-    }
-    .text {
-      background-color: transparent;
-      overflow: hidden;
-      color :$blue-1;
-      // opacity: 0;
-      // transition: opacity ease-in-out .3s .5s;
-      &:before {
-        display: none;
-      }
-    }
-    &.visible .text {
-      opacity: 1;
-    }
-    &:not([disabled]):not(.disabled) {
-      &:hover,
-      &:active {
-        .text {
-          background-color: $blue-1;
-          color: $white;
-        }
-      }
-    }
-    &.visible:before {
-      width: 100%;
-    }
-  }
-  &.btn-transparent-white {
-    .text {
-      color: $white-1;
-      background-color: transparent;
-    }
-    &:not([disabled]):not(.disabled) {
-      &:hover,
-      &:active {
-        .text {
-          background-color: $blue-1;
-          color: $white-1;
-          &:before {
-            border-color: $blue-1;
-          }
-        }
-      }
-    }
-  }
-*/
+  */
 }
 
 @media (max-width: 767px) {
   .btn {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -9828,34 +10510,124 @@ ul {
   border: 2px solid #0053b3;
 }
 
-.btn.btn-small {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.19px;
+.btn.btn-teal-teal, .btn.btn-blue-blue, .btn.btn-teal-teal, .btn.btn-red-red, .btn.btn-green-green {
+  position: relative;
 }
 
-.btn.btn-small .text {
-  padding: 12px 20.1px;
+.btn.btn-teal-teal {
+  background: #0053b3;
+  color: #fff;
+  border-color: #0053b3;
+}
+
+.btn.btn-teal-teal:not([disabled]):not(.disabled):focus, .btn.btn-teal-teal:not([disabled]):not(.disabled):hover, .btn.btn-teal-teal:not([disabled]):not(.disabled):active {
+  background: #fff;
+  color: #0053b3;
+  border-color: #fff;
+}
+
+.btn.btn-green-green {
+  background: #40bb92;
+  color: #fff;
+}
+
+.btn.btn-green-green:not([disabled]):not(.disabled):focus, .btn.btn-green-green:not([disabled]):not(.disabled):hover, .btn.btn-green-green:not([disabled]):not(.disabled):active {
+  color: #40bb92;
+  background-color: #fff;
+  border-color: #40bb92;
+}
+
+.btn.btn-red-red {
+  background: #de0d0d;
+  color: #fff;
+}
+
+.btn.btn-red-red:not([disabled]):not(.disabled):focus, .btn.btn-red-red:not([disabled]):not(.disabled):hover, .btn.btn-red-red:not([disabled]):not(.disabled):active {
+  color: #de0d0d;
+  background-color: #fff;
+  border-color: #de0d0d;
+}
+
+.btn.btn-teal-teal {
+  background: #0053b3;
+  color: #fff;
+}
+
+.btn.btn-teal-teal:not([disabled]):not(.disabled):focus, .btn.btn-teal-teal:not([disabled]):not(.disabled):hover, .btn.btn-teal-teal:not([disabled]):not(.disabled):active {
+  color: #0053b3;
+  background-color: #fff;
+  border-color: #0053b3;
+}
+
+.btn.btn-blue-blue {
+  background: #0042cf;
+  color: #fff;
+}
+
+.btn.btn-blue-blue:not([disabled]):not(.disabled):focus, .btn.btn-blue-blue:not([disabled]):not(.disabled):hover, .btn.btn-blue-blue:not([disabled]):not(.disabled):active {
+  color: #0042cf;
+  background-color: #fff;
+  border-color: #0042cf;
+}
+
+.btn.btn-transparent-blue {
+  background-color: transparent;
+  color: #0053b3;
+  border-color: #0053b3;
+}
+
+.btn.btn-transparent-blue:not([disabled]):not(.disabled):focus, .btn.btn-transparent-blue:not([disabled]):not(.disabled):hover, .btn.btn-transparent-blue:not([disabled]):not(.disabled):active {
+  background-color: #0042cf;
+  color: #fff;
+  border: 2px solid #0053b3;
+}
+
+.btn.btn-transparent-white {
+  color: #333333;
+  background-color: transparent;
+  border-color: #0053b3;
+}
+
+.btn.btn-transparent-white:not([disabled]):not(.disabled):focus, .btn.btn-transparent-white:not([disabled]):not(.disabled):hover, .btn.btn-transparent-white:not([disabled]):not(.disabled):active {
+  background-color: transparent;
+  color: #0053b3;
+  border-color: #0053b3;
+}
+
+.btn.btn-small {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.19px;
+  padding: 0.8em 2em;
 }
 
 .btn.btn-xtra-small {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.19px;
-}
-
-.btn.btn-xtra-small .text {
-  padding: 10px 18px;
+  padding: 0.8em 2em;
 }
 
 .btn.btn-medium {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.19px;
 }
 
-.btn.btn-medium .text {
-  padding: 17px 20.4px;
+.btn.btn-icon-right {
+  position: relative;
+}
+
+.btn.btn-icon-right::before {
+  margin-right: 0.4em;
+}
+
+.btn.btn-icon-left {
+  position: relative;
+}
+
+.btn.btn-icon-left::after {
+  margin-left: 0.4em;
 }
 
 .btn[disabled], .btn.disabled {

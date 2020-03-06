@@ -14,6 +14,69 @@
     margin: 0;
 }
 
+
+
+//============================================================
+// Fontello Button Icons Helper
+//============================================================
+$fontelloCodesBtn: (
+    icon-ok-circled : '\E800',
+    icon-ok : '\E801',
+    icon-down-circle : '\E802',
+    icon-left-circle : '\E803',
+    icon-right-circle : '\E804',
+    icon-up-circle : '\E805',
+    icon-down-open : '\E806',
+    icon-up-open : '\E807',
+    icon-right-open : '\E808',
+    icon-left-open : '\E809',
+    icon-info : '\E80A',
+    icon-facebook : '\F09A',
+    icon-twitter : '\F099',
+    icon-instagram : '\F16D',
+    icon-user : '\E80B',
+    icon-lock-open-alt : '\F13E',
+    icon-login : '\E80C',
+    icon-download : '\E80D',
+    icon-chain : '\E80E',
+    icon-external-link :'\E80F',
+    icon-valide : '\E810',
+    icon-recommencer : '\E811',
+    icon-003-envelope :'\E812',
+    icon-icon : '\E813',
+    icon-linkedin : '\F0E1',
+    icon-mail-alt : '\F0E0',
+    icon-rss : '\E814',
+    icon-citoyennente : '\E815',
+    icon-accessibilite : '\E816',
+    icon-logement : '\E817' 
+   
+);
+
+@each $name, $glyph in $fontelloCodesBtn {
+    .btn-icon-left.btn-#{$name}::after {
+            content: $glyph;
+            font-family: fontello;
+            letter-spacing: normal;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            user-select: none;
+        }
+    
+    .btn-icon-right.btn-#{$name}::before {
+            content: $glyph;
+            font-family: fontello;
+            letter-spacing: normal;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            user-select: none;
+        }
+ 
+}
+
+
 //============================================================
 // Fontello
 //============================================================
@@ -217,3 +280,7 @@
         @content;
     }
 }
+
+
+
+

@@ -18,12 +18,12 @@
 
 <div class="block-preview" id="block_{{ block_id }}">
 		<div class="block-info">
-       <h2 class="block-main-title">{{ block_title }}</h2>
-			 <p>{{ block_description }}</p> 
+            <h2 class="block-main-title">{{ block_title|trim  }}</h2>
+			 <p>{{ block_description|trim  }}</p> 
 		</div>
-		<div class="block_example">
+		{# <div class="block_example">
 			{% include block_path_code_example %} 
-		</div>
+		</div> #}
 	
 
 </div>
