@@ -1,13 +1,26 @@
-{############################################################################################}
-{########################################### USAGE ##########################################}
-{############################################################################################}
+<!-- ========== Left Sidebar Start ========== -->
+<div class="vertical-menu">
 
-{#
-    {% include '../includes/sidebar/_sidebar-menu-item.twig' with {
+	<div data-simplebar class="h-100">
+
+		<div class="sidebar-logo">
+			<h1>
+				Design System
+			</h1>
+		</div>
+
+		<!--- Sidemenu -->
+		<div
+			id="sidebar-menu">
+			<!-- Left Menu Start -->
+			<ul class="metismenu list-unstyled" id="side-menu">
+			
+
+{% include '../sidebar/_sidebar-menu-item.twig' with {
         
         'sidebar_menu_item_items': [
             {
-                'sidebar_menu_item_title': 'Components',
+                'sidebar_menu_item_title': 'Layout',
                 'sidebar_menu_item_child_items': [
                     {    
                     'child_item_title': 'Test',
@@ -30,8 +43,42 @@
                     'child_item_class': 'test',
                     },
                 ],
-                'sidebar_menu_item_class': 'components',
-                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_class': 'layout',
+                'sidebar_menu_item_badge_value': 'New',
+                'sidebar_menu_item_url': 'https://www.google.com' , 
+                'sidebar_menu_item_additionnal_attributes': {
+                    'data-test': 'lol'
+                },
+                'sidebar_menu_item_additionnal_classes': ''
+
+            },
+
+            {
+                'sidebar_menu_item_title': 'Blocks',
+                'sidebar_menu_item_child_items': [
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                    {    
+                    'child_item_title': 'Test',
+                    'child_item_url': 'https://www.google.com',
+                    'child_item_class': 'test',
+                    },
+                ],
+                'sidebar_menu_item_class': 'blocks',
+                'sidebar_menu_item_badge_value': '',
                 'sidebar_menu_item_url': 'https://www.google.com',  
                 'sidebar_menu_item_additionnal_attributes': {
                     'data-test': 'lol'
@@ -41,7 +88,7 @@
             },
 
             {
-                'sidebar_menu_item_title': 'Components',
+                'sidebar_menu_item_title': 'Formulaire',
                 'sidebar_menu_item_child_items': [
                     {    
                     'child_item_title': 'Test',
@@ -64,8 +111,8 @@
                     'child_item_class': 'test',
                     },
                 ],
-                'sidebar_menu_item_class': 'components',
-                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_class': 'formulaire',
+                'sidebar_menu_item_badge_value': '',
                 'sidebar_menu_item_url': 'https://www.google.com',  
                 'sidebar_menu_item_additionnal_attributes': {
                     'data-test': 'lol'
@@ -73,14 +120,13 @@
                 'sidebar_menu_item_additionnal_classes': ''
 
             },
-
             {
                 'sidebar_menu_item_title': 'Components',
                 'sidebar_menu_item_child_items': [
                     {    
-                    'child_item_title': 'Test',
-                    'child_item_url': 'https://www.google.com',
-                    'child_item_class': 'test',
+                    'child_item_title': 'Buttons',
+                    'child_item_url': 'buttons.html',
+                    'child_item_class': 'button',
                     },
                     {    
                     'child_item_title': 'Test',
@@ -99,7 +145,7 @@
                     },
                 ],
                 'sidebar_menu_item_class': 'components',
-                'sidebar_menu_item_badge_value': '2',
+                'sidebar_menu_item_badge_value': 'New',
                 'sidebar_menu_item_url': 'https://www.google.com',  
                 'sidebar_menu_item_additionnal_attributes': {
                     'data-test': 'lol'
@@ -107,85 +153,15 @@
                 'sidebar_menu_item_additionnal_classes': ''
 
             },
-
          ]
-
         
-    } %}
-#}
-
-{############################################################################################}
-{########################################### CODE ###########################################}
-{############################################################################################}
+         } %}
 
 
-{# {% set class = 'sub-menu dropdown sidebar-menu-item' %} #}
+			</ul>
 
-
-{% if sidebar_menu_item_items|length > 0 %}
-	{% for item in sidebar_menu_item_items %}
-
-        <li class="{{ item.sidebar_menu_item_class }}">
-          
-            {% if item.sidebar_menu_item_title %}
-                <a class="waves-effect has-arrow" href="javascript: void(0);">
-                    {% if item.sidebar_menu_item_badge_value  %}
-                        <span class="badge badge-pill badge-success float-right">{{ item.sidebar_menu_item_badge_value }}</span>
-                    {% endif %}
-                    {% if item.sidebar_menu_item_title  %}
-                        <span>{{ item.sidebar_menu_item_title }}</span>
-                    {% endif %}
-                </a>
-            {% endif %}
-
-            {% if item.sidebar_menu_item_child_items|length > 0 %}
-                <ul class="sub-menu" aria-expanded="false">
-                    {% for autres in item.sidebar_menu_item_child_items %}
-                        <li>
-                            <a  href="{{ autres.child_item_url }}">{{ autres.child_item_title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-
-        </li>
-
-   {% endfor %}
-{% endif %}
-
-
-
-
-
-
-
-
-
-
-
-{# {% if sidebar_menu_item_items|length > 0 %}
-    {% for item in sidebar_menu_item_items %}
-
-	    <li class="{{ class }} {{ item.sidebar_menu_item_class }}" >
-        {% if item.sidebar_menu_item_title %}
-		<a class="nav-link has-dropdown"  href="{{ item.sidebar_menu_item_url }}">{{ item.sidebar_menu_item_title }}
-			{% if item.sidebar_menu_item_badge_value  %}
-				<span class="badge">{{ item.sidebar_menu_item_badge_value }}</span>
-			{% endif %}
-		</a>
-       {% endif %}
-
-       {% if item.sidebar_menu_item_child_items|length > 0 %}
-          <ul class="dropdown-menu">
-          {% for autres in item.sidebar_menu_item_child_items %}
-            <li>
-                <a class="nav-link" href="{{ autres.child_item_url }}">{{ autres.child_item_title }}</a>
-            </li>
-           {% endfor %}
-          </ul>
-	   {% endif %} 
-      </li>
-    {% endfor %}
-
-{% endif %} #}
-
+		</div>
+		<!-- Sidebar -->
+	</div>
+</div>
+<!-- Left Sidebar End -->

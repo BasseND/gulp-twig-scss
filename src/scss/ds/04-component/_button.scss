@@ -21,27 +21,12 @@
     margin-bottom: 0.625rem;
   }
 
-  // Buttons Outline
-  /* &.btn-outline {
-     color: $grey-text;
-     border: 2px solid transparent;
-     background: transparent ;
-  }
-
-  // Button Solid
-  &.btn-solid {
-    color: $white;
-    border: 2px solid transparent;
-  }
-
-  */
-
+// A Supprimer
   &.solid-button-one {
     background: $teal-3;
     color: $white;
     padding: 0.9em 2em;
     border-radius: 50px;
-
     &:hover,
     &:focus {
       background: $white;
@@ -49,13 +34,11 @@
       border: 2px solid $teal-3;
     }
   }
-
   &.solid-button-two {
     background: $white;
     color: $teal-3;
     padding: 0.9em 2em;
     border-radius: 50px;
-
     &:hover,
     &:focus {
       background: $white;
@@ -63,13 +46,11 @@
       border: 2px solid $teal-3;
     }
   }
-
   &.solid-button-tree {
     background: $white;
     color: $teal-3;
     padding: 0.9em 2em;
     border-radius: 50px;
-
     &:hover,
     &:focus {
       border: solid 3px $white;
@@ -83,7 +64,6 @@
     color: $white;
     padding: 0.9em 2em;
     border-radius: 0;
-
     &:hover {
       background: $white;
       color: $teal-3;
@@ -91,26 +71,24 @@
     }
   }
 
-  &.line-button-two {}
-
+// End A Supprimer
 
   // Button color bg
-
-  &.btn-teal-teal,
-  &.btn-blue-blue,
-  &.btn-teal-teal,
-  &.btn-red-red,
-  &.btn-green-green {
+  &.btn-blue-outline,
+  &.btn-white-outline,
+  &.btn-teal-solid,
+  &.btn-blue-solid,
+  &.btn-red-solid,
+  &.btn-green-solid {
     position: relative;
   }
 
-  &.btn-teal-teal {
+  // Button Solid 
+  &.btn-teal-solid {
     background: $teal-3;
     color: $white;
     border-color: $teal-3;
-
     &:not([disabled]):not(.disabled) {
-
       &:focus,
       &:hover,
       &:active {
@@ -120,12 +98,10 @@
       }
     }
   }
-   &.btn-green-green {
+   &.btn-green-solid {
      background: $green-1;
      color: $white;
-
      &:not([disabled]):not(.disabled) {
-
        &:focus,
        &:hover,
        &:active {
@@ -137,13 +113,10 @@
      }
    }
 
-
-   &.btn-red-red {
+   &.btn-red-solid {
      background: $red;
      color: $white;
-
      &:not([disabled]):not(.disabled) {
-
        &:focus,
        &:hover,
        &:active {
@@ -155,29 +128,24 @@
      }
    }
 
-  &.btn-teal-teal {
+  &.btn-teal-solid {
     background: $teal-3;
     color: $white;
-
     &:not([disabled]):not(.disabled) {
-
       &:focus,
       &:hover,
       &:active {
         color: $teal-3;
         background-color: $white;
         border-color: $teal-3;
-
       }
     }
   }
 
-  &.btn-blue-blue {
+  &.btn-blue-solid {
     background: $blue-1;
     color: $white;
-
     &:not([disabled]):not(.disabled) {
-
       &:focus,
       &:hover,
       &:active {
@@ -189,13 +157,11 @@
     }
   }
 
-  &.btn-transparent-blue {
+  &.btn-blue-outline {
     background-color: transparent;
     color: $teal-3;
     border-color: $teal-3;
-
     &:not([disabled]):not(.disabled) {
-
       &:focus,
       &:hover,
       &:active {
@@ -204,17 +170,13 @@
         border: 2px solid $teal-3;
       }
     }
-
-
   }
 
-  &.btn-transparent-white {
+  &.btn-white-outline {
     color: $grey-text;
     background-color: transparent;
     border-color: $teal-3;
-
     &:not([disabled]):not(.disabled) {
-
       &:focus,
       &:hover,
       &:active {
@@ -249,7 +211,6 @@
   // Button icons
   &.btn-icon-right {
     position: relative;
-
     &::before {
       margin-right: 0.4em;
     }
@@ -257,14 +218,12 @@
 
   &.btn-icon-left {
     position: relative;
-
     &::after {
       margin-left: 0.4em;
     }
   }
 
   // Buttin Disabled
-
   &[disabled],
   &.disabled {
     cursor: not-allowed;

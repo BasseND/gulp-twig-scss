@@ -2,10 +2,10 @@
 
 
 {% block content %}
-    <div class="ds-content">
+   <div class="ds-content" data-aos="zoom-out-up">
+
        {# Button #}
         <div class="ds-block">
-
             <div class="ds-info">
                 {% include '../blocks/_block-preview.twig' with {
                     'block_id' : random(99999999999) ,
@@ -13,13 +13,32 @@
                     'block_description' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
                 } %}
             </div>
+             <div class="ds-message">
+             	{% include '../blocks/_block-message.twig' with {
+                    'message_title' : 'Attention' ,
+                    'message_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',  
+                    'message_type' : 'warning' 
+                } %}
 
+                {% include '../blocks/_block-message.twig' with {
+                    'message_title' : 'Attention' ,
+                    'message_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',  
+                    'message_type' : '' 
+                } %}
+
+                {% include '../blocks/_block-message.twig' with {
+                   
+                    'message_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',  
+                    'message_type' : 'info' 
+                } %}
+            </div>
+            
             <div class="ds-block_example">
                 {% include '../ds-components/button/_button.twig' with {
                     button: {
                     
                         'text': 'Mon Button',
-                        'color': 'blue-blue', 
+                        'color': 'blue-outline', 
                         'size': 'medium', 
                         'type': 'anchor',
                         'url': 'https://google.com/',
@@ -30,7 +49,7 @@
                 {% include '../ds-components/button/_button.twig' with {
                         button: {
                             'text': 'Lorem ipsum',
-                            'color': 'teal-teal', 
+                            'color': 'white-outline', 
                             'size': '', 
                             'type': 'anchor', 
                             'icon_position': 'icon-left', 
@@ -44,7 +63,7 @@
                     button: {
                     
                         'text': 'Mon Button solid',
-                        'color': 'transparent-blue', 
+                        'color': 'teal-solid', 
                         'size': 'small', 
                         'type': 'submit_btn', 
                         'url': 'https://google.com/',
@@ -55,7 +74,7 @@
                 {% include '../ds-components/button/_button.twig' with {
                     button: {
                         'text': 'Lorem ipsum',
-                        'color': 'transparent-white', 
+                        'color': 'blue-solid', 
                         'size': 'small', 
                         'type': 'anchor', 
                         'icon_position': 'icon-left', 
@@ -68,7 +87,7 @@
                 {% include '../ds-components/button/_button.twig' with {
                     button: {
                         'text': 'Mon Button outline avec icon',
-                        'color': 'red-red', 
+                        'color': 'red-solid', 
                         'size': 'medium', 
                         'type': 'btn', 
                         'url': 'https://google.com/',
@@ -79,7 +98,7 @@
                 {% include '../ds-components/button/_button.twig' with {
                     button: {
                         'text': 'Mon Button outline avec icon',
-                        'color': 'green-green', 
+                        'color': 'green-solid', 
                         'size': 'medium', 
                         'type': 'btn', 
                         'icon_position': 'icon-left', 
@@ -91,7 +110,7 @@
                 {% include '../ds-components/button/_button.twig' with {
                     button: {
                         'text': 'Mon Button outline avec icon',
-                        'color': 'teal-teal', 
+                        'color': 'teal-solid', 
                         'size': 'medium', 
                         'type': 'anchor', 
                         'icon_position': 'icon-right', 
@@ -103,11 +122,12 @@
                 } %}
 
             </div>
-
-            {% include '../blocks/_block-collapse.twig' with {
-                'collapse_id' : random(99999999999) ,
-                'path_code' : '../ds-components/button/buttons.twig'      
-            } %}
+            <div class="ds-code_output">
+                {% include '../blocks/_block-collapse.twig' with {
+                    'collapse_id' : random(99999999999) ,
+                    'path_code' : '../ds-components/button/buttons.twig'      
+                } %}
+            </div>
 
         </div>
 

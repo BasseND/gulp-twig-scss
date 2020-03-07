@@ -6,7 +6,7 @@
     {% include '../ds-components/button/_button.twig' with {
         button: {
             'text': 'Lorem ipsum',
-            'color': 'blue-blue', ['blue-blue', 'transparent-blue',  'transparent-white', 'teal-teal', 'green-green']
+            'color': 'blue-outline', ['white-outline', 'blue-outline',  'teal-solid', 'blue-solid', 'green-solid']
             'size': 'medium', ['small', 'medium']
             'type': 'anchor', ['btn', 'submit_btn', 'anchor', 'new_tab_anchor']
             'icon_position': 'icon-left', ['icon-left', 'icon-right' ]
@@ -18,15 +18,20 @@
     } %}
 #}
 
+
+
 {# ##########################################################################################
 ########################################## CODE ##########################################
 ########################################################################################## #}
 
 
 
-    {% set class = 'btn btn-' ~ button.color ~ ' btn-' ~ button.size ~ ' btn-' ~ button.icon_position ~ ' btn-' ~ button.icon_name %}
+    {% set class = 'btn btn-' ~ button.color ~ ' btn-' ~ button.size  %}
     {% if button.additionnal_classes %}
         {% set class = class ~ ' ' ~ button.additionnal_classes|trim %}
+    {% endif %}
+     {% if button.icon_name %}
+        {% set class = class ~ ' ' ~ ' btn-' ~ button.icon_position ~ ' btn-' ~ button.icon_name %}
     {% endif %}
 
     {% if button.type == 'anchor' or button.type == 'new_tab_anchor' %}

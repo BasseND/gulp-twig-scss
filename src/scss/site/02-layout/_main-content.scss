@@ -1,27 +1,103 @@
 .main-content {
-    padding-left: 280px;
-    padding-right: 30px;
-    padding-top: 98px;
-    width: 100%;
-    position: relative;
+  padding-left: 280px;
+  padding-right: 30px;
+  padding-top: 98px;
+  width: 100%;
+  position: relative;
 
-    .ds-content {
-        max-width: 1000px;
-        margin: 0 auto;
-        margin-bottom: 2em;
-        .ds-block {
-            // background-color: $white;
-            .ds-info {} 
-            .ds-block_example {
-                padding: 1.5rem;
-                margin-right: 0;
-                margin-left: 0;
-                border-width: 0.2rem;
-                background-color: #fff;
-                margin-top: 1em;
-                border: 1px solid #e4e4e4;
-                border-bottom: 0;
+  .ds-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+
+    .ds-block {
+      // background-color: $white;
+      .ds-info {
+        margin-bottom: 1em;
+      }
+
+      .ds-message {
+        margin-bottom: 1em;
+
+        .message {
+          position: relative;
+          padding: 1em 1em 1em 1.6em;
+          background-color: #f8f9fa;
+          border-left: 5px solid;
+          border-color: $teal-3;
+          margin-bottom: 1em;
+
+          &::after {
+            @include fontello;
+            content: "\E80A";
+            font-size: 1rem;
+            position: absolute;
+            left: -15px;
+            top: 18px;
+            color: $white;
+            background: $teal-3;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+          }
+
+          p {
+            font-size: 0.869em;
+
+            &.message-title {
+              font-size: 1.3em;
+              margin-bottom: 0.4em;
+              color: $teal-3;
+              font-weight: 600;
             }
+          }
+
+          &.message-info {
+            border-left-color: rgb(19, 226, 81);
+             &::after {
+                 background: rgb(19, 226, 81);
+               
+             }
+
+            p {
+              &.message-title {
+                color: rgb(19, 226, 81);
+              }
+            }
+          }
+
+          &.message-warning {
+            border-left-color: #f66;
+             &::after {
+                 background: #f66;
+
+             }
+
+            p {
+              &.message-title {
+                color: #f66;
+              }
+            }
+          }
         }
+      }
+
+      .ds-block_example {
+        padding: 1.5rem;
+        margin-right: 0;
+        margin-left: 0;
+        border-width: 0.2rem;
+        background-color: $white;
+        margin-top: 1em;
+        border: 1px solid #e4e4e4;
+        border-bottom: 0;
+      }
+
+      .ds-code_output {
+        margin-bottom: 1em;
+      }
     }
+  }
 }

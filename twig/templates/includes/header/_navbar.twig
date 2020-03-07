@@ -1,17 +1,33 @@
 {#  Mettre le même Navbar #}
-<ul class="nav justify-content-end mt-3">
-	<li class="nav-item">
-		<a class="nav-link" href="#">Installation</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#">Ressources</a>
-	</li>
-	<li class="nav-item">
-        {# <a class="nav-link" href="assets-resource.zip" download>Télécharger</a> #}
-        <a href="assets-resource.zip" download class="btn btn-teal-teal btn-small btn-icon-right btn-icon-download">Télécharger</a>
 
-	</li>
-    <li class="nav-item">
-		<img class="logo-klee" src="./assets/images/klee-interactive.png" alt="Logo Klee Interactive"/>
-	</li>
-</ul>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		<a class="navbar-brand" href="#">
+			<img width="50" height="50" class="d-inline-block align-top" src="./assets/images/Caisse_des_Depots.png" alt="Logo CDC"/>
+		</a>
+		<ul class="navbar-nav mr-auto mt-3 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Installation</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Ressources</a>
+			</li>
+			<li class="nav-item">
+				<a href="assets-resource.zip" download class="btn btn-teal-solid btn-small btn-icon-right btn-icon-download">Télécharger</a>
+
+			</li>
+			<li class="nav-item">
+				<img class="logo-klee" src="./assets/images/klee-interactive.png" alt="Logo Klee Interactive"/>
+			</li>
+		</ul>
+		
+	</div>
+</nav>
+
+
+
+

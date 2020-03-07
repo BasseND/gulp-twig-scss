@@ -1,5 +1,3 @@
-
-
 .main-sidebar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   position: fixed;
@@ -91,24 +89,22 @@
         // DropDown Menu
         &.dropdown {
           .dropdown-menu {
-           display: none;
-    position: static !important;
-    -webkit-transform: inherit !important;
-    -ms-transform: inherit !important;
-    transform: inherit !important;
-    top: inherit !important;
-    left: inherit !important;
-    width: 100%;
-    background: transparent;
-    height:0px;
-    
+            display: none;
+            position: static !important;
+            -webkit-transform: inherit !important;
+            -ms-transform: inherit !important;
+            transform: inherit !important;
+            top: inherit !important;
+            left: inherit !important;
+            width: 100%;
+            background: transparent;
+            height: 0px;
+
             &.show {
               display: block !important;
               height: 100%;
-   
             }
           }
-
         }
       }
     }

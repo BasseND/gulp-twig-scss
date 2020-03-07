@@ -1,0 +1,24 @@
+
+{#
+	{% include '../blocks/_block-message.twig' with {
+		'message_title' : 'Attention' ,
+		'message_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',  
+	    'message_type' : 'warning' , ['warning', 'info']
+    } %}
+#}
+
+{############################################################################################}
+{########################################### CODE ###########################################}
+{############################################################################################}
+{% set class = 'message message-'   %}
+
+{% if message_type %}
+	{% set class = class ~ ' ' ~ ' message-' ~ message_type  %}
+{% endif %}
+
+<div class=" {{ class }}">	
+   {% if message_title %}
+    <p class="message-title">{{ message_title|trim  }}</p>
+   {% endif %}
+    <p>{{ message_description|trim  }}</p> 	
+</div>

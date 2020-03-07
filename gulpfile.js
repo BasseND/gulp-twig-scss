@@ -1,10 +1,11 @@
+/** Ne pas modifier ce fichier SVP car il est en cours de dev */
 /*global require*/
 "use strict";
 
 var gulp = require("gulp"),
   path = require("path"),
   data = require("gulp-data"),
-  twig = require("gulp-twig"), // Decided to use twig, because already familiar with it
+  twig = require("gulp-twig"), 
   prefix = require("gulp-autoprefixer"),
   sass = require("gulp-sass"),
   del = require("del"),
@@ -15,7 +16,8 @@ var gulp = require("gulp"),
   minify = require("gulp-minify"),
   mergeStream = require("merge-stream"),
   sourcemaps = require("gulp-sourcemaps"),
-  browserSync = require("browser-sync"),
+  browserSync = require("browser-sync").create(),
+ 
   fs = require("fs");
 
 /*
@@ -103,9 +105,7 @@ var paths = {
  * matching file name. index.twig - index.twig.json
  */
 function gulpTwigTask () {
-//   return gulp.src(['./twig/templates/*.twig','./twig/data/head.twig'])
   return gulp.src(pathsNew.site.twig.input)
-    // Stay live and reload on error
 	.pipe(plumber({
 		handleError: function (err) {
 			console.log(err);
@@ -158,7 +158,7 @@ gulp.task(
       gulpZipResourcesTask
     ],
     function() {
-      browserSync({
+       browserSync.init({
         server: {
           baseDir: paths.build
         },
@@ -285,6 +285,7 @@ function gulpSassTask  () {
       )
       .pipe(sourcemaps.write("."))
       .pipe(gulp.dest(pathsNew.site.sass.output))
+      .pipe(browserSync.stream())
   );
 };
 
@@ -301,7 +302,8 @@ function gulpJsTask () {
         this.emit("end");
       })
       .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest(pathsNew.site.scripts.output));
+      .pipe(gulp.dest(pathsNew.site.scripts.output))
+      .pipe(browserSync.stream());
 
       var bundlejs = gulp
         .src(pathsNew.site.scripts.inputBundle)
@@ -313,7 +315,8 @@ function gulpJsTask () {
           this.emit("end");
         })
         .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest(pathsNew.site.scripts.outputBundle));
+        .pipe(gulp.dest(pathsNew.site.scripts.outputBundle))
+        .pipe(browserSync.stream());
 
       return mergeStream(scriptjs, bundlejs);
 };
@@ -375,12 +378,16 @@ function gulpZipResourcesTask () {
  * Watch .twig files run twig-rebuild then reload BrowserSync
  */ 
 function gulpWatchTask () {
+  
 	  gulp.watch(paths.build + 'assets/js/script.js', ['js', browserSync.reload]);
     // gulp.watch(paths.sass + 'vendors/main.scss', ['sass', browserSync.reload]);
     gulp.watch(paths.sass.input + 'ds/style.scss', ['sass', browserSync.reload]);
     gulp.watch(paths.sass.input + 'site/main.scss', ['sass', browserSync.reload]);
   	gulp.watch(['twig/templates/**/*.twig','twig/data/*.twig.json'], {cwd:'./'}, ['rebuild']);
 };
+
+
+
 
 
 
@@ -403,4 +410,8 @@ gulp.task(
  * compile the project site, launch BrowserSync then watch
  * files for changes
  */
-gulp.task("default", gulp.series(['browser-sync', gulpWatchTask]));
+gulp.task("default", gulp.series(["browser-sync"], gulpWatchTask));
+
+
+
+

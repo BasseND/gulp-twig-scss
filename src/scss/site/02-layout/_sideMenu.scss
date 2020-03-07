@@ -1,10 +1,10 @@
 // Vertical Sidebar - Default Light
 $sidebar-bg: #ffffff;
 $sidebar-menu-item-color: #fff;
-$sidebar-menu-sub-item-color: #7c8a96;
+$sidebar-menu-sub-item-color: #fff;
 $sidebar-menu-item-icon-color: #3051d3;
 $sidebar-menu-item-hover-color: #f5f5f5;
-$sidebar-menu-item-active-color: #3051d3;
+$sidebar-menu-item-active-color: #b3c3ff;
 $sidebar-menu-item-active-bg: #f5f5f5;
 $sidebar-width: 250px;
 $sidebar-collapsed-width: 70px;
@@ -93,6 +93,7 @@ $header-item-color: #636e75;
   }
 
   .has-arrow {
+    padding: 14px 5px 14px 45px;
     &:after {
       @include fontello;
       content: "\E820";
@@ -100,6 +101,14 @@ $header-item-color: #636e75;
       float: right;
       transition: transform 0.2s;
       font-size: 1rem;
+      margin-right: 8px;
+    }
+    &::before {
+      @include fontello;
+      content: "\E830";
+      font-size: 1rem;
+      position: absolute;
+      left: 14px;
     }
   }
 
@@ -130,8 +139,49 @@ $header-item-color: #636e75;
         }
       }
 
+      &.layout {
+        a.has-arrow {
+          &::before {
+            content: "\F0DB";
+          }
+        }
+      }
+
+      &.blocks {
+        a.has-arrow {
+          &::before {
+            content: "\F1B3";
+          }
+        }
+      }
+
+      &.formulaire {
+        a.has-arrow {
+          &::before {
+            content: "\E830";
+          }
+        }
+      }
+
+      &.components {
+        a.has-arrow {
+          &::before {
+            content: "\E82F";
+          }
+        }
+      }
+
       .badge {
-        margin-top: 4px;
+        // margin-top: 4px;
+        position: absolute;
+        right: 33px;
+        left: inherit;
+        width: initial;
+        font-size: 0.8em;
+        background-color: $blue-gradien-light;
+        top: 31%;
+        padding: 3px 8px;
+        // background: #8c35ff;
       }
 
       ul.sub-menu {
@@ -139,7 +189,7 @@ $header-item-color: #636e75;
 
         li {
           a {
-            padding: 0.4rem 1.5rem 0.4rem 3.7rem;
+            padding: 0.4rem 1.5rem 0.4rem 2.9rem;
             font-size: 13.5px;
             color: $sidebar-menu-sub-item-color;
           }

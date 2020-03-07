@@ -26,6 +26,8 @@ $(document).ready(function() {
         $(this).parent().parent().parent().parent().parent().addClass("mm-active"))
     });
 
+    AOS.init();
+
  
 });
 
