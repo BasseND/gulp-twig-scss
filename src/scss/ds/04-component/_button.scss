@@ -114,15 +114,15 @@
    }
 
    &.btn-red-solid {
-     background: $red;
+     background: $red-2;
      color: $white;
      &:not([disabled]):not(.disabled) {
        &:focus,
        &:hover,
        &:active {
-         color: $red;
+         color: $red-2;
          background-color: $white;
-         border-color: $red;
+         border-color: $red-2;
 
        }
      }
@@ -159,18 +159,34 @@
 
   &.btn-blue-outline {
     background-color: transparent;
-    color: $teal-3;
-    border-color: $teal-3;
+    color:  $blue-1;
+    border-color:  $blue-1;
     &:not([disabled]):not(.disabled) {
       &:focus,
       &:hover,
       &:active {
         background-color: $blue-1;
         color: $white;
-        border: 2px solid $teal-3;
+        border: 2px solid  $blue-1;
       }
     }
   }
+   &.btn-teal-outline {
+     background-color: transparent;
+     color: $teal-3;
+     border-color: $teal-3;
+
+     &:not([disabled]):not(.disabled) {
+
+       &:focus,
+       &:hover,
+       &:active {
+         background-color: $teal-3;
+         color: $white;
+         border: 2px solid $teal-3;
+       }
+     }
+   }
 
   &.btn-white-outline {
     color: $grey-text;
@@ -188,15 +204,14 @@
   }
 
   // Button size
-  &.btn-small {
-    font-size: 0.8rem;
+  &.btn-xtra-small {
+    font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.19px;
     padding: 0.8em 2em;
   }
-
-  &.btn-xtra-small {
-    font-size: 0.75rem;
+  &.btn-small {
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.19px;
     padding: 0.8em 2em;

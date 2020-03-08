@@ -4,13 +4,13 @@
 {% block content %}
    <div class="ds-content" data-aos="zoom-out-up">
 
-       {# Button #}
+       {# Buttons Basics #}
         <div class="ds-block">
             <div class="ds-info">
                 {% include '../blocks/_block-preview.twig' with {
                     'block_id' : random(99999999999) ,
-                    'block_title' : 'Buttons' ,
-                    'block_description' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'block_title' : 'Buttons basiques' ,
+                    'block_description' : 'Les buttons basiques sont les buttons sans taille spécifiée ou icons',
                 } %}
             </div>
              <div class="ds-message">
@@ -120,6 +120,79 @@
                         'additionnal_classes': ''
                     }
                 } %}
+
+            </div>
+            <div class="ds-code_output">
+                {% include '../blocks/_block-collapse.twig' with {
+                    'collapse_id' : random(99999999999) ,
+                    'path_code' : '../ds-components/button/buttons.twig'      
+                } %}
+            </div>
+
+        </div>
+
+        {# Button Size #}
+
+         <div class="ds-block">
+            <div class="ds-info">
+                {% include '../blocks/_block-preview.twig' with {
+                    'block_id' : random(99999999999) ,
+                    'block_title' : 'Button Size' ,
+                    'block_description' : 'Les buttons basiques sont les buttons sans taille spécifiée ou icons',
+                } %}
+            </div>
+            
+            <div class="ds-block_example">
+                {% include '../ds-components/button/_button.twig' with {
+                    button: {
+                    
+                        'text': 'Button avec taille par défaut',
+                        'color': 'teal-solid',
+                        'type': 'anchor',
+                        'url': 'https://google.com/',
+                        'additionnal_attributes': {},
+                        'additionnal_classes': ''
+                    }
+                } %}
+              
+                {% include '../ds-components/button/_button.twig' with {
+                    button: {
+                    
+                        'text': 'Button Medium',
+                        'color': 'teal-solid', 
+                        'size': 'medium', 
+                        'type': 'submit_btn', 
+                        'url': 'https://google.com/',
+                        'additionnal_attributes': {},
+                        'additionnal_classes': ''
+                    }
+                } %}
+
+                  {% include '../ds-components/button/_button.twig' with {
+                        button: {
+                            'text': 'Button Small',
+                            'color': 'teal-solid', 
+                            'size': 'small', 
+                            'type': 'anchor',
+                            'url': 'https://google.com/',
+                            'additionnal_attributes': {},
+                            'additionnal_classes': ''
+                        }
+                    } %}
+
+                {% include '../ds-components/button/_button.twig' with {
+                    button: {
+                    
+                        'text': 'Button Extra Small',
+                        'color': 'teal-solid', 
+                        'size': 'xtra-small', 
+                        'type': 'submit_btn', 
+                        'url': 'https://google.com/',
+                        'additionnal_attributes': {},
+                        'additionnal_classes': ''
+                    }
+                } %}
+              
 
             </div>
             <div class="ds-code_output">

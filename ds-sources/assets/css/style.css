@@ -11299,6 +11299,344 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
+.btn-icon-left.btn-icon-universal-access::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-universal-access::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-icon-wheelchair::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-icon-wheelchair::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-mobile::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-mobile::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-html5::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-html5::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-css3::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-css3::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-spin6::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-spin6::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-spin4::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-spin4::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-spin3::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-spin3::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-spin5::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-spin5::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-cube::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-cube::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-github::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-github::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-bitbucket::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-bitbucket::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-left.btn-icon-attention-filled::after {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-icon-right.btn-icon-attention-filled::before {
+  content: "";
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 /*
 &:before {
   @include fontello;
@@ -11308,8 +11646,8 @@ a.text-dark:hover, a.text-dark:focus {
 */
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello/fontello.eot?3127651250");
-  src: url("../fonts/fontello/fontello.woff2?3127651250") format("woff2"), url("../fonts/fontello/fontello.woff?3127651250") format("woff"), url("../fonts/fontello/fontello.ttf?3127651250") format("truetype"), url("../fonts/fontello/fontello.svg?3127651250#fontello") format("svg");
+  src: url("../fonts/fontello/fontello.eot?2028130443");
+  src: url("../fonts/fontello/fontello.woff2?2028130443") format("woff2"), url("../fonts/fontello/fontello.woff?2028130443") format("woff"), url("../fonts/fontello/fontello.ttf?2028130443") format("truetype"), url("../fonts/fontello/fontello.svg?2028130443#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -11328,6 +11666,24 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, ol, ul, li, label,
 ol,
 ul {
   padding: 0;
+}
+
+.fontello {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .card {
@@ -11513,14 +11869,14 @@ ul {
 }
 
 .btn.btn-red-solid {
-  background: #de0d0d;
+  background: #d5113a;
   color: #fff;
 }
 
 .btn.btn-red-solid:not([disabled]):not(.disabled):focus, .btn.btn-red-solid:not([disabled]):not(.disabled):hover, .btn.btn-red-solid:not([disabled]):not(.disabled):active {
-  color: #de0d0d;
+  color: #d5113a;
   background-color: #fff;
-  border-color: #de0d0d;
+  border-color: #d5113a;
 }
 
 .btn.btn-teal-solid {
@@ -11547,12 +11903,24 @@ ul {
 
 .btn.btn-blue-outline {
   background-color: transparent;
-  color: #0053b3;
-  border-color: #0053b3;
+  color: #0042cf;
+  border-color: #0042cf;
 }
 
 .btn.btn-blue-outline:not([disabled]):not(.disabled):focus, .btn.btn-blue-outline:not([disabled]):not(.disabled):hover, .btn.btn-blue-outline:not([disabled]):not(.disabled):active {
   background-color: #0042cf;
+  color: #fff;
+  border: 2px solid #0042cf;
+}
+
+.btn.btn-teal-outline {
+  background-color: transparent;
+  color: #0053b3;
+  border-color: #0053b3;
+}
+
+.btn.btn-teal-outline:not([disabled]):not(.disabled):focus, .btn.btn-teal-outline:not([disabled]):not(.disabled):hover, .btn.btn-teal-outline:not([disabled]):not(.disabled):active {
+  background-color: #0053b3;
   color: #fff;
   border: 2px solid #0053b3;
 }
@@ -11569,15 +11937,15 @@ ul {
   border-color: #0053b3;
 }
 
-.btn.btn-small {
-  font-size: 0.8rem;
+.btn.btn-xtra-small {
+  font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.19px;
   padding: 0.8em 2em;
 }
 
-.btn.btn-xtra-small {
-  font-size: 0.75rem;
+.btn.btn-small {
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.19px;
   padding: 0.8em 2em;

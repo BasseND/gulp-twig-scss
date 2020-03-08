@@ -10,20 +10,25 @@ header {
   border-bottom: 1px solid rgba(109, 109, 109, 0.125);
   .main-navbar {
     position: relative;
-    .nav {
+    .navbar {
+      height: 70px;
+      border-bottom: 1px solid #f1f1f1;
+      .d-flex {
+        width: 100%;
+      }
       .nav-link {
         font-size: 1em;
         color: $blue-darken;
         font-weight: 500;
+        margin-right: 1em;
         &:hover,
         &:focus {
           color: $blue-1;
         }
-
       }
       img.logo-klee {
-          width: 160px;
-          margin-top: 0.2em;
+        width: 160px;
+        margin-top: 0.2em;
       }
     }
   }

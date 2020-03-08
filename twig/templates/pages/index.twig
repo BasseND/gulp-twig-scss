@@ -2,35 +2,52 @@
 
 
 {% block content %}
-	<div
-		class="ds-content">
-		{# Button #}
-		<div class="ds-block">
-			{% include '../blocks/_block-preview.twig' with {
-              'block_id' : random(99999999999) ,
-              'block_title' : 'Buttons' ,
-              'block_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',
-              'block_path_code_example' : '../blocks/_button-download.twig',      
-            } %}
-          {% include '../blocks/_block-collapse.twig' with {
-              'collapse_id' : random(99999999999) ,
-              'path_code' : '../blocks/_button-download.twig'      
-          } %}
+	<div class="ds-content">
+		{# Accueil #}
+
+    	<div class="ds-accueil">
+
+       <div class="ds-accueil_message">
+       </div>
+       <div class="ds-accueil_feature">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="feature-box">
+              <div class="feature-box_icon"><i class="fontello icon-address-book-o">&#xe833</i></div>
+              <h3 class="feature-box_title">Accessibilité</h3>
+              <p class="feature-box_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box">
+              <div class="feature-box_icon"><i class="fontello icon-address-book-o">&#xe834</i></div>
+              <h3 class="feature-box_title">Responsive Design</h3>
+              <p class="feature-box_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box">
+              <div class="feature-box_icon"><i class="fontello icon-address-book-o">&#xf13B</i></div>
+              <h3 class="feature-box_title">HTML5 / CSS3 / SASS</h3>
+              <p class="feature-box_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box">
+              <div class="feature-box_icon"><i class="fontello icon-address-book-o">&#xf13C</i></div>
+              <h3 class="feature-box_title">Bootstrap 4</h3>
+              <p class="feature-box_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+
         </div>
 
-         {# Button Icons #}
-        <div class="ds-block">
-	       {% include '../blocks/_block-preview.twig' with {
-              'block_id' : random(99999999999) ,
-              'block_title' : 'Buttons' ,
-              'block_description' : 'Utilisez des icônes pour ajouter plus de sens aux boutons. Vous pouvez utiliser uniquement l\'icône pour économiser de l\'espace, ou bien l\'utiliser avec du texte',
-              'block_path_code_example' : '../blocks/_button-download.twig',      
-            } %}
-			{% include '../blocks/_block-collapse.twig' with {
-              'collapse_id' : random(99999999999) ,
-              'path_code' : '../blocks/_button-download.twig'      
-          } %}
-		</div>
+       </div>
+
+		     
+	    </div>
+		
 
 	</div>
 {% endblock %}
