@@ -133,5 +133,38 @@
         }
       }
     }
+
+    // Icons
+    .font-icon {
+      margin-bottom: 1em;
+      padding: 1.5em;
+      border: 1px solid #efeeee;
+      border-radius: 12px;
+      margin-right: 10px;
+      width: 224px;
+      text-align: center;
+      
+      .fontello {
+        font-size: 1.3em;
+        background-color: #ebf4ff;
+        color: #0669db;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        line-height: 55px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+      }
+      .i-name {
+        font-size: 1.3em;
+        color: #0053b3;
+        font-weight: 600;
+        margin-bottom: 0.7em;
+        display: block;
+        margin: 0 auto;
+      }
+    }
   }
 }

@@ -1,0 +1,118 @@
+  {############################################################################################}
+{########################################### USAGE ###########################################}
+{############################################################################################}
+
+{#
+	{% include '../ds-components/icons/_icon.twig' with {
+		'fontello_title' : 'Fontello Custom Icons' ,
+		'fontello_icons' : [
+            { "fontello_name" : "icon-ok-circled "},
+            { "fontello_name" : "icon-ok "},
+            { "fontello_name" : "icon-down-circle "},
+            { "fontello_name" : "icon-left-circle "},
+            { "fontello_name" : "icon-right-circle "},
+            { "fontello_name" : "icon-up-circle "},
+            { "fontello_name" : "icon-down-open "},
+            { "fontello_name" : "icon-up-open "},
+            { "fontello_name" : "icon-right-open "},
+            { "fontello_name" : "icon-left-open "},
+            { "fontello_name" : "icon-info "},
+            { "fontello_name" : "icon-facebook "},
+            { "fontello_name" : "icon-twitter "},
+            { "fontello_name" : "icon-instagram "},
+            { "fontello_name" : "icon-user "},
+            { "fontello_name" : "icon-lock-open-alt "},
+            { "fontello_name" : "icon-login "},
+            { "fontello_name" : "icon-download "},
+            { "fontello_name" : "icon-chain "},
+            { "fontello_name" : "icon-external-link"},
+            { "fontello_name" : "icon-valide "},
+            { "fontello_name" : "icon-recommencer "},
+            { "fontello_name" : "icon-003-envelope"},
+            { "fontello_name" : "icon-icon "},
+            { "fontello_name" : "icon-linkedin "},
+            { "fontello_name" : "icon-mail-alt "},
+            { "fontello_name" : "icon-rss "},
+            { "fontello_name" : "icon-citoyennente "},
+            { "fontello_name" : "icon-accessibilite "},
+            { "fontello_name" : "icon-logement "},
+            { "fontello_name" : "icon-loisirs"},
+            { "fontello_name" : "icon-mobilite "},
+            { "fontello_name" : "icon-sante"},
+            { "fontello_name" : "icon-bulle"},
+            { "fontello_name" : "icon-mail"},
+            { "fontello_name" : "icon-search"},
+            { "fontello_name" : "icon-cancel"},
+            { "fontello_name" : "icon-location"},
+            { "fontello_name" : "icon-menu"},
+            { "fontello_name" : "icon-down-open-1"},
+            { "fontello_name" : "icon-left-open-1"},
+            { "fontello_name" : "icon-right-open-1"},
+            { "fontello_name" : "icon-up-open-1"},
+            { "fontello_name" : "icon-address-book-o"},
+            { "fontello_name" : "icon-help-circled-alt"},
+            { "fontello_name" : "icon-book"},
+            { "fontello_name" : "icon-aide"},
+            { "fontello_name" : "icon-erreur"},
+            { "fontello_name" : "icon-glossaire"},
+            { "fontello_name" : "icon-annuaire"},
+            { "fontello_name" : "icon-attention"},
+            { "fontello_name" : "icon-circle-empty"},
+            { "fontello_name" : "icon-dot-circled"},
+            { "fontello_name" : "icon-check"},
+            { "fontello_name" : "icon-check-empty"},
+            { "fontello_name" : "icon-ok-squared"},
+            { "fontello_name" : "icon-ok-circled-1"},
+            { "fontello_name" : "icon-record"},
+            { "fontello_name" : "icon-compass"},
+            { "fontello_name" : "icon-double_fleche"},
+            { "fontello_name" : "icon-double_fleche_gauche"},
+            { "fontello_name" : "icon-columns"},
+            { "fontello_name" : "icon-cubes"},
+            { "fontello_name" : "icon-window"},
+            { "fontello_name" : "icon-newspaper"},
+            { "fontello_name" : "icon-archive"},
+            { "fontello_name" : "icon-box"},
+            { "fontello_name" : "icon-th-large-outline"},
+            { "fontello_name" : "icon-universal-access"},
+            { "fontello_name" : "icon-wheelchair"},
+            { "fontello_name" : "icon-mobile"},
+            { "fontello_name" : "icon-html5"},
+            { "fontello_name" : "icon-css3"},
+            { "fontello_name" : "icon-spin6 "},
+            { "fontello_name" : "icon-spin4 "},
+            { "fontello_name" : "icon-spin3 "},
+            { "fontello_name" : "icon-spin5 "},
+            { "fontello_name" : "icon-cube "},
+            { "fontello_name" : "icon-github "},
+            { "fontello_name" : "icon-bitbucket "},
+            { "fontello_name" : "icon-attention-filled "}
+
+        ]
+	    
+    } %}
+#}
+
+{############################################################################################}
+{########################################### CODE ###########################################}
+{############################################################################################}
+{% set class = 'fontello'   %}
+
+
+{% if fontello_icons|length > 0 %}
+    {% for item in fontello_icons %}
+        <div class="font-icon" title=" {{ item.fontello_name }}">
+            <i class="fontello {{ item.fontello_name }}"></i>
+            <span class="i-name">{{ item.fontello_name }}</span>
+        </div>
+    {% endfor %} 
+{% endif %}
+
+
+
+
+
+
+
+    
+    

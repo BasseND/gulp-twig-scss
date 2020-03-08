@@ -89,7 +89,7 @@ $fontelloCodesBtn: (
     icon-box: '\E831',
     icon-th-large-outline: '\E832',
     icon-universal-access: '\E833',
-    icon-icon-wheelchair: '\F193',
+    icon-wheelchair: '\F193',
     icon-mobile: '\E834',
     icon-html5: '\F13B',
     icon-css3: '\F13C',
@@ -103,7 +103,17 @@ $fontelloCodesBtn: (
     icon-attention-filled : '\E837'
   
 );
-
+@each $name, $glyph in $fontelloCodesBtn {
+    .#{$name}::after {
+        content: $glyph;
+        font-family: fontello;
+        letter-spacing: normal;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        user-select: none;
+    }
+ }
 @each $name, $glyph in $fontelloCodesBtn {
     .btn-icon-left.btn-#{$name}::after {
             content: $glyph;
