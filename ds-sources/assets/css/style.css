@@ -10428,7 +10428,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.icon-icon-wheelchair::after {
+.icon-wheelchair::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10584,7 +10584,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-ok-circled::after {
+.btn-icon-right.btn-icon-ok-circled::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10597,7 +10597,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-ok-circled::before {
+.btn-icon-left.btn-icon-ok-circled::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10610,7 +10610,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-ok::after {
+.btn-icon-right.btn-icon-ok::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10623,7 +10623,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-ok::before {
+.btn-icon-left.btn-icon-ok::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10636,7 +10636,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-down-circle::after {
+.btn-icon-right.btn-icon-down-circle::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10649,7 +10649,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-down-circle::before {
+.btn-icon-left.btn-icon-down-circle::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10662,7 +10662,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-left-circle::after {
+.btn-icon-right.btn-icon-left-circle::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10675,7 +10675,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-left-circle::before {
+.btn-icon-left.btn-icon-left-circle::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10688,7 +10688,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-right-circle::after {
+.btn-icon-right.btn-icon-right-circle::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10701,7 +10701,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-right-circle::before {
+.btn-icon-left.btn-icon-right-circle::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10714,7 +10714,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-up-circle::after {
+.btn-icon-right.btn-icon-up-circle::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10727,7 +10727,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-up-circle::before {
+.btn-icon-left.btn-icon-up-circle::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10740,7 +10740,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-down-open::after {
+.btn-icon-right.btn-icon-down-open::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10753,7 +10753,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-down-open::before {
+.btn-icon-left.btn-icon-down-open::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10766,7 +10766,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-up-open::after {
+.btn-icon-right.btn-icon-up-open::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10779,7 +10779,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-up-open::before {
+.btn-icon-left.btn-icon-up-open::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10792,7 +10792,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-right-open::after {
+.btn-icon-right.btn-icon-right-open::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10805,7 +10805,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-right-open::before {
+.btn-icon-left.btn-icon-right-open::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10818,7 +10818,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-left-open::after {
+.btn-icon-right.btn-icon-left-open::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10831,7 +10831,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-left-open::before {
+.btn-icon-left.btn-icon-left-open::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10844,7 +10844,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-info::after {
+.btn-icon-right.btn-icon-info::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10857,7 +10857,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-info::before {
+.btn-icon-left.btn-icon-info::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10870,7 +10870,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-facebook::after {
+.btn-icon-right.btn-icon-facebook::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10883,7 +10883,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-facebook::before {
+.btn-icon-left.btn-icon-facebook::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10896,7 +10896,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-twitter::after {
+.btn-icon-right.btn-icon-twitter::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10909,7 +10909,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-twitter::before {
+.btn-icon-left.btn-icon-twitter::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10922,7 +10922,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-instagram::after {
+.btn-icon-right.btn-icon-instagram::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10935,7 +10935,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-instagram::before {
+.btn-icon-left.btn-icon-instagram::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10948,7 +10948,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-user::after {
+.btn-icon-right.btn-icon-user::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10961,7 +10961,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-user::before {
+.btn-icon-left.btn-icon-user::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10974,7 +10974,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-lock-open-alt::after {
+.btn-icon-right.btn-icon-lock-open-alt::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -10987,7 +10987,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-lock-open-alt::before {
+.btn-icon-left.btn-icon-lock-open-alt::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11000,7 +11000,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-login::after {
+.btn-icon-right.btn-icon-login::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11013,7 +11013,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-login::before {
+.btn-icon-left.btn-icon-login::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11026,7 +11026,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-download::after {
+.btn-icon-right.btn-icon-download::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11039,7 +11039,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-download::before {
+.btn-icon-left.btn-icon-download::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11052,7 +11052,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-chain::after {
+.btn-icon-right.btn-icon-chain::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11065,7 +11065,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-chain::before {
+.btn-icon-left.btn-icon-chain::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11078,7 +11078,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-external-link::after {
+.btn-icon-right.btn-icon-external-link::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11091,7 +11091,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-external-link::before {
+.btn-icon-left.btn-icon-external-link::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11104,7 +11104,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-valide::after {
+.btn-icon-right.btn-icon-valide::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11117,7 +11117,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-valide::before {
+.btn-icon-left.btn-icon-valide::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11130,7 +11130,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-recommencer::after {
+.btn-icon-right.btn-icon-recommencer::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11143,7 +11143,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-recommencer::before {
+.btn-icon-left.btn-icon-recommencer::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11156,7 +11156,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-003-envelope::after {
+.btn-icon-right.btn-icon-003-envelope::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11169,7 +11169,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-003-envelope::before {
+.btn-icon-left.btn-icon-003-envelope::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11182,7 +11182,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-icon::after {
+.btn-icon-right.btn-icon-icon::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11195,7 +11195,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-icon::before {
+.btn-icon-left.btn-icon-icon::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11208,7 +11208,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-linkedin::after {
+.btn-icon-right.btn-icon-linkedin::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11221,7 +11221,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-linkedin::before {
+.btn-icon-left.btn-icon-linkedin::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11234,7 +11234,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-mail-alt::after {
+.btn-icon-right.btn-icon-mail-alt::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11247,7 +11247,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-mail-alt::before {
+.btn-icon-left.btn-icon-mail-alt::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11260,7 +11260,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-rss::after {
+.btn-icon-right.btn-icon-rss::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11273,7 +11273,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-rss::before {
+.btn-icon-left.btn-icon-rss::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11286,7 +11286,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-citoyennente::after {
+.btn-icon-right.btn-icon-citoyennente::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11299,7 +11299,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-citoyennente::before {
+.btn-icon-left.btn-icon-citoyennente::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11312,7 +11312,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-accessibilite::after {
+.btn-icon-right.btn-icon-accessibilite::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11325,7 +11325,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-accessibilite::before {
+.btn-icon-left.btn-icon-accessibilite::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11338,7 +11338,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-logement::after {
+.btn-icon-right.btn-icon-logement::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11351,7 +11351,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-logement::before {
+.btn-icon-left.btn-icon-logement::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11364,7 +11364,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-loisirs::after {
+.btn-icon-right.btn-icon-loisirs::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11377,7 +11377,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-loisirs::before {
+.btn-icon-left.btn-icon-loisirs::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11390,7 +11390,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-mobilite::after {
+.btn-icon-right.btn-icon-mobilite::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11403,7 +11403,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-mobilite::before {
+.btn-icon-left.btn-icon-mobilite::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11416,7 +11416,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-sante::after {
+.btn-icon-right.btn-icon-sante::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11429,7 +11429,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-sante::before {
+.btn-icon-left.btn-icon-sante::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11442,7 +11442,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-bulle::after {
+.btn-icon-right.btn-icon-bulle::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11455,7 +11455,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-bulle::before {
+.btn-icon-left.btn-icon-bulle::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11468,7 +11468,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-mail::after {
+.btn-icon-right.btn-icon-mail::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11481,7 +11481,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-mail::before {
+.btn-icon-left.btn-icon-mail::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11494,7 +11494,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-search::after {
+.btn-icon-right.btn-icon-search::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11507,7 +11507,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-search::before {
+.btn-icon-left.btn-icon-search::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11520,7 +11520,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-cancel::after {
+.btn-icon-right.btn-icon-cancel::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11533,7 +11533,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-cancel::before {
+.btn-icon-left.btn-icon-cancel::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11546,7 +11546,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-location::after {
+.btn-icon-right.btn-icon-location::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11559,7 +11559,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-location::before {
+.btn-icon-left.btn-icon-location::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11572,7 +11572,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-menu::after {
+.btn-icon-right.btn-icon-menu::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11585,7 +11585,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-menu::before {
+.btn-icon-left.btn-icon-menu::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11598,7 +11598,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-down-open-1::after {
+.btn-icon-right.btn-icon-down-open-1::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11611,7 +11611,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-down-open-1::before {
+.btn-icon-left.btn-icon-down-open-1::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11624,7 +11624,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-left-open-1::after {
+.btn-icon-right.btn-icon-left-open-1::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11637,7 +11637,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-left-open-1::before {
+.btn-icon-left.btn-icon-left-open-1::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11650,7 +11650,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-right-open-1::after {
+.btn-icon-right.btn-icon-right-open-1::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11663,7 +11663,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-right-open-1::before {
+.btn-icon-left.btn-icon-right-open-1::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11676,7 +11676,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-up-open-1::after {
+.btn-icon-right.btn-icon-up-open-1::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11689,7 +11689,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-up-open-1::before {
+.btn-icon-left.btn-icon-up-open-1::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11702,7 +11702,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-address-book-o::after {
+.btn-icon-right.btn-icon-address-book-o::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11715,7 +11715,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-address-book-o::before {
+.btn-icon-left.btn-icon-address-book-o::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11728,7 +11728,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-help-circled-alt::after {
+.btn-icon-right.btn-icon-help-circled-alt::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11741,7 +11741,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-help-circled-alt::before {
+.btn-icon-left.btn-icon-help-circled-alt::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11754,7 +11754,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-book::after {
+.btn-icon-right.btn-icon-book::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11767,7 +11767,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-book::before {
+.btn-icon-left.btn-icon-book::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11780,7 +11780,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-aide::after {
+.btn-icon-right.btn-icon-aide::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11793,7 +11793,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-aide::before {
+.btn-icon-left.btn-icon-aide::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11806,7 +11806,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-erreur::after {
+.btn-icon-right.btn-icon-erreur::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11819,7 +11819,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-erreur::before {
+.btn-icon-left.btn-icon-erreur::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11832,7 +11832,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-glossaire::after {
+.btn-icon-right.btn-icon-glossaire::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11845,7 +11845,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-glossaire::before {
+.btn-icon-left.btn-icon-glossaire::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11858,7 +11858,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-annuaire::after {
+.btn-icon-right.btn-icon-annuaire::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11871,7 +11871,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-annuaire::before {
+.btn-icon-left.btn-icon-annuaire::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11884,7 +11884,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-attention::after {
+.btn-icon-right.btn-icon-attention::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11897,7 +11897,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-attention::before {
+.btn-icon-left.btn-icon-attention::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11910,7 +11910,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-circle-empty::after {
+.btn-icon-right.btn-icon-circle-empty::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11923,7 +11923,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-circle-empty::before {
+.btn-icon-left.btn-icon-circle-empty::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11936,7 +11936,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-dot-circled::after {
+.btn-icon-right.btn-icon-dot-circled::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11949,7 +11949,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-dot-circled::before {
+.btn-icon-left.btn-icon-dot-circled::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11962,7 +11962,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-check::after {
+.btn-icon-right.btn-icon-check::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11975,7 +11975,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-check::before {
+.btn-icon-left.btn-icon-check::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -11988,7 +11988,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-check-empty::after {
+.btn-icon-right.btn-icon-check-empty::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12001,7 +12001,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-check-empty::before {
+.btn-icon-left.btn-icon-check-empty::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12014,7 +12014,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-ok-squared::after {
+.btn-icon-right.btn-icon-ok-squared::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12027,7 +12027,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-ok-squared::before {
+.btn-icon-left.btn-icon-ok-squared::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12040,7 +12040,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-ok-circled-1::after {
+.btn-icon-right.btn-icon-ok-circled-1::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12053,7 +12053,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-ok-circled-1::before {
+.btn-icon-left.btn-icon-ok-circled-1::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12066,7 +12066,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-record::after {
+.btn-icon-right.btn-icon-record::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12079,7 +12079,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-record::before {
+.btn-icon-left.btn-icon-record::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12092,7 +12092,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-compass::after {
+.btn-icon-right.btn-icon-compass::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12105,7 +12105,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-compass::before {
+.btn-icon-left.btn-icon-compass::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12118,7 +12118,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-double_fleche::after {
+.btn-icon-right.btn-icon-double_fleche::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12131,7 +12131,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-double_fleche::before {
+.btn-icon-left.btn-icon-double_fleche::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12144,7 +12144,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-double_fleche_gauche::after {
+.btn-icon-right.btn-icon-double_fleche_gauche::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12157,7 +12157,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-double_fleche_gauche::before {
+.btn-icon-left.btn-icon-double_fleche_gauche::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12170,7 +12170,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-columns::after {
+.btn-icon-right.btn-icon-columns::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12183,7 +12183,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-columns::before {
+.btn-icon-left.btn-icon-columns::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12196,7 +12196,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-cubes::after {
+.btn-icon-right.btn-icon-cubes::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12209,7 +12209,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-cubes::before {
+.btn-icon-left.btn-icon-cubes::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12222,7 +12222,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-window::after {
+.btn-icon-right.btn-icon-window::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12235,7 +12235,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-window::before {
+.btn-icon-left.btn-icon-window::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12248,7 +12248,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-newspaper::after {
+.btn-icon-right.btn-icon-newspaper::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12261,7 +12261,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-newspaper::before {
+.btn-icon-left.btn-icon-newspaper::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12274,7 +12274,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-archive::after {
+.btn-icon-right.btn-icon-archive::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12287,7 +12287,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-archive::before {
+.btn-icon-left.btn-icon-archive::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12300,7 +12300,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-box::after {
+.btn-icon-right.btn-icon-box::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12313,7 +12313,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-box::before {
+.btn-icon-left.btn-icon-box::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12326,7 +12326,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-th-large-outline::after {
+.btn-icon-right.btn-icon-th-large-outline::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12339,7 +12339,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-th-large-outline::before {
+.btn-icon-left.btn-icon-th-large-outline::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12352,7 +12352,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-universal-access::after {
+.btn-icon-right.btn-icon-universal-access::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12365,7 +12365,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-universal-access::before {
+.btn-icon-left.btn-icon-universal-access::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12378,7 +12378,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-icon-wheelchair::after {
+.btn-icon-right.btn-icon-wheelchair::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12391,7 +12391,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-icon-wheelchair::before {
+.btn-icon-left.btn-icon-wheelchair::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12404,7 +12404,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-mobile::after {
+.btn-icon-right.btn-icon-mobile::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12417,7 +12417,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-mobile::before {
+.btn-icon-left.btn-icon-mobile::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12430,7 +12430,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-html5::after {
+.btn-icon-right.btn-icon-html5::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12443,7 +12443,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-html5::before {
+.btn-icon-left.btn-icon-html5::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12456,7 +12456,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-css3::after {
+.btn-icon-right.btn-icon-css3::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12469,7 +12469,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-css3::before {
+.btn-icon-left.btn-icon-css3::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12482,7 +12482,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-spin6::after {
+.btn-icon-right.btn-icon-spin6::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12495,7 +12495,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-spin6::before {
+.btn-icon-left.btn-icon-spin6::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12508,7 +12508,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-spin4::after {
+.btn-icon-right.btn-icon-spin4::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12521,7 +12521,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-spin4::before {
+.btn-icon-left.btn-icon-spin4::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12534,7 +12534,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-spin3::after {
+.btn-icon-right.btn-icon-spin3::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12547,7 +12547,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-spin3::before {
+.btn-icon-left.btn-icon-spin3::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12560,7 +12560,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-spin5::after {
+.btn-icon-right.btn-icon-spin5::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12573,7 +12573,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-spin5::before {
+.btn-icon-left.btn-icon-spin5::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12586,7 +12586,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-cube::after {
+.btn-icon-right.btn-icon-cube::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12599,7 +12599,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-cube::before {
+.btn-icon-left.btn-icon-cube::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12612,7 +12612,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-github::after {
+.btn-icon-right.btn-icon-github::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12625,7 +12625,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-github::before {
+.btn-icon-left.btn-icon-github::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12638,7 +12638,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-bitbucket::after {
+.btn-icon-right.btn-icon-bitbucket::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12651,7 +12651,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-bitbucket::before {
+.btn-icon-left.btn-icon-bitbucket::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12664,7 +12664,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-left.btn-icon-attention-filled::after {
+.btn-icon-right.btn-icon-attention-filled::after {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12677,7 +12677,7 @@ a.text-dark:hover, a.text-dark:focus {
           user-select: none;
 }
 
-.btn-icon-right.btn-icon-attention-filled::before {
+.btn-icon-left.btn-icon-attention-filled::before {
   content: "";
   font-family: fontello;
   letter-spacing: normal;
@@ -12699,8 +12699,8 @@ a.text-dark:hover, a.text-dark:focus {
 */
 @font-face {
   font-family: "fontello";
-  src: url("../fonts/fontello/fontello.eot?2517903507");
-  src: url("../fonts/fontello/fontello.woff2?2517903507") format("woff2"), url("../fonts/fontello/fontello.woff?2517903507") format("woff"), url("../fonts/fontello/fontello.ttf?2517903507") format("truetype"), url("../fonts/fontello/fontello.svg?2517903507#fontello") format("svg");
+  src: url("../fonts/fontello/fontello.eot?2986018228");
+  src: url("../fonts/fontello/fontello.woff2?2986018228") format("woff2"), url("../fonts/fontello/fontello.woff?2986018228") format("woff"), url("../fonts/fontello/fontello.ttf?2986018228") format("truetype"), url("../fonts/fontello/fontello.svg?2986018228#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12979,15 +12979,15 @@ ul {
 }
 
 .btn.btn-white-outline {
-  color: #333333;
-  background-color: transparent;
-  border-color: #0053b3;
+  color: #0053b3;
+  background-color: #fff;
+  border-color: transparent;
 }
 
 .btn.btn-white-outline:not([disabled]):not(.disabled):focus, .btn.btn-white-outline:not([disabled]):not(.disabled):hover, .btn.btn-white-outline:not([disabled]):not(.disabled):active {
   background-color: transparent;
-  color: #0053b3;
-  border-color: #0053b3;
+  color: #fff;
+  border-color: #fff;
 }
 
 .btn.btn-xtra-small {
@@ -13014,16 +13014,16 @@ ul {
   position: relative;
 }
 
-.btn.btn-icon-right::before {
-  margin-right: 0.4em;
+.btn.btn-icon-right::after {
+  margin-left: 0.4em;
 }
 
 .btn.btn-icon-left {
   position: relative;
 }
 
-.btn.btn-icon-left::after {
-  margin-left: 0.4em;
+.btn.btn-icon-left::before {
+  margin-right: 0.4em;
 }
 
 .btn[disabled], .btn.disabled {

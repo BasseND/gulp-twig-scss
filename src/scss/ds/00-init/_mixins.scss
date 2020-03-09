@@ -115,7 +115,7 @@ $fontelloCodesBtn: (
     }
  }
 @each $name, $glyph in $fontelloCodesBtn {
-    .btn-icon-left.btn-#{$name}::after {
+    .btn-icon-right.btn-#{$name}::after {
             content: $glyph;
             font-family: fontello;
             letter-spacing: normal;
@@ -125,7 +125,7 @@ $fontelloCodesBtn: (
             user-select: none;
         }
     
-    .btn-icon-right.btn-#{$name}::before {
+    .btn-icon-left.btn-#{$name}::before {
             content: $glyph;
             font-family: fontello;
             letter-spacing: normal;

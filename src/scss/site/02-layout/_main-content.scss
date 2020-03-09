@@ -99,6 +99,32 @@
     }
 
     // Accueil Page
+    .ds-accueil_message {
+      margin-bottom: 1em;
+      padding: 30px;
+      // border: 1px solid #efeeee;
+      border-radius: 12px;
+      background: #0553dd;
+
+      .message-box {
+        h2 {
+          color: $white;
+          font-weight: bold;
+        }
+        p {
+          color: $white;
+          
+          font-size: 1.5em;
+          &:last-of-type {
+           font-size: 1em;
+          }
+        }
+       
+      }
+       img {
+           max-height: 350px;
+       }
+    }
     .ds-accueil_feature {
       margin-bottom: 3em;
       .feature-box {
@@ -137,13 +163,13 @@
     // Icons
     .font-icon {
       margin-bottom: 1em;
-      padding: 1.5em;
+      padding: 1em;
       border: 1px solid #efeeee;
       border-radius: 12px;
       margin-right: 10px;
       width: 224px;
       text-align: center;
-      
+
       .fontello {
         font-size: 1.3em;
         background-color: #ebf4ff;

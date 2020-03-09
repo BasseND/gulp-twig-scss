@@ -15,11 +15,11 @@
 
 	<div class="accordion block-collapse" id="accordion_{{collapse_id}}"> <div class="card">
 		<div class="card-header" id="heading_{{collapse_id}}">
-			<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_{{collapse_id}}" aria-expanded="true" aria-controls="collapse_{{collapse_id}}">
+			<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_{{collapse_id}}" aria-expanded="false" aria-controls="collapse_{{collapse_id}}">
 				Code HTML
 			</button>
 		</div>
-		<div id="collapse_{{collapse_id}}" class="collapse show" aria-labelledby="heading_{{collapse_id}}" data-parent="#accordion_{{collapse_id}}">
+		<div id="collapse_{{collapse_id}}" class="collapse" aria-labelledby="heading_{{collapse_id}}" data-parent="#accordion_{{collapse_id}}">
 			<div class="card-body">
 				<script type="text/plain" class="language-html">
 					{% include path_code %}

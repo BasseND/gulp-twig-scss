@@ -1,0 +1,49 @@
+ {% include '../button/_button.twig' with {
+        button: {
+        
+            'text': 'Button avec taille par défaut',
+            'color': 'teal-solid',
+            'type': 'anchor',
+            'url': 'https://google.com/',
+            'additionnal_attributes': {},
+            'additionnal_classes': ''
+        }
+    } %}
+    
+    {% include '../button/_button.twig' with {
+        button: {
+        
+            'text': 'Button Medium',
+            'color': 'teal-solid', 
+            'size': 'medium', 
+            'type': 'submit_btn', 
+            'url': 'https://google.com/',
+            'additionnal_attributes': {},
+            'additionnal_classes': ''
+        }
+    } %}
+
+        {% include '../button/_button.twig' with {
+            button: {
+                'text': 'Button Small',
+                'color': 'teal-solid', 
+                'size': 'small', 
+                'type': 'anchor',
+                'url': 'https://google.com/',
+                'additionnal_attributes': {},
+                'additionnal_classes': ''
+            }
+        } %}
+
+    {% include '../button/_button.twig' with {
+        button: {
+        
+            'text': 'Button Extra Small',
+            'color': 'teal-solid', 
+            'size': 'xtra-small', 
+            'type': 'submit_btn', 
+            'url': 'https://google.com/',
+            'additionnal_attributes': {},
+            'additionnal_classes': ''
+        }
+} %}

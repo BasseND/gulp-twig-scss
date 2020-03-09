@@ -2,12 +2,43 @@
 
 
 {% block content %}
-	<div class="ds-content">
+<div class="ds-content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+
 		{# Accueil #}
 
     	<div class="ds-accueil">
 
-       <div class="ds-accueil_message">
+       <div class="ds-accueil_message mb-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="message-box">
+                <h2 class="mb-2">Kit UI - Design System </h2>
+                <p class="mb-4">Mon Parcours Handicap </p>
+<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur.</p>
+
+                {% include '../ds-components/button/_button.twig' with {
+                    button: {
+                        'text': 'Découvrir',
+                        'color': 'white-outline', 
+                        'type': 'anchor', 
+                        'icon_position': 'icon-right', 
+                        'icon_name': 'icon-double_fleche',
+                        'url': '#',
+                        'additionnal_attributes': {},
+                        'additionnal_classes': ''
+                    }
+                } %}
+
+              </div>
+
+               
+            </div>
+            <div class="col-md-6 text-right">
+               <img src="./assets/images/ill.svg" alt="Illustration">
+            </div>
+
+          </div>
+
        </div>
        <div class="ds-accueil_feature">
         <div class="row">

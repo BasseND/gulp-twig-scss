@@ -189,16 +189,16 @@
    }
 
   &.btn-white-outline {
-    color: $grey-text;
-    background-color: transparent;
-    border-color: $teal-3;
+    color: $teal-3;
+    background-color: $white;
+    border-color: transparent;
     &:not([disabled]):not(.disabled) {
       &:focus,
       &:hover,
       &:active {
         background-color: transparent;
-        color: $teal-3;
-        border-color: $teal-3;
+        color: $white;
+        border-color: $white;
       }
     }
   }
@@ -226,15 +226,15 @@
   // Button icons
   &.btn-icon-right {
     position: relative;
-    &::before {
-      margin-right: 0.4em;
+    &::after {
+       margin-left: 0.4em;
     }
   }
 
   &.btn-icon-left {
     position: relative;
-    &::after {
-      margin-left: 0.4em;
+    &::before {
+      margin-right: 0.4em;
     }
   }
 

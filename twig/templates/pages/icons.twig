@@ -2,15 +2,16 @@
 
 
 {% block content %}
-	<div class="ds-content" data-aos="zoom-out-up">
+<div class="ds-content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+
 
 <div class="ds-block">
 	<div class="ds-info">
 		{% include '../blocks/_block-preview.twig' with {
-                    'block_id' : random(99999999999) ,
-                    'block_title' : 'Button Size' ,
-                    'block_description' : 'Les buttons basiques sont les buttons sans taille spécifiée ou icons',
-                } %}
+            'block_id' : random(99999999999) ,
+            'block_title' : 'Fontello icons' ,
+            'block_description' : 'Les buttons basiques sont les buttons sans taille spécifiée ou icons',
+        } %}
 	</div>
 
 	<div class="ds-block_example">
@@ -104,16 +105,16 @@
                 ]
             
             } %}
-</div>
+     </div>
 
 
 
 	</div>
 	<div class="ds-code_output">
 		{% include '../blocks/_block-collapse.twig' with {
-                    'collapse_id' : random(99999999999) ,
-                    'path_code' : '../ds-components/icons/icons-fontello.twig'      
-                } %}
+            'collapse_id' : random(99999999999) ,
+            'path_code' : '../ds-components/icons/icons-fontello.twig'      
+        } %}
 	</div>
 
 </div>

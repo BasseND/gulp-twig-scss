@@ -2,7 +2,8 @@
 
 
 {% block content %}
-   <div class="ds-content" data-aos="zoom-out-up">
+<div class="ds-content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+
 
        {# Buttons Basics #}
         <div class="ds-block">
@@ -138,73 +139,43 @@
                 {% include '../blocks/_block-preview.twig' with {
                     'block_id' : random(99999999999) ,
                     'block_title' : 'Button Size' ,
-                    'block_description' : 'Les buttons basiques sont les buttons sans taille spécifiée ou icons',
+                    'block_description' : 'la taille des buttons est gérée par les class <code>.btn-xtra-small, .btn-small, .btn-medium </code>',
                 } %}
             </div>
             
             <div class="ds-block_example">
-                {% include '../ds-components/button/_button.twig' with {
-                    button: {
-                    
-                        'text': 'Button avec taille par défaut',
-                        'color': 'teal-solid',
-                        'type': 'anchor',
-                        'url': 'https://google.com/',
-                        'additionnal_attributes': {},
-                        'additionnal_classes': ''
-                    }
-                } %}
-              
-                {% include '../ds-components/button/_button.twig' with {
-                    button: {
-                    
-                        'text': 'Button Medium',
-                        'color': 'teal-solid', 
-                        'size': 'medium', 
-                        'type': 'submit_btn', 
-                        'url': 'https://google.com/',
-                        'additionnal_attributes': {},
-                        'additionnal_classes': ''
-                    }
-                } %}
-
-                  {% include '../ds-components/button/_button.twig' with {
-                        button: {
-                            'text': 'Button Small',
-                            'color': 'teal-solid', 
-                            'size': 'small', 
-                            'type': 'anchor',
-                            'url': 'https://google.com/',
-                            'additionnal_attributes': {},
-                            'additionnal_classes': ''
-                        }
-                    } %}
-
-                {% include '../ds-components/button/_button.twig' with {
-                    button: {
-                    
-                        'text': 'Button Extra Small',
-                        'color': 'teal-solid', 
-                        'size': 'xtra-small', 
-                        'type': 'submit_btn', 
-                        'url': 'https://google.com/',
-                        'additionnal_attributes': {},
-                        'additionnal_classes': ''
-                    }
-                } %}
-              
-
+                {% include '../ds-components/button/_button-size.twig' %}
             </div>
             <div class="ds-code_output">
                 {% include '../blocks/_block-collapse.twig' with {
                     'collapse_id' : random(99999999999) ,
-                    'path_code' : '../ds-components/button/buttons.twig'      
+                    'path_code' : '../ds-components/button/button-size.twig'      
                 } %}
             </div>
 
         </div>
 
          {# Button Icons #}
+          <div class="ds-block">
+            <div class="ds-info">
+                {% include '../blocks/_block-preview.twig' with {
+                    'block_id' : random(99999999999) ,
+                    'block_title' : 'Button avec icons' ,
+                    'block_description' : 'Pour ajouter des icons à vos button, ajouter la class <code>.btn-icon-left</code> pour un icon à gauche, la class <code>.btn-icon-right</code> pour un icon à droite et une class pour spécifier l\'icone. Exemple : <code>.btn-icon-download</code>',
+                } %}
+            </div>
+            
+            <div class="ds-block_example">
+                {% include '../ds-components/button/_button-icon.twig' %}
+            </div>
+            <div class="ds-code_output">
+                {% include '../blocks/_block-collapse.twig' with {
+                    'collapse_id' : random(99999999999) ,
+                    'path_code' : '../ds-components/button/button-icon.twig'      
+                } %}
+            </div>
+
+        </div>
       
 
     </div>
